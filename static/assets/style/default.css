@@ -1,0 +1,132 @@
+
+body {
+	font: 13px/1.5 "Museo Sans", Verdana, sans-serif;
+}
+
+p {
+	
+}
+
+h1,h2,h3,h4 {
+	font-family: "Gentium Basic", Georgia, serif;
+}
+
+h1 {
+	border-top: 2px solid #444;
+	border-bottom: 1px solid #444;
+	padding: 0.5em 0;
+}
+
+#pageframe {
+	padding-top: 1em;
+}
+
+#rightcol {
+	
+}
+
+#rightcol img {
+	border: 1px solid #ccc;
+	-moz-box-shadow: 0px 0px 5px 2px #aaa;
+	-webkit-box-shadow: 0px 0px 5px 2px #aaa;
+	box-shadow: 0px 0px 5px 2px #aaa;
+}
+
+#simplemodal-overlay {
+	background-color:#000;
+}
+
+#simplemodal-container {
+	background-color:#333;
+	border:8px solid #444;
+	padding:12px;
+	color: #fff;
+}
+
+#simplemodal-data {
+	padding: 6px;
+}
+
+#edit-section {
+	position: relative;
+}
+
+#edit-section fieldset {
+	margin: 0;
+}
+
+#edit-section input {
+	font-size: 16pt;
+}
+
+#edit-section input[type=text] {
+	width: 99%;
+	font-family: "Gentium Basic", Georgia, serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+#edit-section textarea {
+	width: 99%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+#edit-section .submit-area {
+	position: absolute;
+	top: 2px;
+	left: -65px;
+}
+
+#edit-section .submit-area .markup-ctrl {
+	margin-top: 17px;
+	display: block;
+	position: relative;
+	left: -3px;
+}
+
+#edit-section .submit-area a {
+	display: block;
+	width: 26px;
+	height: 26px;
+	text-indent: -1000px;
+}
+
+#edit-section .submit-area .cancel {
+	background-image: url(/assets/img/cancel-s.png);
+	margin-left: 30px;
+}
+
+#edit-section .submit-area .cancel:hover {
+	background-image: url(/assets/img/cancel-over.png);
+}
+
+#edit-section .submit-area .save {
+	background-image: url(/assets/img/confirm-s.png);
+	float: left;
+}
+
+#edit-section .submit-area .save:hover {
+	background-image: url(/assets/img/confirm-over.png);
+}
+
+#login {
+	
+}
+
+#login input {
+	font-size: 18pt;
+	width: 150px;
+	margin: 3px 0;
+	display: block;
+	text-align: center;
+}
+

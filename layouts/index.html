@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Colin.is</title>
+	<link rel="stylesheet" href="/assets/style/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/assets/style/text.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/assets/style/960.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/assets/style/default.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+	<div id="pageframe" class="container_12">
+		<div class="grid_8" id="innerframe">
+			{{ range where .Site.Pages "Type" "homepage" }}
+				<h1>{{ .Title }}</h1>
+				<div class="main-content">
+					{{ .Content }}
+				</div>
+			{{ end }}
+		</div>
+		<div id="rightcol" class="grid_4">
+			<img src="/assets/photo/colin-headshot.jpg" alt="Photo of Colin">
+		</div>
+	</div>
+</body>
+</html>
