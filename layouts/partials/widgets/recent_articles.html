@@ -7,11 +7,15 @@
         <ul id="recent-post">
             {{ range first 5 (where .Site.Pages "Type" "blog") }}
             <li>
-                {{ with .Params.banner }}
+                {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
                 <div class="item-thumbnail">
-                    <a href="{{ $.Permalink }}" class="thumbnail">
-                        <span style="background-image:url({{ $.Site.BaseURL }}{{ . }})" alt="{{ $.Title }}" class="thumbnail-image"></span>
+                    <a href="{{ .Permalink }}" class="thumbnail">
+                        <span style="background-image:url({{ .Site.BaseURL }}{{ .Params.banner }})" alt="{{ .Title }}" class="thumbnail-image"></span>
                     </a>
+                </div>
+                {{ else if in .Params.categories "Fun links" }}
+                <div class="item-thumbnail">
+                    <a href="{{ .Permalink }}" class="thumbnail funlink-banner"></a>
                 </div>
                 {{ end }}
                 <div class="item-inner">
