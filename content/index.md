@@ -27,7 +27,7 @@ In his spare time, Colin likes to hack on [node.js][njs] and [AngularJS][ng] and
 
 ## Writer
 
-Colin has maintained personal weblogs since 2001 which ranged in topic from personal reflection to travel commentary to technical tips. These sites have encompassed his [undergraduate][rhu], [graduate][ea] and [professional][cb] life. Currently he is writing about his life in Bermuda at [canuckinbermuda.com][cib] and random technical tidbits at [blog.colin.is][bci].
+Colin has maintained personal weblogs since 2001 which ranged in topic from personal reflection to travel commentary to technical tips. These sites have encompassed his [undergraduate][rhu], [graduate][ea] and [professional][cb] life. He briefly wrote about his life in Bermuda at [canuckinbermuda.com][cib] and current posts random technical tidbits and links at [colin.is/blog][bci].
 
 Although not often as desired, Colin also does a bit of creative writing and aspires to write some short stories with the eventual goal of finishing a novel.
 
@@ -35,7 +35,7 @@ Although not often as desired, Colin also does a bit of creative writing and asp
 [ea]: http://www.europeadventure.ca
 [cb]: http://www.colinbate.com
 [cib]: http://canuckinbermuda.com
-[bci]: http://blog.colin.is
+[bci]: http://colin.is/blog/
 
 ## Photographer
 

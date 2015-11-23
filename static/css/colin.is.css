@@ -50,6 +50,14 @@
 	height: 50px;
 }
 
+.embed-jsbin-frame {
+	margin: 0 -20px;
+}
+
+.embed-jsbin-frame iframe {
+	border: 0 !important;
+}
+
 body > .container {
 	overflow-x: hidden;
 }
