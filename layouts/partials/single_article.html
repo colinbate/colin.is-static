@@ -2,7 +2,11 @@
     <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
         <div class="article-inner">
             {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
-            <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner">
+                {{ if eq (substr .Params.banner 0 2) "C:" }}
+                <img src="{{ .Site.Params.cloudinary_prefix }}{{ substr .Params.banner 2 }}" class="article-banner">
+                {{ else }}
+                <img src="{{ .Site.BaseURL }}{{ .Params.banner }}" class="article-banner">
+                {{ end }}
             {{ else if in .Params.categories "Fun links" }}
             <div class="funlink-banner"></div>
             {{ end }}
@@ -17,9 +21,7 @@
         {{ partial "prev_next_post" . }}
     </article>
     <section id="comments">
-        <div id="disqus_thread">
-            {{ template "_internal/disqus.html" . }}
-        </div>
+        <p>There are no comments available on this site. If you want to respond then you can write your own blog article and send me the link via <a href="https://twitter.com/rhuvok" target="_blank">twitter</a>. If there is an issue with this article or the site in general, you can open an issue on <a href="https://github.com/colinbate/colin.is-static/issues" target="_blank">Github</a></p>
     </section>
 
 </section>

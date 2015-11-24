@@ -11,10 +11,6 @@
 	font-weight: bold;
 }
 
-#comments {
-	display: none;
-}
-
 .note {
 	background-color: rgb(243, 236, 149);
 	position: relative;

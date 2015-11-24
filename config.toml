@@ -8,6 +8,10 @@ title = "Colin Bate is..."
 paginate = 10
 theme = "hugo-icarus-theme"
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
 
 [permalinks]
     post = "/blog/:year/:month/:day/:slug"
@@ -21,6 +25,7 @@ theme = "hugo-icarus-theme"
     location = "Bermuda"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io)."
+    cloudinary_prefix = "//res.cloudinary.com/colinbate/image/upload/"
 
     # Enable Google Analytics by entering your tracking code
     google_analytics = ""
@@ -41,7 +46,7 @@ theme = "hugo-icarus-theme"
 
 [[params.menu]]
     before = true
-    label  = "Blog"
+    label  = "Blogging"
     link   = "blog/"
 
 # Enter a link for the follow button on the left
