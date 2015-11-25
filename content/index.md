@@ -12,7 +12,7 @@ Colin can be [contacted by email][contact] and [followed on Twitter][twitter].
 
 ## Developer
 
-Colin has been coding for various systems since he was quite young. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
+Colin has been developing for the web for 19 years. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
 
 For the past 8 years, Colin has been employed by Orbis Investment Management Limited as a software developer working initially on internal software systems. Most of that time however he was working on a retail investment platform called [Orbis Access][oa].
 
