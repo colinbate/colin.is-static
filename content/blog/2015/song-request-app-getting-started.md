@@ -1,7 +1,8 @@
 +++
 title = "Getting Started with React+Redux"
 series = ["Building A Song Request App"]
-tags = ["series"]
+series_weight = 1
+tags = ["series", "react", "redux"]
 categories = ["Dev"]
 date = 2015-12-30T02:38:11Z
 banner = "C:t_banner_center/mic_hrm05f.jpg"

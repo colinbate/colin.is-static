@@ -1,0 +1,28 @@
+{{ with .Params.series }}
+    {{ $seriescount := len . }}
+    <div class="article-series-lists">
+        <h2 class="article-series-lists__title">Other Articles In {{ if eq $seriescount 1 }}This{{ else }}These{{ end }} Series</h2>
+        {{ range . }}
+        <div class="article-series-list">
+            {{ if gt $seriescount 1 }}<h3 class="article-series-list__title">{{ . }}</h3>{{ end }}
+            <ol class="article-series-list__list">
+                {{ $othercount := len (index $.Site.Taxonomies.series (urlize .)) }}
+                {{ range (index $.Site.Taxonomies.series (urlize .)) }}
+                <li class="article-series-list__listitem">
+                    {{ if eq .Page.Permalink $.Permalink }}
+                        <span>{{ .Page.Title }}</span><span class="arrow_box article-series-list__current">You are here</span>
+                    {{ else }}
+                        <a class="article-series-list__link" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+                    {{ end }}
+                </li>
+                {{ end }}
+                {{ if eq $othercount 1 }}
+                <li class="article-series-list__listitem">
+                    <span>(More coming soon!)</span>
+                </li>
+                {{ end }}
+            </ol>
+        </div>
+        {{ end }}
+    </div>
+{{ end }}
