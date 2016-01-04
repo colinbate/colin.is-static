@@ -87,6 +87,79 @@
   border-color: transparent transparent #006699 #006699;
 }
 
+/* GIST STUFF */
+
+.article-entry .gist {
+    margin: 0 -20px;
+    padding: 0 20px;
+    background-color: #23241f;
+}
+
+.article-entry .gist .gist-file,
+.article-entry .gist .gist-data {
+    border-radius: 0;
+    border: 0;
+}
+
+.article-entry .gist .blob-wrapper {
+    border-radius: 0;
+}
+
+.article-entry .gist .gist-meta {
+    background-color: #555;
+    color: #fff;
+    margin: 0 -20px;
+    padding: 10px 30px;
+}
+
+.article-entry .gist .gist-meta a {
+    color: #ddd;
+}
+
+.article-entry .gist .highlight {
+    background-color: #23241f;
+}
+
+.article-entry .gist .blob-num {
+    color: rgba(255,255,255,0.6);
+}
+.article-entry .gist .blob-num:hover {
+    color: #fff;
+}
+
+.article-entry .gist .blob-code-inner {
+    color: #f8f8f2;
+}
+
+.article-entry .gist .pl-c1,
+.article-entry .gist .pl-s .pl-v {
+    color: #00c0f3;
+}
+
+.article-entry .gist .pl-k {
+    color: #ec008c;
+}
+
+.article-entry .gist .pl-e,
+.article-entry .gist .pl-en {
+    color: #dbe129;
+}
+
+.article-entry .gist .pl-pds,
+.article-entry .gist .pl-s,
+.article-entry .gist .pl-s .pl-pse .pl-s1,
+.article-entry .gist .pl-sr,
+.article-entry .gist .pl-sr .pl-cce,
+.article-entry .gist .pl-sr .pl-sra,
+.article-entry .gist .pl-sr .pl-sre {
+    color: #6dd08e;
+}
+
+.article-entry .gist .pl-s .pl-s1,
+.article-entry .gist .pl-smi {
+    color: #f8f8f2;
+}
+
 .note {
 	background-color: rgb(243, 236, 149);
 	position: relative;
