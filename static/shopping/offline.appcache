@@ -4,7 +4,7 @@ CACHE MANIFEST
 CACHE:
 index.html
 main-51848901dd.css
-main-53150cd7d3.js
+main-985dc3db2a.js
 img/basket.png
 img/cog.svg
 lib/mithril.min.js
@@ -16,4 +16,4 @@ http://*
 https://*
 *
 
-# hash: e28c7f2aaca5a40e6537aea1702f0bcaa369ce4144e1d69adf52c939930a809f
+# hash: d2161130f03f57e6ca3213d996e7e0f1d568a05050ac52c589c081aa6fc6a98e
