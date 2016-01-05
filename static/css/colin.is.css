@@ -92,7 +92,11 @@
 .article-entry .gist {
     margin: 0 -20px;
     padding: 0 20px;
-    background-color: #23241f;
+    background-color: #34383D;
+}
+
+.article-entry .gist .gist-file {
+  padding-top: 5px;
 }
 
 .article-entry .gist .gist-file,
@@ -108,7 +112,7 @@
 .article-entry .gist .gist-meta {
     background-color: #555;
     color: #fff;
-    margin: 0 -20px;
+    margin: 5px -20px 0;
     padding: 10px 30px;
 }
 
@@ -117,7 +121,7 @@
 }
 
 .article-entry .gist .highlight {
-    background-color: #23241f;
+    background-color: #34383D;
 }
 
 .article-entry .gist .blob-num {
@@ -136,7 +140,8 @@
     color: #00c0f3;
 }
 
-.article-entry .gist .pl-k {
+.article-entry .gist .pl-k,
+.article-entry .gist .pl-ent {
     color: #ec008c;
 }
 
