@@ -1,7 +1,7 @@
 +++
 title = "Mercurial Bookmarks in TeamCity"
 date = 2014-02-05T21:21:52Z
-tags = ["teamcity", "hg"]
+tags = ["teamcity", "hg", "ci"]
 categories = ["Dev"]
 +++
 This is just a note to help those people looking for help on this and hopefully prevent some banging of heads into walls.
