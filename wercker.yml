@@ -1,4 +1,4 @@
-box: ubuntu
+box: debian
 build:
   steps:
     - arjen/hugo-build:
@@ -6,6 +6,8 @@ build:
         flags: --disableSitemap=true
 deploy:
   steps:
+    - install-packages:
+        packages: liberror-perl git ssh-client
     - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: colin.is
