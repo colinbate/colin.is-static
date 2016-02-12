@@ -86,6 +86,7 @@ pre,
 .hljs-tag .hljs-title,
 .hljs-value,
 .alias .hljs-keyword:first-child,
+.language-bat .hljs-built_in,
 .css .hljs-tag,
 .css .unit,
 .css .hljs-important {
@@ -132,6 +133,7 @@ pre,
 .tex .hljs-command,
 .hljs-prompt,
 .hljs-link_label,
+.language-bat .hljs-variable,
 .hljs-link_url {
     color:#6dd08e;
 }
