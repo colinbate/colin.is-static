@@ -12,15 +12,16 @@ Colin can be [contacted by email][contact] and [followed on Twitter][twitter].
 
 ## Developer
 
-Colin has been developing for the web for 19 years. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
+Colin has been developing for the web for 20 years. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
 
-For the past 8 years, Colin has been employed by Orbis Investment Management Limited as a software developer working initially on internal software systems. Most of that time however he was working on a retail investment platform called [Orbis Access][oa].
+For the past 8.5 years, Colin has been employed by Orbis Investment Management Limited as a software developer working initially on internal software systems. Most of that time however he was working on a retail investment platform called [Orbis Access][oa].
 
-In his spare time, Colin likes to hack on [node.js][njs] and [AngularJS][ng] and is currently investigating Scheme and whatever else his little spare time permits. Anything publicly available will be located on [bitbucket][bb] or possibly [github][gh]
+In his spare time, Colin likes to hack on [node.js][njs], [Angular][ng], [React][], and is currently investigating Scheme and whatever else his little spare time permits. Anything publicly available will be located on [bitbucket][bb] or possibly [github][gh]
 
 [sav]: http://www.savanaspa.com
 [njs]: http://nodejs.org/
-[ng]: http://angularjs.org
+[ng]: http://angular.io
+[React]: https://facebook.github.io/react/
 [bb]: https://bitbucket.org/colinbate/
 [gh]: https://github.com/colinbate/
 [oa]: https://www.orbisaccess.co.uk
