@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<title>Colin.is</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="assets/style/reset.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="assets/style/text.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="assets/style/960.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="assets/style/grid.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="assets/style/default.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-	<div id="pageframe" class="container_12">
-		<div class="grid_8" id="innerframe">
+	<div id="pageframe" class="container">
+		<div class="grid-4" id="innerframe">
 			{{ range where .Site.Pages "Type" "homepage" }}
 				<h1>{{ .Title }}</h1>
 				<div class="main-content">
@@ -18,7 +19,7 @@
 				</div>
 			{{ end }}
 		</div>
-		<div id="rightcol" class="grid_4">
+		<div id="rightcol" class="grid-2">
 			<img src="assets/photo/colin-headshot.jpg" alt="Photo of Colin">
 		</div>
 	</div>
