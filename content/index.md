@@ -36,7 +36,7 @@ Although not often as desired, Colin also does a bit of creative writing and asp
 [ea]: http://www.europeadventure.ca
 [cb]: http://www.colinbate.com
 [cib]: http://canuckinbermuda.com
-[bci]: http://colin.is/blog/
+[bci]: https://colin.is/blog/
 
 ## Photographer
 
