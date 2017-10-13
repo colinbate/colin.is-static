@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frp on Colin Bate is...</title>
+    <link>https://colin.is/tags/frp/</link>
+    <description>Recent content in Frp on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Nov 2015 16:07:11 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/frp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-11-13</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-13/</link>
+      <pubDate>Fri, 13 Nov 2015 16:07:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-13/</guid>
+      <description>&lt;p&gt;Another themed group of links, this time, Reactive Programming libraries for JavaScript. As the reactive programming paradigm catches on, there are libraries popping up in many languages and JavaScript is no different. Sometimes referred to as Functional Reactive Programming (FRP), the idea is that streams of events or dynamic values represent the data within your application. You can then transform, combine, filter and perform a host of other operations on these streams. Each library has slightly different syntax and names for certain things, but conceptually they are all trying to do the same thing.&lt;/p&gt;
+
+&lt;p&gt;It is something that makes more sense when you see examples, and even then, it may not be apparent what the value is. But if you let it sit in the back of your mind for a while, you can appreciate the value and power the concept brings to the table.&lt;/p&gt;
+
+&lt;p&gt;If that isn&amp;rsquo;t enough to convince you, I&amp;rsquo;ll also mention that as of the time of this writing, it is intended that Angular 2 will use these &lt;em&gt;observables&lt;/em&gt;&amp;ndash;as they are known&amp;ndash;for the results of Ajax calls.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RxJS&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/Reactive-Extensions/RxJS&#34;&gt;https://github.com/Reactive-Extensions/RxJS&lt;/a&gt;&lt;br /&gt;
+From the Reactive Extensions family of libraries, including a Rx.NET, comes the &lt;em&gt;enterprise friendly&lt;/em&gt; RxJS. From what I can tell this is the version that is most popular with enterprise projects. It is quite comprehensive, and if desired, you can pull in only the features that you need. RxJS is the library that Angular 2 will be bundling as far as I know.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bacon.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://baconjs.github.io/&#34;&gt;https://baconjs.github.io/&lt;/a&gt;&lt;br /&gt;
+What can go wrong with a library with the name bacon? This library seems to be more popular with the open source community than RxJS, perhaps because it is a bit more light-weight. This library splits the concept of Observables (from RxJS) into EventStreams and Properties.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kefir.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://rpominov.github.io/kefir/&#34;&gt;https://rpominov.github.io/kefir/&lt;/a&gt;&lt;br /&gt;
+Another reactive library, this one focused on performance and memory footprint. The feature set seems quite comprehensive, and the documentation is good, although it has fewer practical examples than others. What is lacks in practical examples I feel it makes up for with conceptual examples and illustrations that help explain how the different functions work. For what it is worth, Kefir is the library that I&amp;rsquo;m planning to use in my next personal project.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on Colin Bate is...</title>
+    <link>https://colin.is/tags/learning/</link>
+    <description>Recent content in Learning on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2016 17:11:07 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-16</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-16/</link>
+      <pubDate>Fri, 16 Sep 2016 17:11:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-16/</guid>
+      <description>&lt;p&gt;To mark the occasion of the release of Angular 2 (finally), I thought that an Angular 2 themed set of links would be appropriate. And since I&amp;rsquo;ve been heavily steeped in React lately, it also gave me a chance to come up for air a little bit and see what is going on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://angular.io&#34;&gt;https://angular.io&lt;/a&gt;&lt;br /&gt;
+Can&amp;rsquo;t talk about Angular 2 without a link to the official page itself. This site is different to the one for Angular 1 and contains documentation and tutorials as you would expect. For those not subjected to my Angular 2 evangelism yet, it is a bit of a departure from its predecessor. It follows the more structured component-based approach which is very popular at the moment, and it brings some other technologies to the table with it. In particular takes particular advantage of TypeScript to support dependency injection and metadata. It also incorporates the concept of Observables via the &lt;code&gt;rxjs&lt;/code&gt; package. You don&amp;rsquo;t have to use either in your applications, but the community is embracing them, and both are quite powerful additions if you take the time to learn them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2 Courses @ Egghead&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/building-angular-2-components&#34;&gt;https://egghead.io/courses/building-angular-2-components&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/intro-to-angular-2-router&#34;&gt;https://egghead.io/courses/intro-to-angular-2-router&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/angular-2-dependency-injection-di-explained&#34;&gt;https://egghead.io/courses/angular-2-dependency-injection-di-explained&lt;/a&gt;&lt;br /&gt;
+Three links for the price of one. There are three new Angular 2 courses available at Egghead which are completely free, at least for the time being. So unless you have a Pro Egghead account, or would like to, then I&amp;rsquo;d recommend checking out those courses sooner rather than later if you want to learn about Angular 2. That said, I do recommend a Pro Egghead account if you are interested in learning about the hottest web technologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update: They are no longer free apart from the intro videos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ng2-bootstrap&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://valor-software.com/ng2-bootstrap/&#34;&gt;http://valor-software.com/ng2-bootstrap/&lt;/a&gt;&lt;br /&gt;
+Given the popularity of Bootstrap for quickly bringing a UI to life, I wanted to mention the library which brings Bootstrap to Angular 2 using components and doesn&amp;rsquo;t require any of the out-of-the-box Bootstrap JavaScript. It provides components for the usual suspects like the accordion, date picker, and tabs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-01-29</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-29/</link>
+      <pubDate>Fri, 29 Jan 2016 15:43:39 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-29/</guid>
+      <description>&lt;p&gt;Since tomorrow is my son&amp;rsquo;s third birthday, I&amp;rsquo;d say it is high time he starts to learn to program. I need him (l)earning ASAP. A common goal for any geeky parent, but how do you go about it?&lt;/p&gt;
+
+&lt;p&gt;Below are some educational tools and resources aimed at teaching programming whether to someone very young or anyone in general. And even if you know how to program already, the learning never stops.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ABC++&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://inedo.com/abc&#34;&gt;http://inedo.com/abc&lt;/a&gt;&lt;br /&gt;
+ABC++ is a book published by the same team who created ProGet and BuildMaster two great .NET-focused DevOps tools. On one hand it is an ordinary alphabet book for teaching kids their letters, on the other hand, it is a list of programming languages with code samples. The site has a link to Amazon where you can get the book for about $12 USD, but the content of the book is available on the site as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codecademy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.codecademy.com&#34;&gt;https://www.codecademy.com&lt;/a&gt;&lt;br /&gt;
+Codecademy doesn&amp;rsquo;t target children per se, but I suspect older kids would be able to complete some of their courses. They aim to teach the world to program, and they are taking a fresh look at education in the digital age. They have courses on web technologies as well as Python, Ruby, and Java. You can even learn about Git or SQL. The learning catalog is free, but they have a pro account with more tooling around tailoring a custom solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scratch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://scratch.mit.edu/&#34;&gt;https://scratch.mit.edu/&lt;/a&gt;&lt;br /&gt;
+Scratch is a partly a programming language, partly a community. It targets kids from 8 to 16 and was created by a group from MIT. It is free of charge. It does require Flash in your browser though to use the visual editor. It looks like a fun system to teach concepts to kids through fun and engaging projects.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

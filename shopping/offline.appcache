@@ -1,0 +1,19 @@
+CACHE MANIFEST
+
+
+CACHE:
+index.html
+main-3507f44155.js
+main-e8ddadb34b.css
+img/basket.png
+img/cog.svg
+lib/mithril.min.js
+lib/pouchdb-5.1.0.min.js
+
+
+NETWORK:
+http://*
+https://*
+*
+
+# hash: 8b8b79fea5e51d0a091eae2bc5039aa8bae04beefa1eddf5b6645e87e6d66a35

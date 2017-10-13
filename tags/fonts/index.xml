@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fonts on Colin Bate is...</title>
+    <link>https://colin.is/tags/fonts/</link>
+    <description>Recent content in Fonts on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Feb 2016 17:27:36 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/fonts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-02-12</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-02-12/</link>
+      <pubDate>Fri, 12 Feb 2016 17:27:36 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-02-12/</guid>
+      <description>&lt;p&gt;There are many things about which developers can get quite passionate and even defensive. We are a strongly opinionated lot. There are some classic examples: brace style, emacs vs. vi, any language vs. any other language. It boils down to personal preference in the end.&lt;/p&gt;
+
+&lt;p&gt;Another area where personal preference and passion can come into play is with coding fonts. I love typography, and the inherent challenges of creating (or finding) the perfect coding typeface is exciting. However, I find at least personally, that I&amp;rsquo;ll spend some time searching for an excellent coding font, settle on something for a period and then start searching all over again.&lt;/p&gt;
+
+&lt;p&gt;This restlessness is akin to some people needing to rearrange their living space or their workspace occasionally. Because as a software developer, nothing is as &amp;ldquo;in your face&amp;rdquo;, aesthetically speaking, as your coding font.&lt;/p&gt;
+
+&lt;p&gt;However, evaluating a coding typeface is not an entirely subjective experience, there are some more objective things we can evaluate. Glyph coverage (how many different characters the font renders) is a good one if you have any needs for Unicode support or writing in anything other than English. Another is how well the font distinguishes various character groups: &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;O&lt;/code&gt;; &lt;code&gt;I&lt;/code&gt;, &lt;code&gt;l&lt;/code&gt; and &lt;code&gt;1&lt;/code&gt;; &lt;code&gt;,&lt;/code&gt; and &lt;code&gt;.&lt;/code&gt; for example. Check for the position, size and shape of the symbols and operators that you use often. Do they work well with each other? Does it support multiple weights? Is there a separately designed italic version? All things to consider.&lt;/p&gt;
+
+&lt;p&gt;Below is a short list of fonts which I use, or have recently used, with the usual brief description. I&amp;rsquo;ll also throw in a list of alternatives because I recognize that not everyone has the same criteria for choosing a typeface. Before I do that, I will mention of course that there are a couple of standard monospaced fonts included with most operating systems, like Courier New, Consolas, Monaco, Menlo and Bitstream Vera Sans Mono.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Monoid&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://larsenwork.com/monoid/&#34;&gt;http://larsenwork.com/monoid/&lt;/a&gt;&lt;br /&gt;
+Monoid is my new font interest as it supports coding ligatures. Ligatures take two or more characters which often appear together and combine them into a single glyph. So Monoid can take your &lt;code&gt;=&amp;gt;&lt;/code&gt; operator for example and replace it with a proper double arrow. Apart from this, it has a nice large x-height and prominent punctuation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Envy Code R&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released&#34;&gt;https://damieng.com/blog/2008/05/26/envy-code-r-preview-7-coding-font-released&lt;/a&gt;&lt;br /&gt;
+Envy Code R has been my Visual Studio font of choice for many years. It has a nice tall x-height and looks good without anti-aliasing. The particularly nice thing about it for Visual Studio was that it has a specific version which treats &amp;ldquo;bold&amp;rdquo; as &amp;ldquo;italic&amp;rdquo; because Visual Studio used only to let you specify whether a font was bold for certain syntax colourings. I preferred to have italics in my source rather than bold.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Input Mono&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://input.fontbureau.com/&#34;&gt;http://input.fontbureau.com/&lt;/a&gt;&lt;br /&gt;
+Input Mono is a member of a family of three typefaces all using the same basic form. A nice clean shape, it has many weights and styles and allows you to customize some of your letterforms, so you can get the look that you like. The Serif and Sans versions of this font are good for things like Markdown documents where alignment isn&amp;rsquo;t so important.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Others&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inconsolata (&lt;a href=&#34;https://www.google.com/fonts/specimen/Inconsolata&#34;&gt;https://www.google.com/fonts/specimen/Inconsolata&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fira Code (&lt;a href=&#34;https://github.com/tonsky/FiraCode&#34;&gt;https://github.com/tonsky/FiraCode&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Source Code Pro (&lt;a href=&#34;https://www.google.com/fonts/specimen/Source+Code+Pro&#34;&gt;https://www.google.com/fonts/specimen/Source+Code+Pro&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Hack (&lt;a href=&#34;http://sourcefoundry.org/hack/&#34;&gt;http://sourcefoundry.org/hack/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Roboto Mono (&lt;a href=&#34;https://www.google.com/fonts/specimen/Roboto+Mono&#34;&gt;https://www.google.com/fonts/specimen/Roboto+Mono&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Anonymous Pro (&lt;a href=&#34;https://www.google.com/fonts/specimen/Anonymous+Pro&#34;&gt;https://www.google.com/fonts/specimen/Anonymous+Pro&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Profont (&lt;a href=&#34;http://tobiasjung.name/profont/&#34;&gt;http://tobiasjung.name/profont/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Proggy (&lt;a href=&#34;http://www.proggyfonts.net/&#34;&gt;http://www.proggyfonts.net/&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;PragmataPro (&lt;a href=&#34;http://www.fsd.it/shop/fonts/pragmatapro/&#34;&gt;http://www.fsd.it/shop/fonts/pragmatapro/&lt;/a&gt;) (not free)&lt;/li&gt;
+&lt;li&gt;Fantasque Sans Mono (&lt;a href=&#34;https://github.com/belluzj/fantasque-sans&#34;&gt;https://github.com/belluzj/fantasque-sans&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;M+ (&lt;a href=&#34;https://mplus-fonts.osdn.jp/about-en.html&#34;&gt;https://mplus-fonts.osdn.jp/about-en.html&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

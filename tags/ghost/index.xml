@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghost on Colin Bate is...</title>
+    <link>https://colin.is/tags/ghost/</link>
+    <description>Recent content in Ghost on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Oct 2013 23:05:42 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Perfect Excuse</title>
+      <link>https://colin.is/blog/2013/the-perfect-excuse/</link>
+      <pubDate>Fri, 18 Oct 2013 23:05:42 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2013/the-perfect-excuse/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+	&lt;i class=&#34;note__icon fa fa-comment&#34;&gt;&lt;/i&gt;
+	&lt;div class=&#34;note__text&#34;&gt;&lt;p&gt;While this content was accurate at the time of writing, this post has since been extracted from Ghost and is now a humble markdown document processed by Hugo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been thinking about the best way to get some content online focused around the technical tidbits (and rants) that I develop over time. I even wrote my own tool to publish a mercurial repository as a static site, but I haven&amp;rsquo;t been using it.&lt;/p&gt;
+
+&lt;p&gt;So along comes &lt;a href=&#34;http://ghost.org&#34;&gt;Ghost&lt;/a&gt; and saves the day.&lt;/p&gt;
+
+&lt;p&gt;I was following/anticipating Ghost since I just missed their Kickstarter. However, since I&amp;rsquo;m quite busy, the time flew by and here we are, running this site off of a Ghost instance which I spun up on a &lt;a href=&#34;http://www.digitalocean.com&#34;&gt;DigitalOcean&lt;/a&gt; droplet in just a few minutes.&lt;/p&gt;
+
+&lt;p&gt;There are lots of guides for setting up Ghost, this isn&amp;rsquo;t going to be one of them. However, I may decide to start hacking on Ghost, and if I do, then I will certainly share that. Until then, I&amp;rsquo;m going to get started with some content I already have prepared.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

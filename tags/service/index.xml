@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service on Colin Bate is...</title>
+    <link>https://colin.is/tags/service/</link>
+    <description>Recent content in Service on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Sep 2016 14:55:21 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/service/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-23</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-23/</link>
+      <pubDate>Fri, 23 Sep 2016 14:55:21 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-23/</guid>
+      <description>&lt;p&gt;Many technical people like to come up with overly complicated solutions to problems. Like writing an app that you may only need to use once or twice. Does this sound like you? It certainly sounds like me.&lt;/p&gt;
+
+&lt;p&gt;A lot of the time, the reason is to challenge oneself. Or maybe it is because it is just plain enjoyable to procrastinate on real life while learning a new technology. Whatever the motivation, with today&amp;rsquo;s technology it doesn&amp;rsquo;t need to be a time-consuming process. More and more &amp;ldquo;apps&amp;rdquo; aren&amp;rsquo;t just big pieces of software written from the ground up. And I&amp;rsquo;m not just talking about microservices; I&amp;rsquo;m talking more about mashups and other hybrid applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Airtable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/QeE1&#34;&gt;https://airtable.com/&lt;/a&gt;&lt;br /&gt;
+Have you ever found yourself using Google Sheets or Excel to manage a personal collection or otherwise organize things? Or perhaps thought you could use Google Sheets as a simple JSON API? If so you may find Airtable interesting. It sells itself as being simple as a spreadsheet. Essentially it is a nice UI around a set of build-it-yourself databases. The free plan is quite generous and should be more than enough for personal use. There is also an iOS app which lets you manage your data in a very convenient way while mobile. You can attach files/photos to your records through integration with cloud storage providers or directly from your computer or device. It even allows you to expose this data (both reading and writing) via a simple API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/Fm5E&#34;&gt;https://zapier.com/&lt;/a&gt;&lt;br /&gt;
+Zapier provides connections between different services and products which may not otherwise have them. It is a bit like a hub for integrations. You can create &amp;ldquo;zaps&amp;rdquo; which trigger based on something happening in one service (e.g. a Github PR) and then perform an action somewhere else (e.g. send a tweet). The free plan allows for simple one-to-one zaps, or you can pay for more complex workflows. The integrations available are quite extensive and target the productivity and business space. In particular, it has integrations with Airtable allowing you to trigger actions based on changes being made to your data or adding new data based on events elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/2LRO&#34;&gt;https://ifttt.com/&lt;/a&gt;&lt;br /&gt;
+If This Then That is another service offering to perform actions on one service based on triggers from another. The service is free. However, the integrations seem to be geared more toward personal use and focus on the Internet of Things (IoT) space. Like you could set it up so that an email from a particular address might turn on your lights in your house. I think there is a lot of potential for this type of simple orchestration, if for no other reason than the geek factor.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-05-20</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-05-20/</link>
+      <pubDate>Fri, 20 May 2016 13:17:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-05-20/</guid>
+      <description>&lt;p&gt;I know I&amp;rsquo;ve written about static sites before. I&amp;rsquo;ve linked to some site generators and some complementary services, and now I&amp;rsquo;m going to add simple, CDN-based hosting to that list.&lt;/p&gt;
+
+&lt;p&gt;All of these services allow you publish a static site with a simple command, and all offer free plans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com&lt;/a&gt;&lt;br /&gt;
+Netlify seems like the most full featured of this batch, but that may or may not be a good thing. In addition to hosting static files, it will also build your site from the source material, integrating with your git repository if desired. It can generate Jekyll, Roots, and Hugo sites as well as run any build tools like Grunt or Gulp. They also offer API proxying, support for client-side routing and the ability to hook into third party OAuth2 providers. SSL is managed for you and included in all plans. The free plan allows a custom domain but adds a small callout to the bottom corner of your site/app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Surge&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://surge.sh/&#34;&gt;https://surge.sh/&lt;/a&gt;&lt;br /&gt;
+Surge takes the approach of lowering the barrier to get something &amp;ldquo;out there&amp;rdquo; as quickly and simply as possible. Just type &lt;code&gt;surge&lt;/code&gt; and hit enter in your project directory and Surge will publish it under a &lt;code&gt;surge.sh&lt;/code&gt; subdomain. You can add your custom domain for free. However, Surge just hosts your static site; it won&amp;rsquo;t build it or do any proxying, etc. You can, of course, integrate the &lt;code&gt;surge&lt;/code&gt; NPM package into your existing CI process and have it publish your site once built. The free plan doesn&amp;rsquo;t allow SSL on custom domains, but it does on their subdomains so that you could use it as a simple static asset CDN for a site hosted elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PubStorm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.pubstorm.com/&#34;&gt;https://www.pubstorm.com/&lt;/a&gt;&lt;br /&gt;
+PubStorm is the new kid on this block. It is an offering from Nitrous, the creators the online IDE, presumably to create the whole farm-to-table type of experience. They only have a free plan at the moment, which allows you to host up to 10 separate sites with custom domains and SSL. They support version rollback and simple &lt;code&gt;pushState&lt;/code&gt; support to allow client-side routing. It looks like their future premium offering will add more features. They also work primarily through a command line interface and allow you to add collaborators so that other people can publish or rollback if that is how you work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-15</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-15/</link>
+      <pubDate>Fri, 15 Apr 2016 18:13:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-15/</guid>
+      <description>&lt;p&gt;BOTS! While the picture that forms in your head may vary when you hear that word, I suspect before too long it may become as common a term as social media is now. There is a proliferation of messaging bots at the moment. And as you may guess, that means a large number of services are popping up to enable the simple and convenient hosting, development and maintenance of your bots.&lt;/p&gt;
+
+&lt;p&gt;The following are a sample of such services with various takes on the issue. Some even allow you to piece together a bot without any programming. We certainly have come a long way since the Eggdrop IRC bots of 20+ years ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chatfuel&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://chatfuel.com/&#34;&gt;https://chatfuel.com/&lt;/a&gt;&lt;br /&gt;
+Chatfuel gives you the tools to build your bots without needing to program. You can hook up your data and leverage existing modules to create a bot to engage your customers. At the moment, it only supports &lt;a href=&#34;https://telegram.org/&#34;&gt;Telegram&lt;/a&gt;, but more providers are on the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meya&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://meya.ai/&#34;&gt;https://meya.ai/&lt;/a&gt;&lt;br /&gt;
+Meya is another bot host/platform which allows you to write your bots in Python and Node.js. It also has some built-in bot components. It also has integrations with other sites like Facebook and Trello to provide information to your bot in addition to a local datastore.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Microsoft Bot Framework&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://dev.botframework.com/&#34;&gt;https://dev.botframework.com/&lt;/a&gt;&lt;br /&gt;
+Microsoft is also jumping on the messaging bandwagon, with their Bot Framework. You can build your bots with Node.js or C#, and their SDK is open source. It provides connectors to SMS, Office 365 mail, Skype, Slack, and others.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-18</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-18/</link>
+      <pubDate>Fri, 18 Mar 2016 15:48:28 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-18/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve &lt;a href=&#34;http://colin.is/blog/2013/fun-links-2013-09-27/&#34;&gt;mentioned Trello before&lt;/a&gt; as a personal productivity tool that many people use for managing software projects. I&amp;rsquo;ve used it myself for a few.&lt;/p&gt;
+
+&lt;p&gt;Some people use the issue tracking tools provided by GitHub or Bitbucket to manage their tasks, and that works. But I prefer to leave those for bugs raised externally. Even working on my own, I find tools with workflows and drag and drop particularly pleasant to use. So I&amp;rsquo;ve compiled a list of some software project management services online which hopefully people will find useful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pivotal Tracker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.pivotaltracker.com/&#34;&gt;http://www.pivotaltracker.com/&lt;/a&gt;&lt;br /&gt;
+Pivotal Tracker aims to help you build better software faster. It is from the same folks who bring us the Jasmine JS testing library. From the looks of things, the tool has recently undergone a facelift which has people excited. They have a free plan which supports up to three collaborators and two private projects. Public projects are all free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clubhouse&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://clubhouse.io/&#34;&gt;https://clubhouse.io/&lt;/a&gt;&lt;br /&gt;
+Clubhouse is a newer player, and it was created to overcome frustrations its founders had with existing tools. It features the ability to zoom in and out of projects to see different levels of details at a glance. The free plan here also allows for three collaborators, but unlimited projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Favro&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://favro.com/&#34;&gt;https://favro.com/&lt;/a&gt;&lt;br /&gt;
+Favro seems a bit more general purpose, similar to Trello, but looks like it would be quite capable of planning software development. Their free plan provides unlimited users and projects, but only a single service integration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-04</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-04/</link>
+      <pubDate>Fri, 04 Mar 2016 14:59:40 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-04/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;m revisiting microservices, but from a slightly different angle. While I still don&amp;rsquo;t believe microservices are a panacea, they certainly have a place in today&amp;rsquo;s technical ecosystem. If you aren&amp;rsquo;t going down the &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-06/&#34;&gt;microservices as a service route&lt;/a&gt; that I mentioned before, then you will likely need to consider how to deploy and orchestrate your microservices, whether that is in-house or in-cloud.&lt;/p&gt;
+
+&lt;p&gt;The whole concept of microservices just moves where the technical challenges lie, and in this case, pushes extra challenges into the territory of DevOps and Infrastructure. As such I&amp;rsquo;m listing some tools which are designed to help out in that area.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giant Swarm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://giantswarm.io/&#34;&gt;https://giantswarm.io/&lt;/a&gt;&lt;br /&gt;
+Giant Swarm is a company which provides support for microservice deployment. They provide professional support/consulting services as well as publishing several open source tools used in the deployment and orchestration of microservices.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Claudia&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/claudiajs/claudia&#34;&gt;https://github.com/claudiajs/claudia&lt;/a&gt;&lt;br /&gt;
+Claudia is a tool that takes the pain out of deploying Node.js microservices to AWS. It allows you to get something up and running quickly without the hassles associated with AWS Lambda and API Gateway directly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;linkerd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://linkerd.io/&#34;&gt;https://linkerd.io/&lt;/a&gt;&lt;br /&gt;
+Linkerd touts itself as a modern RPC proxy for microservices. It sits near your application and provides abstractions for service discovery and load balances and instruments your remote services. This functionality allows you to make infrastructure and architecture changes without modifying application code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In other news&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/en/blog/release/v5.7.0/&#34;&gt;Node 5.7.0 is released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hook.io/blog/role-based-access-control&#34;&gt;Hook.io adds extra security, API keys and ES7 support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-01-08</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-08/</link>
+      <pubDate>Fri, 08 Jan 2016 19:28:06 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-08/</guid>
+      <description>&lt;p&gt;Having integrated third party identity management into a web app recently, I thought I&amp;rsquo;d take a moment to compare some of the options available in this space.&lt;/p&gt;
+
+&lt;p&gt;Whatever type of app you are building, you are very likely to have users. Often you need to keep track of those users, and authenticate them when using your app. And not just authenticate, you need to collect some information about them and provide a way for them to change their passwords, or even reset them if forgotten. There is a lot of standard boilerplate surrounding user management that makes it ideal to be managed by a third party. Assuming you trust the third party with this information. But that is true of any cloud service.&lt;/p&gt;
+
+&lt;p&gt;Two years ago, &lt;a href=&#34;https://colin.is/Blogs/BateBlog/Lists/Posts/Post.aspx?ID=26&#34;&gt;I wrote a post&lt;/a&gt; which linked to a service that offers this type of functionality called UserApp. You can consider these offerings to be similar. Ultimately they are all trying to provide the same essential service; it is just how they deliver that makes the difference.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m seeing the main differences are in pricing model and integration support. The latter refers to how many identity providers you can access. Commonly these are &amp;ldquo;social&amp;rdquo; websites you can use to identify yourself. You&amp;rsquo;ve likely seen things like this before with a &lt;em&gt;Login with Facebook&lt;/em&gt; button when signing up to other websites. But it can also mean enterprise providers, like LDAP.&lt;/p&gt;
+
+&lt;p&gt;All of these options provide a free option with some restrictions or up to a certain threshold.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Auth0&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://auth0.com&#34;&gt;https://auth0.com&lt;/a&gt;&lt;br /&gt;
+Auth0 claims their free plan is production ready, which sound right since they provide up to 7,000 active users per month. They can host a username/password database for you and you can integrate with up to two social providers (out of the 30+ they support). They provide a drop-in component for your web and mobile apps called Lock which provides the UI for authentication and registration of users. Their documentation is good, and they have lots of sample apps and examples to guide your integration (which is pretty easy).&lt;/p&gt;
+
+&lt;p&gt;Disclosure: &lt;a href=&#34;https://colin.is/Blogs/BateBlog/Lists/Posts/Post.aspx?ID=149&#34;&gt;I&amp;rsquo;ve used Auth0 before&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stormpath&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stormpath.com/&#34;&gt;https://stormpath.com/&lt;/a&gt;&lt;br /&gt;
+Stormpath has a free developer plan, limited to 100,000 monthly API calls. They will host unlimited users and groups and can integrate with Facebook and Google. They only support those two at the moment. Stormpath also has some SDKs and example apps available which show integration in various languages. They don&amp;rsquo;t seem to have a pre-made UI for you to use, but they do offer a hosted login domain for some of the plans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DailyCred&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.dailycred.com&#34;&gt;https://www.dailycred.com&lt;/a&gt;&lt;br /&gt;
+DailyCred has a pricing model similar to Auth0, in that they count active users per month. With DailyCred, your first 1000 are free each month. There is no other tiered offering, just pay per active user. They only support ten social identity providers, but they do provide a drop in UI for use locally, called Connect. Also, they have hosted pages to signup and sign in on their servers that will redirect you back to your app with a token. They also have an extensive user analytics offering that I haven&amp;rsquo;t seen mentioned anywhere else.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-12-18</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-18/</link>
+      <pubDate>Fri, 18 Dec 2015 15:13:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-18/</guid>
+      <description>&lt;p&gt;Continuing with my trend of grouping links by theme, I&amp;rsquo;m going to list a few &lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; based blogging/web hosting solutions. It is an appealing proposition, particularly for people who are non-technical to be able to update files on your computer and then have them &lt;em&gt;magically&lt;/em&gt; published for you.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m listing services with free options, but I&amp;rsquo;ll give honourable mention to a couple of others which may not. In general, some of these tools feel a bit simplified, but that makes sense since they are trying to be as easy to use as possible.&lt;/p&gt;
+
+&lt;p&gt;And in case you were wondering, these apps don&amp;rsquo;t get full access to your Dropbox content, only the app-specific folder that they set up as part of the linking process.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DropPages&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://droppages.com/&#34;&gt;http://droppages.com/&lt;/a&gt;&lt;br /&gt;
+DropPages allows you to edit text files with the (Markdown-based) content of your pages and takes care of adding the templates/themes around it. Everything gets compressed and minified as part of their processing, and you can host off of a subdomain of droppages.com for free. If you want a custom domain name, it costs £5/month for premium service.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pancake&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://pancake.io/&#34;&gt;https://pancake.io/&lt;/a&gt;&lt;br /&gt;
+Pancake also supports Markdown-based pages in a Dropbox folder, but also allows you to use HTML files as well. It also gives you more control over your templates. It supports adding metadata to your Markdown files. You can even edit your content files from the Pancake website if you aren&amp;rsquo;t able to access your Dropbox. It looks like Pancake is starting to get into hosting sites from Git repositories, passing things through a static site generator. You can also use a custom domain name for free. Otherwise, your site will be hosted on a subdomain of &lt;code&gt;pancakeapps.com&lt;/code&gt;. In fact, I believe that the entirety of Pancake&amp;rsquo;s services is free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Postach.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://postach.io/&#34;&gt;http://postach.io/&lt;/a&gt;&lt;br /&gt;
+OK, I&amp;rsquo;ll admit, this isn&amp;rsquo;t Dropbox-based, it is Evernote-based, but the offering and site are so compelling that I thought it would be worth mentioning. I&amp;rsquo;m not much of an Evernote person, but some people swear by it, well for them, this might be the best way to blog. Custom domains are available for free (to integrate, you still need to buy the domain), and creating a post is as easy as creating a new note in Evernote. It does seem more blog oriented versus general site oriented. There is a premium level you can pay for which offers multiple authors, password protection and the ability to have multiple sites per account.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple of &amp;ldquo;honourable mention&amp;rdquo; links because I short changed you on Dropbox services. They don&amp;rsquo;t seem to have free options but are otherwise similar to the previous Dropbox services.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Site44 - &lt;a href=&#34;http://www.site44.com&#34;&gt;http://www.site44.com&lt;/a&gt; - starts at $4.95/month&lt;/li&gt;
+&lt;li&gt;Blot.im - &lt;a href=&#34;https://blot.im&#34;&gt;https://blot.im&lt;/a&gt; - $20/year&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-12-11</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-11/</link>
+      <pubDate>Fri, 11 Dec 2015 15:43:31 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-11/</guid>
+      <description>&lt;p&gt;One important aspect of software development, particularly agile software development is continuous integration. Often referred to as just &lt;em&gt;CI&lt;/em&gt;, continuous integration is the practice of ensuring that your piece of software builds and passes any tests you have set up for it on a regular basis, usually just after someone makes changes to the source code. Typically this integration happens in an automated fashion.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t go into all of the details of why this is good, but I will say this is done everywhere from large enterprise teams to small, indie open source projects. There are continuous integration software packages you can install yourself, both commercial and open source along with hosted services you can use. Some of these CI servers are very configurable and general purpose, others are focused on a particular platform or language.&lt;/p&gt;
+
+&lt;p&gt;The following list focuses on hosted CI services that are available for free or with a free option.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wercker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://wercker.com/&#34;&gt;http://wercker.com/&lt;/a&gt;&lt;br /&gt;
+Wercker uses Docker containers as a core concept in its offering and focuses on microservices. It highlights JavaScript, Go, Ruby and Python with tutorials, but it supports the use of any Docker container on Docker Hub, so you should be able to work with other languages as well. It supports Git out of the box, but you could probably have a container with Mercurial and use that if you wanted to. As for pricing, Wercker is free for normal use, but if you want to run it on a virtual private cloud then that is an option, but I suspect that would be a bespoke quote. Another nice thing, Wercker has a registry of user-created recipes to do certain things in your pipeline. Want to compile a static site? There are recipes for that. Deploy to S3? No problem. There is even a command line client that lets you run your builds locally.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AppVeyor&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.appveyor.com/&#34;&gt;http://www.appveyor.com/&lt;/a&gt;&lt;br /&gt;
+AppVeyor focuses on the Windows/.NET market. It has a free plan available to open source projects but otherwise seems to be quite pricey. Particularly if you want more than one concurrent job. The configuration of your build can be done via a YAML file, or through the Web UI. It only supports Git officially. However, it does allow you to do a shallow fetch using the GitHub or Bitbucket API to get a zip file. I would imagine that would work for a Mercurial repository hosted with Bitbucket as well, but I don&amp;rsquo;t know for sure. It supports the things you&amp;rsquo;d expect when dealing with .NET software like AssemblyVersion patching, NuGet dependencies (and deployment) and running PowerShell commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Distelli&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.distelli.com&#34;&gt;https://www.distelli.com&lt;/a&gt;&lt;br /&gt;
+Distelli has more of a focus on DevOps, and it has a bit more of an enterprise feel to it, but they support Mercurial which isn&amp;rsquo;t easy to find in many of these hosted services. As with the other services, the build process can be defined from a YAML file in your source code. It has audit and logging for all of the steps along the way, and after building and testing your application, will also allow you to deploy it somewhere. They have a generous free plan that allows unlimited projects (even private ones); it only limits you to two servers and concurrent builds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-11-27</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-27/</link>
+      <pubDate>Fri, 27 Nov 2015 14:13:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-27/</guid>
+      <description>&lt;p&gt;Today my links are for various image/document services each of which fills slightly different needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cloudinary&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cloudinary.com/&#34;&gt;http://cloudinary.com/&lt;/a&gt;&lt;br /&gt;
+A cloud image/video service that provides storage and CDN hosting in addition to manipulation all with API access. You can send files to it from your web apps directly from the browser, no need to deal with storing end user uploads yourself. You can have it perform various manipulations as well, including face detection for thumbnail creation. It can even fetch your users&amp;rsquo; profile pictures from some common sites. Offers a very generous free tier. I&amp;rsquo;ve been using Cloudinary myself for a short time to experiment with hosting images for my blog. The UI is full featured, but I would say a bit clunky. I can&amp;rsquo;t argue with the value though.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ImgIX&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.imgix.com&#34;&gt;https://www.imgix.com&lt;/a&gt;&lt;br /&gt;
+ImgIX is an image processing service that allows you to deliver device-specific and manipulated images very quickly. They don&amp;rsquo;t host the images directly; those would come from a location you provide (S3, public web location, etc.). They also don&amp;rsquo;t seem to have a free tier, which is unfortunate for any hobby sites/applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smallpdf&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://smallpdf.com/&#34;&gt;http://smallpdf.com/&lt;/a&gt;&lt;br /&gt;
+Smallpdf, as the name suggests, deals with PDF files. They provide online services to compress, split, merge, unlock and convert PDF files. I used their compress tool to optimize a 1.1 MB PDF into a 58 KB file. Impressive. They don&amp;rsquo;t seem to have an API, you need to drag and drop files onto their pages, but the site looks and works smoothly, and the whole process is very easy. This probably won&amp;rsquo;t replace Acrobat if you are doing serious PDF work, but if you need the occasional PDF compressed or converted, then this tool is a great resource.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-11-20</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-20/</link>
+      <pubDate>Fri, 20 Nov 2015 14:49:51 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-20/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been dealing with a lot of DNS recently, and so I figured I&amp;rsquo;d put together a DNS flavoured set of links this week. If you own a domain name (or perhaps a collection of them), then you need DNS as well. DNS allows your handsome domain name to resolve into IP addresses that then are used to send requests where they need to go.&lt;/p&gt;
+
+&lt;p&gt;A lot of DNS providers want to charge a fair bit for their services. And if you are an enterprise client with strict SLA needs and high-end requirements, with DDoS protection then spending a bit of money makes sense. If you are hosting a personal website or a hobby application online, you want something free or cheap.&lt;/p&gt;
+
+&lt;p&gt;Before even looking at the list below, your best bet may well be to use the DNS service from whoever sold you your domain name. Most popular registrars offer DNS services with their domains, usually for free. If that isn&amp;rsquo;t the case, perhaps you can find a better registrar. Usually, the service offered is fairly basic, but most of the time that is all you need.&lt;/p&gt;
+
+&lt;p&gt;If you are using a VPS from somewhere like &lt;a href=&#34;https://www.digitalocean.com/?refcode=36a3aada382b&#34;&gt;Digital Ocean&lt;/a&gt; then they may provide a free DNS service. Rackspace and Linode do this as well. So if you are paying for a service with someone already, check for free DNS offerings. However, if like with Digital Ocean in my case, the offering isn&amp;rsquo;t flexible enough for your needs, you may need to look elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Another feature of some DNS services is API access that can allow you to update your DNS to point to a dynamic IP address, like the one you probably have on your home broadband connection. Some DNS providers offer tools for this specifically so if it is something that you are looking for then search around.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Route 53&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://aws.amazon.com/route53/&#34;&gt;https://aws.amazon.com/route53/&lt;/a&gt;&lt;br /&gt;
+Amazon Web Services offer a domain registration and DNS service called Route 53. While the DNS service isn&amp;rsquo;t free, it is fully customizable and will only add less than a dollar per month to your AWS bill. Unless you are getting over a million visits per month, in which case it might cost $1.50. As with any AWS service, it is &lt;em&gt;enterprise&lt;/em&gt; ready and probably overkill for a personal blog or similar site, but if you need full control over the records in your zone, then this is a viable option. Has an HTTP API for managing zones and records.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ClouDNS&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.cloudns.net&#34;&gt;https://www.cloudns.net&lt;/a&gt;&lt;br /&gt;
+ClouDNS is a DNS provider with a free plan that allows for up to three domain names. The free plan is missing some features that you may want, but they have a personal ($22/year) plan that adds in all of the features you should need and supports up to 40 domains. The paid plans have an HTTP API, but the free plan claims to support dynamic IPs, so they may have a tool as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Namecheap FreeDNS&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.namecheap.com/domains/freedns.aspx&#34;&gt;https://www.namecheap.com/domains/freedns.aspx&lt;/a&gt;&lt;br /&gt;
+Namecheap is a domain name registrar who offers its DNS services for free to non-domain users because they believe their quality of service will win you over to transfer your domains to them. They are targeting people whose domain registrars don&amp;rsquo;t provide DNS hosting for the domains. Not a bad move. I can&amp;rsquo;t speak to their offering regarding tooling or customization, but I suspect it is pretty easy to use.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-11-06</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-06/</link>
+      <pubDate>Fri, 06 Nov 2015 16:46:36 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-06/</guid>
+      <description>&lt;p&gt;Today is my microservices edition. I&amp;rsquo;m not going to debate or extol the merits of microservices as part of this, as, like anything else, it is a matter of choosing the right tool for the job. They aren&amp;rsquo;t a silver bullet that will solve all of your problems. In this case, I&amp;rsquo;m linking to some providers of microservices as a service. That&amp;rsquo;s right, we&amp;rsquo;ve come full circle.&lt;/p&gt;
+
+&lt;p&gt;These microservices do have their place, like if you have a static site that needs a small bit of custom server-side processing. Or you want to perform some custom actions as a result of some web-hook, like a GitHub or Bitbucket push.&lt;/p&gt;
+
+&lt;p&gt;Some of the big players are offering microservices as well, but I&amp;rsquo;m going to leave those for another week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;StackHut&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://stackhut.com&#34;&gt;http://stackhut.com&lt;/a&gt;&lt;br /&gt;
+StackHut allows you to deploy Python or JavaScript classes as microservices. You can then invoke these services using their client libraries, or with a bespoke RPC-style JSON+HTTP request. At the moment, they are in beta, so you can use the service for free, but in the future their free tier will limit the number of parallel requests they will handle. There is also a command line tool for deploying and updating your services.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hook.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://hook.io&#34;&gt;https://hook.io&lt;/a&gt;&lt;br /&gt;
+Back in 2012, I linked to another hook.io that was a different project, and now it seems to have disappeared. This one is for creating and hosting microservices based on GitHub Gists. They also provide a simple (Redis-backed) data store that your services can access. They support JavaScript officially but have experimental support for ten other languages. You can even schedule services to run periodically. The free tier is certainly enough to play around with, and their paid plan is only $5/month if you find it necessary.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;webtask&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://webtask.io&#34;&gt;https://webtask.io&lt;/a&gt;&lt;br /&gt;
+This one is JavaScript only as far as I can tell. It has a command line tool to load tasks/services from local files or URLs. It allows for scheduled tasks, and their free tier limits you to one request per second. The computing and execution model for this offering is a bit different in that all of the information required to run the task comes as part of the request, including where the code is which it will execute. These requests are in the form of encrypted tokens that can contain secret information (keys, etc.). It is possible with this service to provide a safe sandbox in which to execute custom code provided by your users. An interesting offering for sure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-08</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-08/</link>
+      <pubDate>Fri, 08 May 2015 15:19:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-08/</guid>
+      <description>&lt;p&gt;Apologies, I&amp;rsquo;ve been out of the office for a while and I&amp;rsquo;ve fallen behind. I&amp;rsquo;ve been building up a backlog of links though, and so there should be a fairly steady stream for the next while.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RethinkDB&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://rethinkdb.com/&#34;&gt;http://rethinkdb.com/&lt;/a&gt;&lt;br /&gt;
+An open-source distributed database built with love. RethinkDB is built to store JSON documents, and scale to multiple machines with very little effort. It has a pleasant query language that supports useful queries like table joins and group by, and is easy to setup and learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gitbook&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.gitbook.com/&#34;&gt;https://www.gitbook.com/&lt;/a&gt;&lt;br /&gt;
+A git and Markdown-based way to create books and distribute them. Generous terms and a freemium payment model, you can try it out for free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codio&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://codio.com/&#34;&gt;https://codio.com/&lt;/a&gt;&lt;br /&gt;
+Codio is a cloud-based IDE with a focus on education. They offer a free plan with 256MB of RAM and 2GB of disk space. As with any of the other Cloud IDEs I&amp;rsquo;ve mentioned before, it isn&amp;rsquo;t always about specs. Features can vary subtly, and the IDE UIs are often a deciding factor when looking for something to suit your tastes. I&amp;rsquo;ve compared a number of the cloud IDEs lately, and this one ranks pretty highly if you are using Mercurial.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-03-27</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-03-27/</link>
+      <pubDate>Fri, 27 Mar 2015 13:10:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-03-27/</guid>
+      <description>&lt;p&gt;Sorry for the lack of links being sent out lately, my backlog was looking pretty bare for a bit and I wasn&amp;rsquo;t really getting much time to do anything about it.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, these links will make up for it. A bit of variety today to wean people back into it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;StackEdit&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stackedit.io/&#34;&gt;https://stackedit.io/&lt;/a&gt;&lt;br /&gt;
+An online markdown editor which uses the same engine as StackOverflow. Allows you to access your various cloud files and can publish content to various blogs as well as export to PDF. Supports GFM, MathJax and even flow and sequence diagrams.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Babel&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://babeljs.io&#34;&gt;https://babeljs.io&lt;/a&gt;&lt;br /&gt;
+Formerly 6to5, Babel is an ECMAScript 6 transpiler allowing you to use ES6 features with today&amp;rsquo;s ES5 compatible browsers. In particular they have a nice section on their site which discusses the new ES6 features: &lt;a href=&#34;https://babeljs.io/docs/learn-es6&#34;&gt;https://babeljs.io/docs/learn-es6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Grammarly&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.grammarly.com/&#34;&gt;https://www.grammarly.com/&lt;/a&gt;&lt;br /&gt;
+A grammar and contextual spell checker as a service. Works in your browser for free, or you can get a premium account with extra grammar rules and an MS Office plugin. Never make embarrassing grammar mistakes in emails, posts, or comments again. In fact, Grammarly saved me from a few mistakes in this very post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-01-23</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-01-23/</link>
+      <pubDate>Fri, 23 Jan 2015 16:29:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-01-23/</guid>
+      <description>&lt;p&gt;Happy Friday everyone&lt;/p&gt;
+
+&lt;p&gt;Today there is a bit of a customer engagement theme to my links.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apostle.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://apostle.io/&#34;&gt;http://apostle.io/&lt;/a&gt;&lt;br /&gt;
+Manage your transactional emails without needing a developer. Does your web app send emails? Would you like to better manage and track engagement with these emails? Then check out Apostle.io.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cloudcannon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cloudcannon.com/&#34;&gt;http://cloudcannon.com/&lt;/a&gt;&lt;br /&gt;
+A CMS for static sites without the CMS. I haven&amp;rsquo;t tried this yet personally, but I know I&amp;rsquo;ve created sites for people in the past where this would have been ideal. Perhaps now you can stop making edits to sites of family members :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sniply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://snip.ly/&#34;&gt;http://snip.ly/&lt;/a&gt;&lt;br /&gt;
+If you share a lot of content and links, then perhaps it would be nice to be able to embed a call to action in those links bringing people back to you or your products/services, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

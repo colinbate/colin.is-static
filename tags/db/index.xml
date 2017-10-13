@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Db on Colin Bate is...</title>
+    <link>https://colin.is/tags/db/</link>
+    <description>Recent content in Db on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Sep 2016 14:55:21 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/db/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-23</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-23/</link>
+      <pubDate>Fri, 23 Sep 2016 14:55:21 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-23/</guid>
+      <description>&lt;p&gt;Many technical people like to come up with overly complicated solutions to problems. Like writing an app that you may only need to use once or twice. Does this sound like you? It certainly sounds like me.&lt;/p&gt;
+
+&lt;p&gt;A lot of the time, the reason is to challenge oneself. Or maybe it is because it is just plain enjoyable to procrastinate on real life while learning a new technology. Whatever the motivation, with today&amp;rsquo;s technology it doesn&amp;rsquo;t need to be a time-consuming process. More and more &amp;ldquo;apps&amp;rdquo; aren&amp;rsquo;t just big pieces of software written from the ground up. And I&amp;rsquo;m not just talking about microservices; I&amp;rsquo;m talking more about mashups and other hybrid applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Airtable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/QeE1&#34;&gt;https://airtable.com/&lt;/a&gt;&lt;br /&gt;
+Have you ever found yourself using Google Sheets or Excel to manage a personal collection or otherwise organize things? Or perhaps thought you could use Google Sheets as a simple JSON API? If so you may find Airtable interesting. It sells itself as being simple as a spreadsheet. Essentially it is a nice UI around a set of build-it-yourself databases. The free plan is quite generous and should be more than enough for personal use. There is also an iOS app which lets you manage your data in a very convenient way while mobile. You can attach files/photos to your records through integration with cloud storage providers or directly from your computer or device. It even allows you to expose this data (both reading and writing) via a simple API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/Fm5E&#34;&gt;https://zapier.com/&lt;/a&gt;&lt;br /&gt;
+Zapier provides connections between different services and products which may not otherwise have them. It is a bit like a hub for integrations. You can create &amp;ldquo;zaps&amp;rdquo; which trigger based on something happening in one service (e.g. a Github PR) and then perform an action somewhere else (e.g. send a tweet). The free plan allows for simple one-to-one zaps, or you can pay for more complex workflows. The integrations available are quite extensive and target the productivity and business space. In particular, it has integrations with Airtable allowing you to trigger actions based on changes being made to your data or adding new data based on events elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/2LRO&#34;&gt;https://ifttt.com/&lt;/a&gt;&lt;br /&gt;
+If This Then That is another service offering to perform actions on one service based on triggers from another. The service is free. However, the integrations seem to be geared more toward personal use and focus on the Internet of Things (IoT) space. Like you could set it up so that an email from a particular address might turn on your lights in your house. I think there is a lot of potential for this type of simple orchestration, if for no other reason than the geek factor.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-06-05</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-05/</link>
+      <pubDate>Fri, 05 Jun 2015 15:13:44 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-05/</guid>
+      <description>&lt;p&gt;SQL tools, build tools and a little something functional for my fans of that genre. Please enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wagon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1MsU8q5&#34;&gt;http://www.wagonhq.com/&lt;/a&gt;&lt;br /&gt;
+Wagon claims to be a modern editor and analysis tool for SQL. Supports a growing list of database types, with SQL Server coming soon apparently. It runs on Linux, Mac, and Windows. Very early days for this project, so this might be something to watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lazy-array&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GoQFKc&#34;&gt;http://oli.me.uk/2015/05/31/lazy-arrays-in-javascript/&lt;/a&gt;&lt;br /&gt;
+Lazy array is a JavaScript library that was modeled after lazy sequences in Clojure. Essentially an array of values which is represented algorithmically and only populated when specific values are needed. An interested concept and I linked to the author&amp;rsquo;s blog post where he discusses possible UI use cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brunch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1FBQepc&#34;&gt;http://brunch.io/&lt;/a&gt;&lt;br /&gt;
+Brunch is a web build tool that has been around for a long time by web standards but hasn&amp;rsquo;t received the fame of some newer tools. It emphasizes speed and conventions over configuration to make the build process less of a burden to your day to day. Now that I&amp;rsquo;m working with ES6 and find myself transpiling more often, I might look into just how fast it is because it could make some of my projects easier to work with, maybe. It is a pluggable system, which provides some skeletons that are essentially just project templates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-08</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-08/</link>
+      <pubDate>Fri, 08 May 2015 15:19:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-08/</guid>
+      <description>&lt;p&gt;Apologies, I&amp;rsquo;ve been out of the office for a while and I&amp;rsquo;ve fallen behind. I&amp;rsquo;ve been building up a backlog of links though, and so there should be a fairly steady stream for the next while.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RethinkDB&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://rethinkdb.com/&#34;&gt;http://rethinkdb.com/&lt;/a&gt;&lt;br /&gt;
+An open-source distributed database built with love. RethinkDB is built to store JSON documents, and scale to multiple machines with very little effort. It has a pleasant query language that supports useful queries like table joins and group by, and is easy to setup and learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gitbook&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.gitbook.com/&#34;&gt;https://www.gitbook.com/&lt;/a&gt;&lt;br /&gt;
+A git and Markdown-based way to create books and distribute them. Generous terms and a freemium payment model, you can try it out for free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codio&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://codio.com/&#34;&gt;https://codio.com/&lt;/a&gt;&lt;br /&gt;
+Codio is a cloud-based IDE with a focus on education. They offer a free plan with 256MB of RAM and 2GB of disk space. As with any of the other Cloud IDEs I&amp;rsquo;ve mentioned before, it isn&amp;rsquo;t always about specs. Features can vary subtly, and the IDE UIs are often a deciding factor when looking for something to suit your tastes. I&amp;rsquo;ve compared a number of the cloud IDEs lately, and this one ranks pretty highly if you are using Mercurial.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

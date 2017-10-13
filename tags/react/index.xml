@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on Colin Bate is...</title>
+    <link>https://colin.is/tags/react/</link>
+    <description>Recent content in React on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jun 2016 15:04:11 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-06-10</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-06-10/</link>
+      <pubDate>Fri, 10 Jun 2016 15:04:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-06-10/</guid>
+      <description>&lt;p&gt;Since I&amp;rsquo;m in the middle of delivering a React training course to some of my colleagues, I thought why not highlight something React-related.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m starting off with some React-inspired alternatives to React. The concept of virtual DOM comparisons and one-way data flow has become very popular in the JavaScript world, so there has been a slew of copycat libraries emerge. Some are almost drop-in replacements, others take the concepts and run in a different direction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inferno&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/trueadm/inferno&#34;&gt;https://github.com/trueadm/inferno&lt;/a&gt;&lt;br /&gt;
+Inferno claims to be one of, if not &lt;em&gt;the&lt;/em&gt; fastest virtual DOM libraries out there. It does this by only &amp;ldquo;diffing&amp;rdquo; the parts of the DOM that are potentially dynamic. The result is a React-like library which performs even better on low-power devices like phones and tablets. It has a Babel plugin as well, so you can write your components using the same JSX syntax you may be familiar with, and have it compiled to optimized Inferno virtual DOM.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;React-lite&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/Lucifier129/react-lite&#34;&gt;https://github.com/Lucifier129/react-lite&lt;/a&gt;&lt;br /&gt;
+React-lite is a drop-in replacement for React on the browser which optimizes for file size. It is less than 20% of the size of React. Obviously, it makes some sacrifices to do that, and certain development niceties of React didn&amp;rsquo;t make the cut, like PropTypes and support for the React dev-tools. It also doesn&amp;rsquo;t support rendering on the server. In all of these cases, you can use the full React if necessary.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preact&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://preactjs.com/&#34;&gt;https://preactjs.com/&lt;/a&gt;&lt;br /&gt;
+Preact is a slightly less compatible, but even smaller version of React, weighing in at around 3kb when fully optimized. It only supports the newer ES2015 class and stateless components. It too is missing PropTypes, but otherwise is quite compatible with an extra compatibility package available if you need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with React&#43;Redux</title>
+      <link>https://colin.is/blog/2015/song-request-app-getting-started/</link>
+      <pubDate>Wed, 30 Dec 2015 02:38:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/song-request-app-getting-started/</guid>
+      <description>
+
+&lt;p&gt;Over the holidays, I worked on a web app. That isn&amp;rsquo;t new; I do that most chances I get. However this app was an assignment, and I&amp;rsquo;d like to walk you through some of the lessons learned. I&amp;rsquo;m planning this to be a series of articles looking at different aspects of building this application.&lt;/p&gt;
+
+&lt;p&gt;The assignment, in this case, was &lt;a href=&#34;https://github.com/colinbate/web-club-assignments/tree/master/song-request&#34;&gt;one that I created myself&lt;/a&gt;. I created it for some of my colleagues as a way to learn new web technologies without needing to worry about what to build. The goal was to recreate a simple app I had written years ago to request songs to add to my karaoke song list. Yes, I was an office karaoke jockey for a while.&lt;/p&gt;
+
+&lt;p&gt;The goal of the assignment aside from some specifications on functionality was to state that you needed to use at least two technologies that were new to you. But why stop at two? Why not make everything new?&lt;/p&gt;
+
+&lt;p&gt;I started with the notion of using &lt;a href=&#34;https://facebook.github.io/react/&#34;&gt;React&lt;/a&gt;, mostly to see what all the fuss was about. React is a view engine, and doesn&amp;rsquo;t provide the full package you get with some other frameworks. Looking around, I saw that Facebook also had a state management library called Flux. At this time, I was investigating Reactive Programming, and I had it in my head that I would use &lt;a href=&#34;https://rpominov.github.io/kefir/&#34;&gt;Kefir.js&lt;/a&gt; instead of Flux. Then I heard about &lt;a href=&#34;http://redux.js.org/&#34;&gt;Redux&lt;/a&gt; and I was hooked.&lt;/p&gt;
+
+&lt;p&gt;The ideas behind Redux are simple:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Application state is a single object tree (&lt;em&gt;store&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;That state is read-only, you can only update it via an &lt;em&gt;action&lt;/em&gt; describing what happened.&lt;/li&gt;
+&lt;li&gt;Changes are made with pure functions so that each state is independent (&lt;em&gt;reducers&lt;/em&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Essentially it is event sourcing or, at least, a light-weight version of it.&lt;/p&gt;
+
+&lt;p&gt;Redux isn&amp;rsquo;t exclusively for use with React, but the two play well together. There is a &lt;code&gt;react-redux&lt;/code&gt; package that provides some integration points. If you want to learn more about Redux, particularly if you don&amp;rsquo;t know much about React, then watch the &lt;a href=&#34;https://egghead.io/series/getting-started-with-redux&#34;&gt;&lt;em&gt;Getting Started with Redux&lt;/em&gt; course at Egghead.io&lt;/a&gt;. It was produced by the creator of Redux and is an informative, ground-up set of lessons.&lt;/p&gt;
+
+&lt;p&gt;For a taste, here is an example reducer function from my karaoke app:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import * as Actions from &#39;../actions&#39;;
+
+function user(state = {}, action) {
+  switch (action.type) {
+    case Actions.CLEAR_USER:
+      return {};
+    case Actions.SET_USER:
+      if (action.ready &amp;amp;&amp;amp; action.result) {
+        return {
+          ...action.result
+        };
+      }
+    default:
+      return state;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This function is responsible for managing the state of a single part of the app (the user info) and is combined with other reducers to create a function that manages the full application state.&lt;/p&gt;
+
+&lt;p&gt;You can see under the &lt;code&gt;SET_USER&lt;/code&gt; case that I&amp;rsquo;m returning a new object populated with the spread of values from the action result. This syntax is an ES2016 proposed feature (object spread) and probably not strictly necessary since the result would be a new object from the state&amp;rsquo;s perspective. In any case, it gives you an idea.&lt;/p&gt;
+
+&lt;p&gt;The actions which this reducer handles look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import {signin, signout} from &#39;../api/auth&#39;;
+
+export const SET_USER = &#39;SET_USER&#39;;
+export const CLEAR_USER = &#39;CLEAR_USER&#39;;
+
+export function login() {
+  return {
+    promise: signin(),
+    type: SET_USER
+  };
+}
+
+export function logout() {
+  signout();
+  return {
+    type: CLEAR_USER
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apart from the potentially confusing signout vs. logout nomenclature, you can see that actions are potentially very simple, just objects with a type. Functions that create actions are called action creators in the Redux world (imagine that). In the &lt;code&gt;login&lt;/code&gt; case, I&amp;rsquo;m setting a promise on the action. This promise is picked up by some middleware that turns that into two actions, one initially when called and another when the promise is fulfilled. The state of the action is indicated by &lt;code&gt;action.ready&lt;/code&gt; that you can see in the reducer above.&lt;/p&gt;
+
+&lt;p&gt;And here I bring it all together by creating a store with the reducers and middleware:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import { createStore, applyMiddleware } from &#39;redux&#39;;
+import rootReducer from &#39;../reducers&#39;;
+import promiseMiddleware from &#39;./promise-middleware&#39;;
+import thunkMiddleware from &#39;./thunk-middleware&#39;;
+
+function configureStore(initialState) {
+  const createStoreWithMiddleware = applyMiddleware(
+    promiseMiddleware,
+    thunkMiddleware
+  )(createStore);
+  return createStoreWithMiddleware(rootReducer, initialState);
+}
+
+const store = configureStore(); 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So that is a quick look at the Redux part, how does this fit in with the rendering using React?&lt;/p&gt;
+
+&lt;p&gt;React uses JSX, an extension on JavaScript, which uses HTML-like structures inline within your rendering methods. There are specific compilers for it, but Babel supports it as well if you are using that already.&lt;/p&gt;
+
+&lt;p&gt;Here is my &lt;code&gt;Header&lt;/code&gt; component. A parent JSX component would reference it as &lt;code&gt;&amp;lt;Header /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import React from &#39;react&#39;;
+import {connect} from &#39;react-redux&#39;;
+import Button from &#39;./Button&#39;;
+import {login, logout} from &#39;../actions&#39;;
+
+const Header = ({ user, login, logout, children }) =&amp;gt; (
+  &amp;lt;header className=&amp;quot;mdl-layout__header&amp;quot;&amp;gt;
+    &amp;lt;div className=&amp;quot;mdl-layout__header-row&amp;quot;&amp;gt;
+      &amp;lt;span className=&amp;quot;mdl-layout-title&amp;quot;&amp;gt;{children}&amp;lt;/span&amp;gt;
+      &amp;lt;div className=&amp;quot;mdl-layout-spacer&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+      &amp;lt;div&amp;gt;{user.email ?
+        &amp;lt;div&amp;gt;
+          &amp;lt;span&amp;gt;{user.email}&amp;lt;/span&amp;gt;
+          &amp;lt;Button accent=&amp;quot;true&amp;quot; onClick={logout}&amp;gt;Logout&amp;lt;/Button&amp;gt;
+        &amp;lt;/div&amp;gt; :
+        &amp;lt;Button accent=&amp;quot;true&amp;quot; onClick={login}&amp;gt;Login&amp;lt;/Button&amp;gt;}
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/header&amp;gt;
+);
+
+const mapStateToProps = (state) =&amp;gt; ({ user: state.user });
+
+export default connect(mapStateToProps, {login, logout})(Header);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;Header&lt;/code&gt; function is a simple stateless React component. It can be a bit tricky at first glance if you aren&amp;rsquo;t familiar with ES2015 syntax; between that and React there are about four different syntactic uses of curly braces in that snippet.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;connect&lt;/code&gt; function is what is doing the magic of hooking up the React component to the Redux store. You should check out the lessons I mentioned earlier, as they explain what exactly the &lt;code&gt;connect&lt;/code&gt; function is doing so you can see how things are wired up.&lt;/p&gt;
+
+&lt;h3 id=&#34;next-up:24752f5a4a3a65bb890df4891e9fef80&#34;&gt;Next Up&lt;/h3&gt;
+
+&lt;p&gt;When I said that I wanted everything to be new for this app, I wasn&amp;rsquo;t kidding. The only thing that I&amp;rsquo;d used before was ES2015 as a language and &lt;a href=&#34;http://babeljs.io&#34;&gt;Babel&lt;/a&gt; as a transpiler. That said, it was my first use of Babel 6, and I used &lt;a href=&#34;https://webpack.github.io/docs/&#34;&gt;Webpack&lt;/a&gt; which was new to me as well.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&#34;http://hook.io&#34;&gt;Hook.io&lt;/a&gt; as my backend and &lt;a href=&#34;https://auth0.com&#34;&gt;Auth0&lt;/a&gt; as my authentication provider. And on the visual side, I used &lt;a href=&#34;http://www.getmdl.io&#34;&gt;Material Design Lite&lt;/a&gt; for styles. I used the &lt;a href=&#34;https://github.com/github/fetch&#34;&gt;fetch&lt;/a&gt; API and polyfill for talking to the server, Git instead of Mercurial and even my editor was new, switching to &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VS Code&lt;/a&gt;. All told a great experience. I&amp;rsquo;ll be sharing more of my &lt;em&gt;learnings&lt;/em&gt; and struggles with you soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

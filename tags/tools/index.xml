@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Colin Bate is...</title>
+    <link>https://colin.is/tags/tools/</link>
+    <description>Recent content in Tools on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Sep 2016 14:55:21 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-23</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-23/</link>
+      <pubDate>Fri, 23 Sep 2016 14:55:21 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-23/</guid>
+      <description>&lt;p&gt;Many technical people like to come up with overly complicated solutions to problems. Like writing an app that you may only need to use once or twice. Does this sound like you? It certainly sounds like me.&lt;/p&gt;
+
+&lt;p&gt;A lot of the time, the reason is to challenge oneself. Or maybe it is because it is just plain enjoyable to procrastinate on real life while learning a new technology. Whatever the motivation, with today&amp;rsquo;s technology it doesn&amp;rsquo;t need to be a time-consuming process. More and more &amp;ldquo;apps&amp;rdquo; aren&amp;rsquo;t just big pieces of software written from the ground up. And I&amp;rsquo;m not just talking about microservices; I&amp;rsquo;m talking more about mashups and other hybrid applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Airtable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/QeE1&#34;&gt;https://airtable.com/&lt;/a&gt;&lt;br /&gt;
+Have you ever found yourself using Google Sheets or Excel to manage a personal collection or otherwise organize things? Or perhaps thought you could use Google Sheets as a simple JSON API? If so you may find Airtable interesting. It sells itself as being simple as a spreadsheet. Essentially it is a nice UI around a set of build-it-yourself databases. The free plan is quite generous and should be more than enough for personal use. There is also an iOS app which lets you manage your data in a very convenient way while mobile. You can attach files/photos to your records through integration with cloud storage providers or directly from your computer or device. It even allows you to expose this data (both reading and writing) via a simple API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/Fm5E&#34;&gt;https://zapier.com/&lt;/a&gt;&lt;br /&gt;
+Zapier provides connections between different services and products which may not otherwise have them. It is a bit like a hub for integrations. You can create &amp;ldquo;zaps&amp;rdquo; which trigger based on something happening in one service (e.g. a Github PR) and then perform an action somewhere else (e.g. send a tweet). The free plan allows for simple one-to-one zaps, or you can pay for more complex workflows. The integrations available are quite extensive and target the productivity and business space. In particular, it has integrations with Airtable allowing you to trigger actions based on changes being made to your data or adding new data based on events elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/2LRO&#34;&gt;https://ifttt.com/&lt;/a&gt;&lt;br /&gt;
+If This Then That is another service offering to perform actions on one service based on triggers from another. The service is free. However, the integrations seem to be geared more toward personal use and focus on the Internet of Things (IoT) space. Like you could set it up so that an email from a particular address might turn on your lights in your house. I think there is a lot of potential for this type of simple orchestration, if for no other reason than the geek factor.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-06-03</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-06-03/</link>
+      <pubDate>Fri, 03 Jun 2016 16:05:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-06-03/</guid>
+      <description>&lt;p&gt;A bit more of a theme today, and that is diagnostic API/HTTP clients. I don&amp;rsquo;t want to call them REST clients because they are much more general than that. But sometimes that is what they call themselves, perhaps to capitalize on the jargon bonus.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Postman&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.getpostman.com/&#34;&gt;http://www.getpostman.com/&lt;/a&gt;&lt;br /&gt;
+Postman is probably the most well known of this group. It started out as a Chrome plugin, but I see that there is now a Mac app as well. It allows you build customized HTTP requests to arbitrary URLs using any of the standard HTTP verbs like GET, POST, PUT, DELETE, etc. You can add headers and whatever content you need, and it will also help visualize your responses with coloring, folding, and other inspection features. Postman also allows you to create tests for each of the URLs you are accessing, making assertions on the response. You can run these tests from the command line using a companion tool called Newman. Free for use, although they do offer a team-oriented cloud offering at a reasonable price.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advanced REST Client&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://chromerestclient.appspot.com/&#34;&gt;https://chromerestclient.appspot.com/&lt;/a&gt;&lt;br /&gt;
+The Advanced REST Client (or ARC) is another Chrome extension which provides similar functionality to Postman with a slightly different UI (and color palette). However, instead of using Chrome&amp;rsquo;s XMLHttpRequest client to make requests, it works over raw sockets, allowing it to bypass restrictions that Chrome imposed. It also supports connecting to WebSocket servers as well. ARC is free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paw&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://luckymarmot.com/paw&#34;&gt;https://luckymarmot.com/paw&lt;/a&gt;&lt;br /&gt;
+Paw is Mac HTTP client that offers a full-featured suite of tools. It also can generate client code in various languages to call your APIs. It supports dynamic values in your requests which can come from previous responses; it can compute hashes; generate random values; all sorts of things which can help in your testing/debugging efforts. Probably the biggest problem with it is the price. Not free; $50.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-05-27</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-05-27/</link>
+      <pubDate>Fri, 27 May 2016 13:09:56 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-05-27/</guid>
+      <description>&lt;p&gt;Not as much of a theme today for the links. A collection of tools that I thought might be of interest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DevDocs&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://devdocs.io/&#34;&gt;http://devdocs.io/&lt;/a&gt;&lt;br /&gt;
+If you&amp;rsquo;ve ever used Dash on a Mac, DevDocs is a similar idea. A central place for technical documentation, with offline support and simple, quick search functionality. You can customize which docs you want to load, but unfortunately, MSDN isn&amp;rsquo;t an option at this point. Mostly web focused, so if that is your thing, this might be a great resource.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apache Allura&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://allura.apache.org/&#34;&gt;https://allura.apache.org/&lt;/a&gt;&lt;br /&gt;
+Apache Allura is a software forge. That is to say, it is like a self-hosted GitHub. It has a wiki, issue tracking, forums, blogs and some other nice features in addition to managing code repositories. On that front, it supports Git, SVN and, with a plugin, Mercurial. It is written in Python and backed by MongoDB.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GraphQL&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://graphql.org/&#34;&gt;http://graphql.org/&lt;/a&gt;&lt;br /&gt;
+GraphQL is another one of the hot new technologies coming out of Facebook. It is a declarative, hierarchical query language and runtime which allows for more maintainable data access from your client applications (web, mobile, etc.) to your server. It essentially replaces REST and bespoke endpoints, being both less chatty and easier to maintain over time. Having seen examples of its use in an immutable application architecture, it certainly seems like a smart choice for some applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-18</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-18/</link>
+      <pubDate>Fri, 18 Mar 2016 15:48:28 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-18/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve &lt;a href=&#34;http://colin.is/blog/2013/fun-links-2013-09-27/&#34;&gt;mentioned Trello before&lt;/a&gt; as a personal productivity tool that many people use for managing software projects. I&amp;rsquo;ve used it myself for a few.&lt;/p&gt;
+
+&lt;p&gt;Some people use the issue tracking tools provided by GitHub or Bitbucket to manage their tasks, and that works. But I prefer to leave those for bugs raised externally. Even working on my own, I find tools with workflows and drag and drop particularly pleasant to use. So I&amp;rsquo;ve compiled a list of some software project management services online which hopefully people will find useful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pivotal Tracker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.pivotaltracker.com/&#34;&gt;http://www.pivotaltracker.com/&lt;/a&gt;&lt;br /&gt;
+Pivotal Tracker aims to help you build better software faster. It is from the same folks who bring us the Jasmine JS testing library. From the looks of things, the tool has recently undergone a facelift which has people excited. They have a free plan which supports up to three collaborators and two private projects. Public projects are all free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clubhouse&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://clubhouse.io/&#34;&gt;https://clubhouse.io/&lt;/a&gt;&lt;br /&gt;
+Clubhouse is a newer player, and it was created to overcome frustrations its founders had with existing tools. It features the ability to zoom in and out of projects to see different levels of details at a glance. The free plan here also allows for three collaborators, but unlimited projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Favro&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://favro.com/&#34;&gt;https://favro.com/&lt;/a&gt;&lt;br /&gt;
+Favro seems a bit more general purpose, similar to Trello, but looks like it would be quite capable of planning software development. Their free plan provides unlimited users and projects, but only a single service integration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-04</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-04/</link>
+      <pubDate>Fri, 04 Mar 2016 14:59:40 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-04/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;m revisiting microservices, but from a slightly different angle. While I still don&amp;rsquo;t believe microservices are a panacea, they certainly have a place in today&amp;rsquo;s technical ecosystem. If you aren&amp;rsquo;t going down the &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-06/&#34;&gt;microservices as a service route&lt;/a&gt; that I mentioned before, then you will likely need to consider how to deploy and orchestrate your microservices, whether that is in-house or in-cloud.&lt;/p&gt;
+
+&lt;p&gt;The whole concept of microservices just moves where the technical challenges lie, and in this case, pushes extra challenges into the territory of DevOps and Infrastructure. As such I&amp;rsquo;m listing some tools which are designed to help out in that area.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giant Swarm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://giantswarm.io/&#34;&gt;https://giantswarm.io/&lt;/a&gt;&lt;br /&gt;
+Giant Swarm is a company which provides support for microservice deployment. They provide professional support/consulting services as well as publishing several open source tools used in the deployment and orchestration of microservices.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Claudia&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/claudiajs/claudia&#34;&gt;https://github.com/claudiajs/claudia&lt;/a&gt;&lt;br /&gt;
+Claudia is a tool that takes the pain out of deploying Node.js microservices to AWS. It allows you to get something up and running quickly without the hassles associated with AWS Lambda and API Gateway directly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;linkerd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://linkerd.io/&#34;&gt;https://linkerd.io/&lt;/a&gt;&lt;br /&gt;
+Linkerd touts itself as a modern RPC proxy for microservices. It sits near your application and provides abstractions for service discovery and load balances and instruments your remote services. This functionality allows you to make infrastructure and architecture changes without modifying application code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In other news&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/en/blog/release/v5.7.0/&#34;&gt;Node 5.7.0 is released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hook.io/blog/role-based-access-control&#34;&gt;Hook.io adds extra security, API keys and ES7 support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-02-26</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-02-26/</link>
+      <pubDate>Fri, 26 Feb 2016 18:46:58 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-02-26/</guid>
+      <description>&lt;p&gt;Today my links fall into the category of &amp;ldquo;dev tools&amp;rdquo;. Some may even lean into the &amp;ldquo;DevOps&amp;rdquo; territory. They are all language agnostic but mostly focus on web applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LaunchDarkly&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://launchdarkly.com/&#34;&gt;https://launchdarkly.com/&lt;/a&gt;&lt;br /&gt;
+LaunchDarkly calls itself &amp;ldquo;feature flags as a service&amp;rdquo; which seems like as good a description as any. It is a service that you integrate with your web application to allow you to roll out new features slowly, tracking the results. You can use it to do A/B testing, beta releases, or even to provide premium features to some users. Essentially, a formalized means to provide feature toggling through a nice UI. Most big sites build their applications this way; with new, in-development, code deployed for weeks or months before it is ready to be turned on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;StopLight&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stoplight.io/&#34;&gt;https://stoplight.io/&lt;/a&gt;&lt;br /&gt;
+StopLight is an API design and testing service. It provides visual tools to build your API and can export the specification in a few different formats including the popular Open API Initiative (Swagger) format. Also, it can also be used to make calls into your existing API as a test client. And it can use Prism to record and playback or mock out an API for testing as a test server. All said a full feature API toolkit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;diff-so-fancy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/so-fancy/diff-so-fancy&#34;&gt;https://github.com/so-fancy/diff-so-fancy&lt;/a&gt;&lt;br /&gt;
+Who says appearances don&amp;rsquo;t matter? If you are looking to tidy (and fancy) up your git diffs, then you need &lt;code&gt;diff-so-fancy&lt;/code&gt;. It is a visual filter which builds on other tools to provide in-line character diff highlighting and better file separation. You can use diff-so-fancy once-off, or set it as your default for all diffs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-01-29</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-29/</link>
+      <pubDate>Fri, 29 Jan 2016 15:43:39 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-29/</guid>
+      <description>&lt;p&gt;Since tomorrow is my son&amp;rsquo;s third birthday, I&amp;rsquo;d say it is high time he starts to learn to program. I need him (l)earning ASAP. A common goal for any geeky parent, but how do you go about it?&lt;/p&gt;
+
+&lt;p&gt;Below are some educational tools and resources aimed at teaching programming whether to someone very young or anyone in general. And even if you know how to program already, the learning never stops.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ABC++&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://inedo.com/abc&#34;&gt;http://inedo.com/abc&lt;/a&gt;&lt;br /&gt;
+ABC++ is a book published by the same team who created ProGet and BuildMaster two great .NET-focused DevOps tools. On one hand it is an ordinary alphabet book for teaching kids their letters, on the other hand, it is a list of programming languages with code samples. The site has a link to Amazon where you can get the book for about $12 USD, but the content of the book is available on the site as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codecademy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.codecademy.com&#34;&gt;https://www.codecademy.com&lt;/a&gt;&lt;br /&gt;
+Codecademy doesn&amp;rsquo;t target children per se, but I suspect older kids would be able to complete some of their courses. They aim to teach the world to program, and they are taking a fresh look at education in the digital age. They have courses on web technologies as well as Python, Ruby, and Java. You can even learn about Git or SQL. The learning catalog is free, but they have a pro account with more tooling around tailoring a custom solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scratch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://scratch.mit.edu/&#34;&gt;https://scratch.mit.edu/&lt;/a&gt;&lt;br /&gt;
+Scratch is a partly a programming language, partly a community. It targets kids from 8 to 16 and was created by a group from MIT. It is free of charge. It does require Flash in your browser though to use the visual editor. It looks like a fun system to teach concepts to kids through fun and engaging projects.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-01-22</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-22/</link>
+      <pubDate>Fri, 22 Jan 2016 16:31:28 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-22/</guid>
+      <description>&lt;p&gt;You may have heard me mentioned &lt;a href=&#34;https://code.visualstudio.com&#34;&gt;Visual Studio Code&lt;/a&gt; before; it is an editor from Microsoft which is more lightweight and web focused. I&amp;rsquo;ve been using the December release for the past month or so, and I must say it is certainly coming into its own. It works well with JavaScript and Typescript and other web-based languages, providing an Intellisense that feels more comprehensive than its peers&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;The nice thing about Visual Studio Code (at least for me) is that it is cross-platform. It works very well on my Macbook as well as my Windows workstation. To provide that compatibility, VS Code builds on top of Electron, the &amp;ldquo;shell&amp;rdquo; that was created by the folks at GitHub for their own &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt; editor. Under the hood, it uses Node.js and Webkit to provide the behaviour and UI for the applications. So all of your elements are essentially HTML and styled with CSS.&lt;/p&gt;
+
+&lt;p&gt;However, VS Code isn&amp;rsquo;t the only app to use Electron, so I thought I&amp;rsquo;d send around a list of some other neat apps which are built using web technologies. In theory, these apps should all be cross-platform, but in practice, some of them may not be (yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Light Table&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://lighttable.com&#34;&gt;http://lighttable.com&lt;/a&gt;&lt;br /&gt;
+Yes, that&amp;rsquo;s right, another text editor. Or is it? Light Table claims to be more than just an editor; it is code explorer as well. It will run your code and can render pages with the usual live reload. However, it also allows you to set watches on variables and inspect values real-time in the editor. In addition to JavaScript/HTML/CSS, it supports Clojure and Python. I certainly like where this project is going regarding its goals, and I suspect that we will see more innovation in the IDE/editor space in the future. Light Table is free and open source software.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speak&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://speak.io&#34;&gt;https://speak.io&lt;/a&gt;&lt;br /&gt;
+Speak is a communication tool designed for work teams. It does audio, video and screen sharing and is targeting itself as a replacement for tools like Skype, Webex and GotoMeeting when you need informal sharing and collaborating with your colleagues. Speak hasn&amp;rsquo;t started charging yet, so I take that to mean they are still in development, but the future pricing model seems fair. They also claim to have an Unlimited Trial which means that you can use the service for as long as you want for free and start paying when you decide it is the right tool for your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mancy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://mancy-re.pl&#34;&gt;http://mancy-re.pl&lt;/a&gt;&lt;br /&gt;
+Mancy is a JavaScript/TypeScript/CoffeeScript REPL. In addition to the basic REPL functionality that you might get from the Chrome console or running node without a script, it adds a number of extra features. For starters, it allows you to write in dialects of JavaScript directly. It has syntax highlighting, autocomplete and some useful data visualizers. You can view your data as charts, or any HTML in strings rendered out. It understand the JSX syntax from React and will even watch any promises that returned from an evaluation. Mancy is a useful tool for learning JavaScript (or variant) without a lot of setting up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-12-11</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-11/</link>
+      <pubDate>Fri, 11 Dec 2015 15:43:31 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-11/</guid>
+      <description>&lt;p&gt;One important aspect of software development, particularly agile software development is continuous integration. Often referred to as just &lt;em&gt;CI&lt;/em&gt;, continuous integration is the practice of ensuring that your piece of software builds and passes any tests you have set up for it on a regular basis, usually just after someone makes changes to the source code. Typically this integration happens in an automated fashion.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t go into all of the details of why this is good, but I will say this is done everywhere from large enterprise teams to small, indie open source projects. There are continuous integration software packages you can install yourself, both commercial and open source along with hosted services you can use. Some of these CI servers are very configurable and general purpose, others are focused on a particular platform or language.&lt;/p&gt;
+
+&lt;p&gt;The following list focuses on hosted CI services that are available for free or with a free option.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wercker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://wercker.com/&#34;&gt;http://wercker.com/&lt;/a&gt;&lt;br /&gt;
+Wercker uses Docker containers as a core concept in its offering and focuses on microservices. It highlights JavaScript, Go, Ruby and Python with tutorials, but it supports the use of any Docker container on Docker Hub, so you should be able to work with other languages as well. It supports Git out of the box, but you could probably have a container with Mercurial and use that if you wanted to. As for pricing, Wercker is free for normal use, but if you want to run it on a virtual private cloud then that is an option, but I suspect that would be a bespoke quote. Another nice thing, Wercker has a registry of user-created recipes to do certain things in your pipeline. Want to compile a static site? There are recipes for that. Deploy to S3? No problem. There is even a command line client that lets you run your builds locally.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AppVeyor&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.appveyor.com/&#34;&gt;http://www.appveyor.com/&lt;/a&gt;&lt;br /&gt;
+AppVeyor focuses on the Windows/.NET market. It has a free plan available to open source projects but otherwise seems to be quite pricey. Particularly if you want more than one concurrent job. The configuration of your build can be done via a YAML file, or through the Web UI. It only supports Git officially. However, it does allow you to do a shallow fetch using the GitHub or Bitbucket API to get a zip file. I would imagine that would work for a Mercurial repository hosted with Bitbucket as well, but I don&amp;rsquo;t know for sure. It supports the things you&amp;rsquo;d expect when dealing with .NET software like AssemblyVersion patching, NuGet dependencies (and deployment) and running PowerShell commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Distelli&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.distelli.com&#34;&gt;https://www.distelli.com&lt;/a&gt;&lt;br /&gt;
+Distelli has more of a focus on DevOps, and it has a bit more of an enterprise feel to it, but they support Mercurial which isn&amp;rsquo;t easy to find in many of these hosted services. As with the other services, the build process can be defined from a YAML file in your source code. It has audit and logging for all of the steps along the way, and after building and testing your application, will also allow you to deploy it somewhere. They have a generous free plan that allows unlimited projects (even private ones); it only limits you to two servers and concurrent builds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-06-05</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-05/</link>
+      <pubDate>Fri, 05 Jun 2015 15:13:44 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-05/</guid>
+      <description>&lt;p&gt;SQL tools, build tools and a little something functional for my fans of that genre. Please enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wagon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1MsU8q5&#34;&gt;http://www.wagonhq.com/&lt;/a&gt;&lt;br /&gt;
+Wagon claims to be a modern editor and analysis tool for SQL. Supports a growing list of database types, with SQL Server coming soon apparently. It runs on Linux, Mac, and Windows. Very early days for this project, so this might be something to watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lazy-array&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GoQFKc&#34;&gt;http://oli.me.uk/2015/05/31/lazy-arrays-in-javascript/&lt;/a&gt;&lt;br /&gt;
+Lazy array is a JavaScript library that was modeled after lazy sequences in Clojure. Essentially an array of values which is represented algorithmically and only populated when specific values are needed. An interested concept and I linked to the author&amp;rsquo;s blog post where he discusses possible UI use cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brunch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1FBQepc&#34;&gt;http://brunch.io/&lt;/a&gt;&lt;br /&gt;
+Brunch is a web build tool that has been around for a long time by web standards but hasn&amp;rsquo;t received the fame of some newer tools. It emphasizes speed and conventions over configuration to make the build process less of a burden to your day to day. Now that I&amp;rsquo;m working with ES6 and find myself transpiling more often, I might look into just how fast it is because it could make some of my projects easier to work with, maybe. It is a pluggable system, which provides some skeletons that are essentially just project templates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-15</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-15/</link>
+      <pubDate>Fri, 15 May 2015 14:29:18 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-15/</guid>
+      <description>&lt;p&gt;A functional reactive library, a new web browser and a new-school take on old school build processes. I hope that people find something interesting here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flyd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/paldepind/flyd&#34;&gt;https://github.com/paldepind/flyd&lt;/a&gt;&lt;br /&gt;
+The minimalistic but powerful, modular, functional reactive programming library in JavaScript. With reactive programming being in vogue at the moment, there are a number of libraries popping up in various languages. I&amp;rsquo;m certainly no expert, but I like the API on this one. Quite functional (and therefore very composable) with a number of convenient optional modules you can pull in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vivaldi&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://vivaldi.com/&#34;&gt;https://vivaldi.com/&lt;/a&gt;&lt;br /&gt;
+A new web browser built from HTML, CSS and Node.js. Created by the former CEO of Opera, this is a browser designed for power users. Has built-in note taking, email, sync and host of other features that make this a unique offering. If nothing else you don&amp;rsquo;t get more meta than creating a browser using HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DIY&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.vittoriozaccaria.net/diy/&#34;&gt;http://www.vittoriozaccaria.net/diy/&lt;/a&gt;&lt;br /&gt;
+A slightly different take on creating a web/JavaScript build system by allowing you to create a JS file that compiles into a &lt;code&gt;Makefile&lt;/code&gt;. Of course, this is a bit more cumbersome for Windows users who would need to grab a copy of GnuWin&amp;rsquo;s version of &lt;code&gt;make&lt;/code&gt;, but it might appeal to some. The library has a number of the standard operations (minification, concatenation, etc.) built-in.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

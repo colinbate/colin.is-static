@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps on Colin Bate is...</title>
+    <link>https://colin.is/tags/apps/</link>
+    <description>Recent content in Apps on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Jan 2016 16:31:28 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/apps/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-01-22</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-22/</link>
+      <pubDate>Fri, 22 Jan 2016 16:31:28 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-22/</guid>
+      <description>&lt;p&gt;You may have heard me mentioned &lt;a href=&#34;https://code.visualstudio.com&#34;&gt;Visual Studio Code&lt;/a&gt; before; it is an editor from Microsoft which is more lightweight and web focused. I&amp;rsquo;ve been using the December release for the past month or so, and I must say it is certainly coming into its own. It works well with JavaScript and Typescript and other web-based languages, providing an Intellisense that feels more comprehensive than its peers&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;The nice thing about Visual Studio Code (at least for me) is that it is cross-platform. It works very well on my Macbook as well as my Windows workstation. To provide that compatibility, VS Code builds on top of Electron, the &amp;ldquo;shell&amp;rdquo; that was created by the folks at GitHub for their own &lt;a href=&#34;https://atom.io&#34;&gt;Atom&lt;/a&gt; editor. Under the hood, it uses Node.js and Webkit to provide the behaviour and UI for the applications. So all of your elements are essentially HTML and styled with CSS.&lt;/p&gt;
+
+&lt;p&gt;However, VS Code isn&amp;rsquo;t the only app to use Electron, so I thought I&amp;rsquo;d send around a list of some other neat apps which are built using web technologies. In theory, these apps should all be cross-platform, but in practice, some of them may not be (yet).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Light Table&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://lighttable.com&#34;&gt;http://lighttable.com&lt;/a&gt;&lt;br /&gt;
+Yes, that&amp;rsquo;s right, another text editor. Or is it? Light Table claims to be more than just an editor; it is code explorer as well. It will run your code and can render pages with the usual live reload. However, it also allows you to set watches on variables and inspect values real-time in the editor. In addition to JavaScript/HTML/CSS, it supports Clojure and Python. I certainly like where this project is going regarding its goals, and I suspect that we will see more innovation in the IDE/editor space in the future. Light Table is free and open source software.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Speak&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://speak.io&#34;&gt;https://speak.io&lt;/a&gt;&lt;br /&gt;
+Speak is a communication tool designed for work teams. It does audio, video and screen sharing and is targeting itself as a replacement for tools like Skype, Webex and GotoMeeting when you need informal sharing and collaborating with your colleagues. Speak hasn&amp;rsquo;t started charging yet, so I take that to mean they are still in development, but the future pricing model seems fair. They also claim to have an Unlimited Trial which means that you can use the service for as long as you want for free and start paying when you decide it is the right tool for your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mancy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://mancy-re.pl&#34;&gt;http://mancy-re.pl&lt;/a&gt;&lt;br /&gt;
+Mancy is a JavaScript/TypeScript/CoffeeScript REPL. In addition to the basic REPL functionality that you might get from the Chrome console or running node without a script, it adds a number of extra features. For starters, it allows you to write in dialects of JavaScript directly. It has syntax highlighting, autocomplete and some useful data visualizers. You can view your data as charts, or any HTML in strings rendered out. It understand the JSX syntax from React and will even watch any promises that returned from an evaluation. Mancy is a useful tool for learning JavaScript (or variant) without a lot of setting up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-12-04</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-04/</link>
+      <pubDate>Fri, 04 Dec 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-04/</guid>
+      <description>&lt;p&gt;I know that I must have mentioned Markdown in passing in some of my past fun link posts, but today I wanted to focus on it a bit more with some tools specifically focused on Markdown.&lt;/p&gt;
+
+&lt;p&gt;For those not familiar with Markdown, I will try to reserve judgement and say that it is a simple text markup format with the goal of being easy and natural to read in its unprocessed form. Plain text emails are the inspiration for the syntax and it has been gaining traction over the past number of years to the point where a lot of content systems and other tools support the format. Recently work has been happening to try to formalize the specification of the syntax such that implementors of tools can provide consistent behaviour. You can find more information over at &lt;a href=&#34;http://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; and in addition to a specification, they provide a reference implementation as well.&lt;/p&gt;
+
+&lt;p&gt;As a relevant matter of interest, I write all of my Fun Links content in Markdown format, which I then convert into the various forms that I need it in for the web and emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dillinger&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://dillinger.io/&#34;&gt;http://dillinger.io/&lt;/a&gt;&lt;br /&gt;
+Dillinger is a simple split screen web app that lets your write Markdown on the left and see the resulting HTML rendering on the right. It is a pretty simple app that supports linking to Dropbox, Github, Google Drive and One Drive to load and save documents. I haven&amp;rsquo;t seen a way to customize the stylesheet for the rendering either with themes or custom CSS. But for a quick, simple editor that lets you check your general rendering it works great. It also supports exporting the content as HTML or PDF if you&amp;rsquo;d like.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://markable.in/&#34;&gt;http://markable.in/&lt;/a&gt;&lt;br /&gt;
+Markable is a similar web-based tool for editing Markdown, but unlike Dillinger, it requires that you create an account first. It integrates with Evernote and Tumblr in addition to Dropbox. Interestingly it allows for customization, but only of the input editor, not the output rendering. It adds Word document export to the usual HTML and PDF. One interesting and potentially useful feature is it allows you to import HTML documents and convert them to Markdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tools to support your markdown authoring&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&#34;&gt;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&lt;/a&gt;&lt;br /&gt;
+This link might be considered cheating, but this is a page with a list of links to other Markdown-related resources. I was going to link to some Mac tools and some Windows tools, but the ones I wanted to link to are on this page already. As it turns out the two sites I write about above are not. If you want to get familiar with the various tools in the Markdown ecosystem, then this should get you started.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-29</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-29/</link>
+      <pubDate>Fri, 29 May 2015 14:26:35 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-29/</guid>
+      <description>&lt;p&gt;A DevOps tool, an IoT kit and a transcompiled JavaScript language. I&amp;rsquo;m hoping that people will find something interesting&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kitematic&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JYR2uy&#34;&gt;https://kitematic.com/&lt;/a&gt;&lt;br /&gt;
+A Mac app to manage your Docker containers in a visual way. Works side by side with the Docker CLI app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Particle&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1PSp5cK&#34;&gt;https://www.particle.io/&lt;/a&gt;&lt;br /&gt;
+Particle is an interesting Internet of Things toolkit. They provide hardware dev kits to prototype your ideas, and they have an online IDE, which allows you to edit and deploy firmware applications written in SparkJS and their Mobile SDK. Used to be called Spark.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Earl Grey&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1Qff2ZT&#34;&gt;http://breuleux.github.io/earl-grey/&lt;/a&gt;&lt;br /&gt;
+Earl Grey is a neat little language that compiles to JavaScript. It is still in development, but it has a concise syntax and might appeal to people, particularly with a Python background.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-15</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-15/</link>
+      <pubDate>Fri, 15 May 2015 14:29:18 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-15/</guid>
+      <description>&lt;p&gt;A functional reactive library, a new web browser and a new-school take on old school build processes. I hope that people find something interesting here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flyd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/paldepind/flyd&#34;&gt;https://github.com/paldepind/flyd&lt;/a&gt;&lt;br /&gt;
+The minimalistic but powerful, modular, functional reactive programming library in JavaScript. With reactive programming being in vogue at the moment, there are a number of libraries popping up in various languages. I&amp;rsquo;m certainly no expert, but I like the API on this one. Quite functional (and therefore very composable) with a number of convenient optional modules you can pull in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vivaldi&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://vivaldi.com/&#34;&gt;https://vivaldi.com/&lt;/a&gt;&lt;br /&gt;
+A new web browser built from HTML, CSS and Node.js. Created by the former CEO of Opera, this is a browser designed for power users. Has built-in note taking, email, sync and host of other features that make this a unique offering. If nothing else you don&amp;rsquo;t get more meta than creating a browser using HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DIY&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.vittoriozaccaria.net/diy/&#34;&gt;http://www.vittoriozaccaria.net/diy/&lt;/a&gt;&lt;br /&gt;
+A slightly different take on creating a web/JavaScript build system by allowing you to create a JS file that compiles into a &lt;code&gt;Makefile&lt;/code&gt;. Of course, this is a bit more cumbersome for Windows users who would need to grab a copy of GnuWin&amp;rsquo;s version of &lt;code&gt;make&lt;/code&gt;, but it might appeal to some. The library has a number of the standard operations (minification, concatenation, etc.) built-in.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

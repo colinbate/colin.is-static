@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular 2 on Colin Bate is...</title>
+    <link>https://colin.is/series/angular-2/</link>
+    <description>Recent content in Angular 2 on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Mar 2016 17:01:15 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/series/angular-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular 2 Error: No Directive annotation found</title>
+      <link>https://colin.is/blog/2016/angular2-error-no-directive/</link>
+      <pubDate>Thu, 24 Mar 2016 17:01:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/angular2-error-no-directive/</guid>
+      <description>&lt;p&gt;I thought I&amp;rsquo;d start keeping track of all of the errors that I work through as I work on several Angular 2 based projects. Many of these are not issues with Angular 2 per se, but perhaps your build tooling or even something silly you&amp;rsquo;ve done in your code. In any case, if it results in a semi-cryptic error in the console from Angular, then I&amp;rsquo;ll try to add it to my site here.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ll also try to write about my more positive experiences as well. :)&lt;/p&gt;
+
+&lt;p&gt;In this case, the error I was seeing was &lt;code&gt;No Directive annotation found on &amp;lt;Type&amp;gt;&lt;/code&gt;, where Type was a directive from another third party library.&lt;/p&gt;
+
+&lt;p&gt;This error happened just after I had decided to try the latest beta from Angular 2 and also update the third party library as well. The third party library claimed to have a dependency on a particular previous beta version, but I knew it would be okay, so I ignored the errors about unmet peer dependencies.&lt;/p&gt;
+
+&lt;p&gt;After running into this issue at runtime, I tried to debug the &lt;code&gt;directive_resolver&lt;/code&gt; file and found that the type in question had the correct metadata and claimed to be of the right type (Angular 2 does an &lt;code&gt;instanceof&lt;/code&gt; comparison). So I had an object claiming to be of type &lt;code&gt;DirectiveMetadata&lt;/code&gt; and I had the &lt;code&gt;DirectiveMetadata&lt;/code&gt; type itself, but &lt;code&gt;instanceof&lt;/code&gt; was failing.&lt;/p&gt;
+
+&lt;p&gt;It turns out that NPM had installed a separate older version of Angular 2 specifically for the third party library, and that was why the types didn&amp;rsquo;t match up. I deleted the library&amp;rsquo;s &lt;code&gt;node_modules&lt;/code&gt; folder, and all was well.&lt;/p&gt;
+
+&lt;p&gt;This issue leads me to a broader rant about peer dependencies. This particular library listed &lt;code&gt;angular2&lt;/code&gt; in both &lt;code&gt;peerDependencies&lt;/code&gt; and &lt;code&gt;dependencies&lt;/code&gt; lists. I agree with the former; the latter is what causes this problem. With NPM 3, it will complain about unmet peer dependencies, but it won&amp;rsquo;t do anything about it. That is what I was seeing. However, if it is also a normal dependency it will install a private copy of it. That doesn&amp;rsquo;t work so well for an application framework dependency like this.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this will help sort out any similar issues you see like this. What you can do from this point is up to you. Likely things will get sorted out with your third party before long.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

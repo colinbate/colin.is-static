@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ci on Colin Bate is...</title>
+    <link>https://colin.is/tags/ci/</link>
+    <description>Recent content in Ci on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Dec 2015 15:43:31 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-12-11</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-11/</link>
+      <pubDate>Fri, 11 Dec 2015 15:43:31 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-11/</guid>
+      <description>&lt;p&gt;One important aspect of software development, particularly agile software development is continuous integration. Often referred to as just &lt;em&gt;CI&lt;/em&gt;, continuous integration is the practice of ensuring that your piece of software builds and passes any tests you have set up for it on a regular basis, usually just after someone makes changes to the source code. Typically this integration happens in an automated fashion.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t go into all of the details of why this is good, but I will say this is done everywhere from large enterprise teams to small, indie open source projects. There are continuous integration software packages you can install yourself, both commercial and open source along with hosted services you can use. Some of these CI servers are very configurable and general purpose, others are focused on a particular platform or language.&lt;/p&gt;
+
+&lt;p&gt;The following list focuses on hosted CI services that are available for free or with a free option.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wercker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://wercker.com/&#34;&gt;http://wercker.com/&lt;/a&gt;&lt;br /&gt;
+Wercker uses Docker containers as a core concept in its offering and focuses on microservices. It highlights JavaScript, Go, Ruby and Python with tutorials, but it supports the use of any Docker container on Docker Hub, so you should be able to work with other languages as well. It supports Git out of the box, but you could probably have a container with Mercurial and use that if you wanted to. As for pricing, Wercker is free for normal use, but if you want to run it on a virtual private cloud then that is an option, but I suspect that would be a bespoke quote. Another nice thing, Wercker has a registry of user-created recipes to do certain things in your pipeline. Want to compile a static site? There are recipes for that. Deploy to S3? No problem. There is even a command line client that lets you run your builds locally.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AppVeyor&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.appveyor.com/&#34;&gt;http://www.appveyor.com/&lt;/a&gt;&lt;br /&gt;
+AppVeyor focuses on the Windows/.NET market. It has a free plan available to open source projects but otherwise seems to be quite pricey. Particularly if you want more than one concurrent job. The configuration of your build can be done via a YAML file, or through the Web UI. It only supports Git officially. However, it does allow you to do a shallow fetch using the GitHub or Bitbucket API to get a zip file. I would imagine that would work for a Mercurial repository hosted with Bitbucket as well, but I don&amp;rsquo;t know for sure. It supports the things you&amp;rsquo;d expect when dealing with .NET software like AssemblyVersion patching, NuGet dependencies (and deployment) and running PowerShell commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Distelli&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.distelli.com&#34;&gt;https://www.distelli.com&lt;/a&gt;&lt;br /&gt;
+Distelli has more of a focus on DevOps, and it has a bit more of an enterprise feel to it, but they support Mercurial which isn&amp;rsquo;t easy to find in many of these hosted services. As with the other services, the build process can be defined from a YAML file in your source code. It has audit and logging for all of the steps along the way, and after building and testing your application, will also allow you to deploy it somewhere. They have a generous free plan that allows unlimited projects (even private ones); it only limits you to two servers and concurrent builds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mercurial Bookmarks in TeamCity</title>
+      <link>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</link>
+      <pubDate>Wed, 05 Feb 2014 21:21:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</guid>
+      <description>&lt;p&gt;This is just a note to help those people looking for help on this and hopefully prevent some banging of heads into walls.&lt;/p&gt;
+
+&lt;p&gt;To use bookmarks fully with &lt;a href=&#34;http://www.jetbrains.com/teamcity/&#34;&gt;TeamCity&lt;/a&gt;, you need TeamCity 8 &lt;strong&gt;and&lt;/strong&gt; Mercurial 2.4 installed on the server.&lt;/p&gt;
+
+&lt;p&gt;New installations shouldn&amp;rsquo;t have a problem, but if you&amp;rsquo;ve upgraded to TC8, then do yourself a favour and &lt;a href=&#34;http://mercurial.selenic.com/downloads/&#34;&gt;upgrade your Mercurial as well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have an old version of Mercurial, you may see an exception like this if you try to set your default branch to be a bookmark.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jetbrains.buildServer.vcs.VcsRootVcsException: Cannot find revision of the default branch &#39;&amp;lt;bookmark name&amp;gt;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You also won&amp;rsquo;t be able to select any branches in the custom run dialog.&lt;/p&gt;
+
+&lt;p&gt;It will be very frustrating. :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Colin Bate is...</title>
+    <link>https://colin.is/</link>
+    <description>Recent content on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Sep 2016 14:55:21 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-23</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-23/</link>
+      <pubDate>Fri, 23 Sep 2016 14:55:21 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-23/</guid>
+      <description>&lt;p&gt;Many technical people like to come up with overly complicated solutions to problems. Like writing an app that you may only need to use once or twice. Does this sound like you? It certainly sounds like me.&lt;/p&gt;
+
+&lt;p&gt;A lot of the time, the reason is to challenge oneself. Or maybe it is because it is just plain enjoyable to procrastinate on real life while learning a new technology. Whatever the motivation, with today&amp;rsquo;s technology it doesn&amp;rsquo;t need to be a time-consuming process. More and more &amp;ldquo;apps&amp;rdquo; aren&amp;rsquo;t just big pieces of software written from the ground up. And I&amp;rsquo;m not just talking about microservices; I&amp;rsquo;m talking more about mashups and other hybrid applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Airtable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/QeE1&#34;&gt;https://airtable.com/&lt;/a&gt;&lt;br /&gt;
+Have you ever found yourself using Google Sheets or Excel to manage a personal collection or otherwise organize things? Or perhaps thought you could use Google Sheets as a simple JSON API? If so you may find Airtable interesting. It sells itself as being simple as a spreadsheet. Essentially it is a nice UI around a set of build-it-yourself databases. The free plan is quite generous and should be more than enough for personal use. There is also an iOS app which lets you manage your data in a very convenient way while mobile. You can attach files/photos to your records through integration with cloud storage providers or directly from your computer or device. It even allows you to expose this data (both reading and writing) via a simple API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zapier&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/Fm5E&#34;&gt;https://zapier.com/&lt;/a&gt;&lt;br /&gt;
+Zapier provides connections between different services and products which may not otherwise have them. It is a bit like a hub for integrations. You can create &amp;ldquo;zaps&amp;rdquo; which trigger based on something happening in one service (e.g. a Github PR) and then perform an action somewhere else (e.g. send a tweet). The free plan allows for simple one-to-one zaps, or you can pay for more complex workflows. The integrations available are quite extensive and target the productivity and business space. In particular, it has integrations with Airtable allowing you to trigger actions based on changes being made to your data or adding new data based on events elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IFTTT&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://colin.fyi/2LRO&#34;&gt;https://ifttt.com/&lt;/a&gt;&lt;br /&gt;
+If This Then That is another service offering to perform actions on one service based on triggers from another. The service is free. However, the integrations seem to be geared more toward personal use and focus on the Internet of Things (IoT) space. Like you could set it up so that an email from a particular address might turn on your lights in your house. I think there is a lot of potential for this type of simple orchestration, if for no other reason than the geek factor.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-09-16</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-16/</link>
+      <pubDate>Fri, 16 Sep 2016 17:11:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-16/</guid>
+      <description>&lt;p&gt;To mark the occasion of the release of Angular 2 (finally), I thought that an Angular 2 themed set of links would be appropriate. And since I&amp;rsquo;ve been heavily steeped in React lately, it also gave me a chance to come up for air a little bit and see what is going on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://angular.io&#34;&gt;https://angular.io&lt;/a&gt;&lt;br /&gt;
+Can&amp;rsquo;t talk about Angular 2 without a link to the official page itself. This site is different to the one for Angular 1 and contains documentation and tutorials as you would expect. For those not subjected to my Angular 2 evangelism yet, it is a bit of a departure from its predecessor. It follows the more structured component-based approach which is very popular at the moment, and it brings some other technologies to the table with it. In particular takes particular advantage of TypeScript to support dependency injection and metadata. It also incorporates the concept of Observables via the &lt;code&gt;rxjs&lt;/code&gt; package. You don&amp;rsquo;t have to use either in your applications, but the community is embracing them, and both are quite powerful additions if you take the time to learn them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2 Courses @ Egghead&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/building-angular-2-components&#34;&gt;https://egghead.io/courses/building-angular-2-components&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/intro-to-angular-2-router&#34;&gt;https://egghead.io/courses/intro-to-angular-2-router&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/angular-2-dependency-injection-di-explained&#34;&gt;https://egghead.io/courses/angular-2-dependency-injection-di-explained&lt;/a&gt;&lt;br /&gt;
+Three links for the price of one. There are three new Angular 2 courses available at Egghead which are completely free, at least for the time being. So unless you have a Pro Egghead account, or would like to, then I&amp;rsquo;d recommend checking out those courses sooner rather than later if you want to learn about Angular 2. That said, I do recommend a Pro Egghead account if you are interested in learning about the hottest web technologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update: They are no longer free apart from the intro videos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ng2-bootstrap&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://valor-software.com/ng2-bootstrap/&#34;&gt;http://valor-software.com/ng2-bootstrap/&lt;/a&gt;&lt;br /&gt;
+Given the popularity of Bootstrap for quickly bringing a UI to life, I wanted to mention the library which brings Bootstrap to Angular 2 using components and doesn&amp;rsquo;t require any of the out-of-the-box Bootstrap JavaScript. It provides components for the usual suspects like the accordion, date picker, and tabs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-06-10</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-06-10/</link>
+      <pubDate>Fri, 10 Jun 2016 15:04:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-06-10/</guid>
+      <description>&lt;p&gt;Since I&amp;rsquo;m in the middle of delivering a React training course to some of my colleagues, I thought why not highlight something React-related.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m starting off with some React-inspired alternatives to React. The concept of virtual DOM comparisons and one-way data flow has become very popular in the JavaScript world, so there has been a slew of copycat libraries emerge. Some are almost drop-in replacements, others take the concepts and run in a different direction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inferno&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/trueadm/inferno&#34;&gt;https://github.com/trueadm/inferno&lt;/a&gt;&lt;br /&gt;
+Inferno claims to be one of, if not &lt;em&gt;the&lt;/em&gt; fastest virtual DOM libraries out there. It does this by only &amp;ldquo;diffing&amp;rdquo; the parts of the DOM that are potentially dynamic. The result is a React-like library which performs even better on low-power devices like phones and tablets. It has a Babel plugin as well, so you can write your components using the same JSX syntax you may be familiar with, and have it compiled to optimized Inferno virtual DOM.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;React-lite&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/Lucifier129/react-lite&#34;&gt;https://github.com/Lucifier129/react-lite&lt;/a&gt;&lt;br /&gt;
+React-lite is a drop-in replacement for React on the browser which optimizes for file size. It is less than 20% of the size of React. Obviously, it makes some sacrifices to do that, and certain development niceties of React didn&amp;rsquo;t make the cut, like PropTypes and support for the React dev-tools. It also doesn&amp;rsquo;t support rendering on the server. In all of these cases, you can use the full React if necessary.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preact&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://preactjs.com/&#34;&gt;https://preactjs.com/&lt;/a&gt;&lt;br /&gt;
+Preact is a slightly less compatible, but even smaller version of React, weighing in at around 3kb when fully optimized. It only supports the newer ES2015 class and stateless components. It too is missing PropTypes, but otherwise is quite compatible with an extra compatibility package available if you need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-06-03</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-06-03/</link>
+      <pubDate>Fri, 03 Jun 2016 16:05:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-06-03/</guid>
+      <description>&lt;p&gt;A bit more of a theme today, and that is diagnostic API/HTTP clients. I don&amp;rsquo;t want to call them REST clients because they are much more general than that. But sometimes that is what they call themselves, perhaps to capitalize on the jargon bonus.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Postman&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.getpostman.com/&#34;&gt;http://www.getpostman.com/&lt;/a&gt;&lt;br /&gt;
+Postman is probably the most well known of this group. It started out as a Chrome plugin, but I see that there is now a Mac app as well. It allows you build customized HTTP requests to arbitrary URLs using any of the standard HTTP verbs like GET, POST, PUT, DELETE, etc. You can add headers and whatever content you need, and it will also help visualize your responses with coloring, folding, and other inspection features. Postman also allows you to create tests for each of the URLs you are accessing, making assertions on the response. You can run these tests from the command line using a companion tool called Newman. Free for use, although they do offer a team-oriented cloud offering at a reasonable price.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advanced REST Client&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://chromerestclient.appspot.com/&#34;&gt;https://chromerestclient.appspot.com/&lt;/a&gt;&lt;br /&gt;
+The Advanced REST Client (or ARC) is another Chrome extension which provides similar functionality to Postman with a slightly different UI (and color palette). However, instead of using Chrome&amp;rsquo;s XMLHttpRequest client to make requests, it works over raw sockets, allowing it to bypass restrictions that Chrome imposed. It also supports connecting to WebSocket servers as well. ARC is free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paw&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://luckymarmot.com/paw&#34;&gt;https://luckymarmot.com/paw&lt;/a&gt;&lt;br /&gt;
+Paw is Mac HTTP client that offers a full-featured suite of tools. It also can generate client code in various languages to call your APIs. It supports dynamic values in your requests which can come from previous responses; it can compute hashes; generate random values; all sorts of things which can help in your testing/debugging efforts. Probably the biggest problem with it is the price. Not free; $50.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-05-27</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-05-27/</link>
+      <pubDate>Fri, 27 May 2016 13:09:56 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-05-27/</guid>
+      <description>&lt;p&gt;Not as much of a theme today for the links. A collection of tools that I thought might be of interest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DevDocs&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://devdocs.io/&#34;&gt;http://devdocs.io/&lt;/a&gt;&lt;br /&gt;
+If you&amp;rsquo;ve ever used Dash on a Mac, DevDocs is a similar idea. A central place for technical documentation, with offline support and simple, quick search functionality. You can customize which docs you want to load, but unfortunately, MSDN isn&amp;rsquo;t an option at this point. Mostly web focused, so if that is your thing, this might be a great resource.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apache Allura&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://allura.apache.org/&#34;&gt;https://allura.apache.org/&lt;/a&gt;&lt;br /&gt;
+Apache Allura is a software forge. That is to say, it is like a self-hosted GitHub. It has a wiki, issue tracking, forums, blogs and some other nice features in addition to managing code repositories. On that front, it supports Git, SVN and, with a plugin, Mercurial. It is written in Python and backed by MongoDB.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GraphQL&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://graphql.org/&#34;&gt;http://graphql.org/&lt;/a&gt;&lt;br /&gt;
+GraphQL is another one of the hot new technologies coming out of Facebook. It is a declarative, hierarchical query language and runtime which allows for more maintainable data access from your client applications (web, mobile, etc.) to your server. It essentially replaces REST and bespoke endpoints, being both less chatty and easier to maintain over time. Having seen examples of its use in an immutable application architecture, it certainly seems like a smart choice for some applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-05-20</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-05-20/</link>
+      <pubDate>Fri, 20 May 2016 13:17:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-05-20/</guid>
+      <description>&lt;p&gt;I know I&amp;rsquo;ve written about static sites before. I&amp;rsquo;ve linked to some site generators and some complementary services, and now I&amp;rsquo;m going to add simple, CDN-based hosting to that list.&lt;/p&gt;
+
+&lt;p&gt;All of these services allow you publish a static site with a simple command, and all offer free plans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Netlify&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.netlify.com&#34;&gt;https://www.netlify.com&lt;/a&gt;&lt;br /&gt;
+Netlify seems like the most full featured of this batch, but that may or may not be a good thing. In addition to hosting static files, it will also build your site from the source material, integrating with your git repository if desired. It can generate Jekyll, Roots, and Hugo sites as well as run any build tools like Grunt or Gulp. They also offer API proxying, support for client-side routing and the ability to hook into third party OAuth2 providers. SSL is managed for you and included in all plans. The free plan allows a custom domain but adds a small callout to the bottom corner of your site/app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Surge&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://surge.sh/&#34;&gt;https://surge.sh/&lt;/a&gt;&lt;br /&gt;
+Surge takes the approach of lowering the barrier to get something &amp;ldquo;out there&amp;rdquo; as quickly and simply as possible. Just type &lt;code&gt;surge&lt;/code&gt; and hit enter in your project directory and Surge will publish it under a &lt;code&gt;surge.sh&lt;/code&gt; subdomain. You can add your custom domain for free. However, Surge just hosts your static site; it won&amp;rsquo;t build it or do any proxying, etc. You can, of course, integrate the &lt;code&gt;surge&lt;/code&gt; NPM package into your existing CI process and have it publish your site once built. The free plan doesn&amp;rsquo;t allow SSL on custom domains, but it does on their subdomains so that you could use it as a simple static asset CDN for a site hosted elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PubStorm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.pubstorm.com/&#34;&gt;https://www.pubstorm.com/&lt;/a&gt;&lt;br /&gt;
+PubStorm is the new kid on this block. It is an offering from Nitrous, the creators the online IDE, presumably to create the whole farm-to-table type of experience. They only have a free plan at the moment, which allows you to host up to 10 separate sites with custom domains and SSL. They support version rollback and simple &lt;code&gt;pushState&lt;/code&gt; support to allow client-side routing. It looks like their future premium offering will add more features. They also work primarily through a command line interface and allow you to add collaborators so that other people can publish or rollback if that is how you work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-15</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-15/</link>
+      <pubDate>Fri, 15 Apr 2016 18:13:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-15/</guid>
+      <description>&lt;p&gt;BOTS! While the picture that forms in your head may vary when you hear that word, I suspect before too long it may become as common a term as social media is now. There is a proliferation of messaging bots at the moment. And as you may guess, that means a large number of services are popping up to enable the simple and convenient hosting, development and maintenance of your bots.&lt;/p&gt;
+
+&lt;p&gt;The following are a sample of such services with various takes on the issue. Some even allow you to piece together a bot without any programming. We certainly have come a long way since the Eggdrop IRC bots of 20+ years ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Chatfuel&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://chatfuel.com/&#34;&gt;https://chatfuel.com/&lt;/a&gt;&lt;br /&gt;
+Chatfuel gives you the tools to build your bots without needing to program. You can hook up your data and leverage existing modules to create a bot to engage your customers. At the moment, it only supports &lt;a href=&#34;https://telegram.org/&#34;&gt;Telegram&lt;/a&gt;, but more providers are on the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meya&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://meya.ai/&#34;&gt;https://meya.ai/&lt;/a&gt;&lt;br /&gt;
+Meya is another bot host/platform which allows you to write your bots in Python and Node.js. It also has some built-in bot components. It also has integrations with other sites like Facebook and Trello to provide information to your bot in addition to a local datastore.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Microsoft Bot Framework&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://dev.botframework.com/&#34;&gt;https://dev.botframework.com/&lt;/a&gt;&lt;br /&gt;
+Microsoft is also jumping on the messaging bandwagon, with their Bot Framework. You can build your bots with Node.js or C#, and their SDK is open source. It provides connectors to SMS, Office 365 mail, Skype, Slack, and others.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-08</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-08/</link>
+      <pubDate>Fri, 08 Apr 2016 17:34:53 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-08/</guid>
+      <description>&lt;p&gt;Back in November, I wrote about &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-13/&#34;&gt;reactive programming libraries&lt;/a&gt; for JavaScript. Today I&amp;rsquo;m going to write about some frameworks and libraries which sit on top of the reactive libraries and provide UI or application integration.&lt;/p&gt;
+
+&lt;p&gt;Using these libraries you can write an app in a declarative manner and not have to worry about state management. Not every type of application benefits from this. At the moment, I&amp;rsquo;m working on a &lt;a href=&#34;https://github.com/colinbate/battleship&#34;&gt;game with reactive programming&lt;/a&gt;, which I think may work well. Whether or not it is always appropriate, it is a worthwhile concept to learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cycle.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cycle.js.org/&#34;&gt;http://cycle.js.org/&lt;/a&gt;&lt;br /&gt;
+Cycle.js attempts to model your application as pure data flow using reactive programming. It isolates a &lt;code&gt;main&lt;/code&gt; function for your logic and provides sources (inputs from the external world) and sinks (outputs/writes to the external world). It uses provided &lt;em&gt;drivers&lt;/em&gt; to handle the integration with things like the DOM, HTTP requests, Websockets, etc. You need to see examples to appreciate exactly how it works.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motorcycle.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/motorcyclejs/core&#34;&gt;https://github.com/motorcyclejs/core&lt;/a&gt;&lt;br /&gt;
+Motorcycle.js is being created by the same guy (and the group of contributors) as Cycle.js, but as the name suggests, it is designed to be faster. Under the hood, it uses Most.js instead of RxJS and a more performant virtual DOM library. It uses the same concepts of sources, sinks, and drivers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yolk&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/garbles/yolk&#34;&gt;https://github.com/garbles/yolk&lt;/a&gt;&lt;br /&gt;
+Yolk is meant to be a minimal API on top of RxJS and virtual DOM. It treats everything as an observable; even the properties passed into its React-like UI components. If you are familiar with React and RxJS, then you will be right at home with Yolk. Yolk is what I am using for my game.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-01</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-01/</link>
+      <pubDate>Fri, 01 Apr 2016 13:16:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-01/</guid>
+      <description>&lt;p&gt;It may be April Fool&amp;rsquo;s day, but these links are no joke. To be sure, I wrote this article on March 31st. ;) However, to mark the occasion, I&amp;rsquo;m going to have four links today instead of three. Mind blowing.&lt;/p&gt;
+
+&lt;p&gt;My theme for these links is immutability. Specifically immutability in JavaScript. Arrays and objects, as well as the new &lt;code&gt;Map&lt;/code&gt; and &lt;code&gt;Set&lt;/code&gt; in JavaScript, are mutable. That is one can change their values and contents while maintaining a single reference to them. While this is a familiar concept for some, it sometimes has unintended side effects when these entities are passed around to different parts of the application.&lt;/p&gt;
+
+&lt;p&gt;On the other hand programming with immutable data types requires a slightly different way of thinking about things, but offers benefits which make it valuable in certain applications.&lt;/p&gt;
+
+&lt;p&gt;For example, change detection. If you want to know if a JavaScript array has changed, you could first check its length, but if they are the same, you&amp;rsquo;d have to iterate the whole array to determine if any element has changed. And even then, for mutable types within the array, you&amp;rsquo;d have to check those deeply as well. But if you have immutable types, then checking for a changed array is just a reference check which is much faster.&lt;/p&gt;
+
+&lt;p&gt;Most of these libraries listed do very similar things but have different syntax, different performance and manage slightly different data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Immutable.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://facebook.github.io/immutable-js/&#34;&gt;https://facebook.github.io/immutable-js/&lt;/a&gt;&lt;br /&gt;
+Immutable collections for JavaScript from Facebook. Instead of extending the native types, Immutable has its own collections: List, Map, OrderedMap, Seq, Stack, etc. They are all immutable and can be created from and cast back into native arrays and objects as necessary. The API, while a bit verbose, is clean and understandable. If you want some addition data and collection types in addition to immutability, then this is a good choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mori&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/swannodette/mori&#34;&gt;https://github.com/swannodette/mori&lt;/a&gt;&lt;br /&gt;
+Mori is designed to emulate ClojureScript&amp;rsquo;s persistent data structures in JS. As such it is decidedly more functional (stylistically) than the rest of the options. It supports many of the same data types as Immutable.js but claims to be faster (but larger). It has tried to make provisions for being closer to idiomatic JavaScript, but to be honest, it still feels a bit foreign. YMMV.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ancient Oak&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/brainshave/ancient-oak&#34;&gt;https://github.com/brainshave/ancient-oak&lt;/a&gt;&lt;br /&gt;
+Ancient Oak dubs itself as the immutable tree. I like the name of this library the best, but that is judging a book by its cover. It is designed to work on trees of plain JS data types, something you might get from or convert to JSON. One of the types supported by Ancient Oak is the Date object, which isn&amp;rsquo;t something I&amp;rsquo;ve seen in any of the others. Allows you to use the types that you are used to in JS with pretty much the same API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Freezer&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/arqex/freezer&#34;&gt;https://github.com/arqex/freezer&lt;/a&gt;&lt;br /&gt;
+Freezer is a bit like Ancient Oak in that it maintains an immutable tree structure, but it was built with React in mind, so it also has an event mechanism which allows you to re-render your application when the freezer has been updated. That said, it doesn&amp;rsquo;t seem to have immutable Date support. And having played with Freezer and Ancient Oak, the API seems a lot more pleasant and intuitive with the former.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Angular 2 Error: No Directive annotation found</title>
+      <link>https://colin.is/blog/2016/angular2-error-no-directive/</link>
+      <pubDate>Thu, 24 Mar 2016 17:01:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/angular2-error-no-directive/</guid>
+      <description>&lt;p&gt;I thought I&amp;rsquo;d start keeping track of all of the errors that I work through as I work on several Angular 2 based projects. Many of these are not issues with Angular 2 per se, but perhaps your build tooling or even something silly you&amp;rsquo;ve done in your code. In any case, if it results in a semi-cryptic error in the console from Angular, then I&amp;rsquo;ll try to add it to my site here.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ll also try to write about my more positive experiences as well. :)&lt;/p&gt;
+
+&lt;p&gt;In this case, the error I was seeing was &lt;code&gt;No Directive annotation found on &amp;lt;Type&amp;gt;&lt;/code&gt;, where Type was a directive from another third party library.&lt;/p&gt;
+
+&lt;p&gt;This error happened just after I had decided to try the latest beta from Angular 2 and also update the third party library as well. The third party library claimed to have a dependency on a particular previous beta version, but I knew it would be okay, so I ignored the errors about unmet peer dependencies.&lt;/p&gt;
+
+&lt;p&gt;After running into this issue at runtime, I tried to debug the &lt;code&gt;directive_resolver&lt;/code&gt; file and found that the type in question had the correct metadata and claimed to be of the right type (Angular 2 does an &lt;code&gt;instanceof&lt;/code&gt; comparison). So I had an object claiming to be of type &lt;code&gt;DirectiveMetadata&lt;/code&gt; and I had the &lt;code&gt;DirectiveMetadata&lt;/code&gt; type itself, but &lt;code&gt;instanceof&lt;/code&gt; was failing.&lt;/p&gt;
+
+&lt;p&gt;It turns out that NPM had installed a separate older version of Angular 2 specifically for the third party library, and that was why the types didn&amp;rsquo;t match up. I deleted the library&amp;rsquo;s &lt;code&gt;node_modules&lt;/code&gt; folder, and all was well.&lt;/p&gt;
+
+&lt;p&gt;This issue leads me to a broader rant about peer dependencies. This particular library listed &lt;code&gt;angular2&lt;/code&gt; in both &lt;code&gt;peerDependencies&lt;/code&gt; and &lt;code&gt;dependencies&lt;/code&gt; lists. I agree with the former; the latter is what causes this problem. With NPM 3, it will complain about unmet peer dependencies, but it won&amp;rsquo;t do anything about it. That is what I was seeing. However, if it is also a normal dependency it will install a private copy of it. That doesn&amp;rsquo;t work so well for an application framework dependency like this.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this will help sort out any similar issues you see like this. What you can do from this point is up to you. Likely things will get sorted out with your third party before long.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-18</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-18/</link>
+      <pubDate>Fri, 18 Mar 2016 15:48:28 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-18/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve &lt;a href=&#34;http://colin.is/blog/2013/fun-links-2013-09-27/&#34;&gt;mentioned Trello before&lt;/a&gt; as a personal productivity tool that many people use for managing software projects. I&amp;rsquo;ve used it myself for a few.&lt;/p&gt;
+
+&lt;p&gt;Some people use the issue tracking tools provided by GitHub or Bitbucket to manage their tasks, and that works. But I prefer to leave those for bugs raised externally. Even working on my own, I find tools with workflows and drag and drop particularly pleasant to use. So I&amp;rsquo;ve compiled a list of some software project management services online which hopefully people will find useful.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pivotal Tracker&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.pivotaltracker.com/&#34;&gt;http://www.pivotaltracker.com/&lt;/a&gt;&lt;br /&gt;
+Pivotal Tracker aims to help you build better software faster. It is from the same folks who bring us the Jasmine JS testing library. From the looks of things, the tool has recently undergone a facelift which has people excited. They have a free plan which supports up to three collaborators and two private projects. Public projects are all free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clubhouse&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://clubhouse.io/&#34;&gt;https://clubhouse.io/&lt;/a&gt;&lt;br /&gt;
+Clubhouse is a newer player, and it was created to overcome frustrations its founders had with existing tools. It features the ability to zoom in and out of projects to see different levels of details at a glance. The free plan here also allows for three collaborators, but unlimited projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Favro&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://favro.com/&#34;&gt;https://favro.com/&lt;/a&gt;&lt;br /&gt;
+Favro seems a bit more general purpose, similar to Trello, but looks like it would be quite capable of planning software development. Their free plan provides unlimited users and projects, but only a single service integration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-11</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-11/</link>
+      <pubDate>Fri, 11 Mar 2016 20:22:47 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-11/</guid>
+      <description>&lt;p&gt;Dynamic programming languages and interpreted languages all have the benefit of being quick to use to write code. They have grown quite popular in the past years, driven mostly by the fluid nature of the web. The nebbish amongst us will usually lament the lack of static typing, but the genuine issue with these languages is usually quite simple: execution speed.&lt;/p&gt;
+
+&lt;p&gt;So while they may be fast to write, they aren&amp;rsquo;t always fast to run.&lt;/p&gt;
+
+&lt;p&gt;OK, that makes sense. And to be fair, that might be perfectly acceptable in some cases, and clearly people were accepting this trade-off for a while. And no matter how provocative you find pointer dereferencing to be, you can&amp;rsquo;t argue that languages like Ruby, Python and PHP aren&amp;rsquo;t in vogue. Whether the syntax, the high-level abstractions or the dynamic features mentioned before, each has a little &amp;ldquo;je ne sais quoi&amp;rdquo; about them.&lt;/p&gt;
+
+&lt;p&gt;So you love your language, but it isn&amp;rsquo;t quite what you need, what do you do? You create a new language with the same basic syntax and make it better. At least in theory. The following languages make look a bit niche at the moment, but it is worth keeping an eye on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Crystal&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://crystal-lang.org/&#34;&gt;http://crystal-lang.org/&lt;/a&gt;&lt;br /&gt;
+Crystal is like Ruby, only faster. Developed by a company in Argentina, there seems to be a growing community around the new language. Unlike Ruby, Crystal is a compiled language, so you create a native executable. It also has a package/module management system called &lt;code&gt;shard&lt;/code&gt;. At the moment, it looks like it only runs on Linux or Mac, and given how the Ruby community regards Windows, I wouldn&amp;rsquo;t hold my breath for a native compiler there.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Julia&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://julialang.org/&#34;&gt;http://julialang.org/&lt;/a&gt;&lt;br /&gt;
+Julia is the upgraded, faster version of Python. Sort of. The syntax is certainly Python inspired, and built with data and scientific processing in mind. Looking at the summary of features and benchmark results, it seems like the best of all worlds as a language. It has a package manager as well and even built-in support for parallelism and distributed computing. Not surprising given its focus on technical computing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hack&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://hacklang.org/&#34;&gt;http://hacklang.org/&lt;/a&gt;&lt;br /&gt;
+Hack is Facebook&amp;rsquo;s enhanced version of PHP. Supposedly they couldn&amp;rsquo;t think of a woman&amp;rsquo;s name to use. And while the name they did choose may invoke some concern, the language moves in a more &amp;ldquo;safe&amp;rdquo; direction from its origins. Hack requires a runtime called HHVM, and at the moment, is only available on Linux. You could run it from a VM for development locally. It adds things like types and native XML support to the PHP language, and they even have tools for converting from PHP to Hack.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-03-04</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-04/</link>
+      <pubDate>Fri, 04 Mar 2016 14:59:40 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-04/</guid>
+      <description>&lt;p&gt;Today I&amp;rsquo;m revisiting microservices, but from a slightly different angle. While I still don&amp;rsquo;t believe microservices are a panacea, they certainly have a place in today&amp;rsquo;s technical ecosystem. If you aren&amp;rsquo;t going down the &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-06/&#34;&gt;microservices as a service route&lt;/a&gt; that I mentioned before, then you will likely need to consider how to deploy and orchestrate your microservices, whether that is in-house or in-cloud.&lt;/p&gt;
+
+&lt;p&gt;The whole concept of microservices just moves where the technical challenges lie, and in this case, pushes extra challenges into the territory of DevOps and Infrastructure. As such I&amp;rsquo;m listing some tools which are designed to help out in that area.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giant Swarm&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://giantswarm.io/&#34;&gt;https://giantswarm.io/&lt;/a&gt;&lt;br /&gt;
+Giant Swarm is a company which provides support for microservice deployment. They provide professional support/consulting services as well as publishing several open source tools used in the deployment and orchestration of microservices.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Claudia&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/claudiajs/claudia&#34;&gt;https://github.com/claudiajs/claudia&lt;/a&gt;&lt;br /&gt;
+Claudia is a tool that takes the pain out of deploying Node.js microservices to AWS. It allows you to get something up and running quickly without the hassles associated with AWS Lambda and API Gateway directly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;linkerd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://linkerd.io/&#34;&gt;https://linkerd.io/&lt;/a&gt;&lt;br /&gt;
+Linkerd touts itself as a modern RPC proxy for microservices. It sits near your application and provides abstractions for service discovery and load balances and instruments your remote services. This functionality allows you to make infrastructure and architecture changes without modifying application code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In other news&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/en/blog/release/v5.7.0/&#34;&gt;Node 5.7.0 is released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hook.io/blog/role-based-access-control&#34;&gt;Hook.io adds extra security, API keys and ES7 support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-02-26</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-02-26/</link>
+      <pubDate>Fri, 26 Feb 2016 18:46:58 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-02-26/</guid>
+      <description>&lt;p&gt;Today my links fall into the category of &amp;ldquo;dev tools&amp;rdquo;. Some may even lean into the &amp;ldquo;DevOps&amp;rdquo; territory. They are all language agnostic but mostly focus on web applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LaunchDarkly&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://launchdarkly.com/&#34;&gt;https://launchdarkly.com/&lt;/a&gt;&lt;br /&gt;
+LaunchDarkly calls itself &amp;ldquo;feature flags as a service&amp;rdquo; which seems like as good a description as any. It is a service that you integrate with your web application to allow you to roll out new features slowly, tracking the results. You can use it to do A/B testing, beta releases, or even to provide premium features to some users. Essentially, a formalized means to provide feature toggling through a nice UI. Most big sites build their applications this way; with new, in-development, code deployed for weeks or months before it is ready to be turned on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;StopLight&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stoplight.io/&#34;&gt;https://stoplight.io/&lt;/a&gt;&lt;br /&gt;
+StopLight is an API design and testing service. It provides visual tools to build your API and can export the specification in a few different formats including the popular Open API Initiative (Swagger) format. Also, it can also be used to make calls into your existing API as a test client. And it can use Prism to record and playback or mock out an API for testing as a test server. All said a full feature API toolkit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;diff-so-fancy&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/so-fancy/diff-so-fancy&#34;&gt;https://github.com/so-fancy/diff-so-fancy&lt;/a&gt;&lt;br /&gt;
+Who says appearances don&amp;rsquo;t matter? If you are looking to tidy (and fancy) up your git diffs, then you need &lt;code&gt;diff-so-fancy&lt;/code&gt;. It is a visual filter which builds on other tools to provide in-line character diff highlighting and better file separation. You can use diff-so-fancy once-off, or set it as your default for all diffs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Batch File Templating</title>
+      <link>https://colin.is/blog/2016/batch-file-templating/</link>
+      <pubDate>Fri, 12 Feb 2016 21:40:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/batch-file-templating/</guid>
+      <description>&lt;p&gt;Say you have a batch file and you want to read in a template and replace some values in it and output the result as a separate file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;@echo off
+setlocal enabledelayedexpansion
+
+rem Reference to the template file and output
+set template=my-template.txt
+set outputFile=my-output.txt
+
+rem Set template values
+set name=Colin Bate
+set url=http://colin.is
+
+rem Read template and replace
+for /f &amp;quot;tokens=1,* delims=¶&amp;quot; %%G in ( &#39;&amp;quot;type %template%&amp;quot;&#39;) do (
+  set _temp=%%G
+  set _modified=!_temp:{{NAME}}=%name%!
+  set _modified=!_modified:{{URL}}=%url%!
+  echo !_modified! &amp;gt;&amp;gt; %outputFile%
+)
+
+endlocal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Great! So this will read &lt;code&gt;my-template.txt&lt;/code&gt; and replace any occurrences of &lt;code&gt;{{NAME}}&lt;/code&gt; with &amp;ldquo;Colin Bate&amp;rdquo; and &lt;code&gt;{{URL}}&lt;/code&gt; with my URL. It will save that result of that to &lt;code&gt;my-output.txt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note the use of &lt;code&gt;enabledelayedexpansion&lt;/code&gt; at the top, this allows the evaluation of the variables using &lt;code&gt;!&lt;/code&gt; inside the loop to work.&lt;/p&gt;
+
+&lt;p&gt;This works, but assume you are getting your name and url from somewhere else. And assume that the name you get on some run of this script is: &amp;ldquo;Pete (Maverick) Mitchell&amp;rdquo;. What will you see?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;Mitchell was unexpected at this time.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And while that might be true, it does cause a problem. The underlying issue is the parentheses in the name.&lt;/p&gt;
+
+&lt;p&gt;So what can you do about it, short of flying off without your wingman?&lt;/p&gt;
+
+&lt;p&gt;Add the following to your script after you read in the name and before you loop through the template.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;set name=!name:)=^^)!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What looks like an emoticon with two noses is actually another variable replacement escaping your closing parenthesis. Escaping values in variables is a tricky business as your escape characters can be consumed when used with &lt;code&gt;%&lt;/code&gt; based expansion.&lt;/p&gt;
+
+&lt;p&gt;If you want to preserve any &lt;code&gt;^&lt;/code&gt; characters that might be in your input, add this as well.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;set name=!name:^^=^^^^!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

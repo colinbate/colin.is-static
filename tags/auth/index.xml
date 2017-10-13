@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Auth on Colin Bate is...</title>
+    <link>https://colin.is/tags/auth/</link>
+    <description>Recent content in Auth on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jan 2016 19:28:06 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/auth/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-01-08</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-08/</link>
+      <pubDate>Fri, 08 Jan 2016 19:28:06 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-08/</guid>
+      <description>&lt;p&gt;Having integrated third party identity management into a web app recently, I thought I&amp;rsquo;d take a moment to compare some of the options available in this space.&lt;/p&gt;
+
+&lt;p&gt;Whatever type of app you are building, you are very likely to have users. Often you need to keep track of those users, and authenticate them when using your app. And not just authenticate, you need to collect some information about them and provide a way for them to change their passwords, or even reset them if forgotten. There is a lot of standard boilerplate surrounding user management that makes it ideal to be managed by a third party. Assuming you trust the third party with this information. But that is true of any cloud service.&lt;/p&gt;
+
+&lt;p&gt;Two years ago, &lt;a href=&#34;https://colin.is/Blogs/BateBlog/Lists/Posts/Post.aspx?ID=26&#34;&gt;I wrote a post&lt;/a&gt; which linked to a service that offers this type of functionality called UserApp. You can consider these offerings to be similar. Ultimately they are all trying to provide the same essential service; it is just how they deliver that makes the difference.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m seeing the main differences are in pricing model and integration support. The latter refers to how many identity providers you can access. Commonly these are &amp;ldquo;social&amp;rdquo; websites you can use to identify yourself. You&amp;rsquo;ve likely seen things like this before with a &lt;em&gt;Login with Facebook&lt;/em&gt; button when signing up to other websites. But it can also mean enterprise providers, like LDAP.&lt;/p&gt;
+
+&lt;p&gt;All of these options provide a free option with some restrictions or up to a certain threshold.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Auth0&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://auth0.com&#34;&gt;https://auth0.com&lt;/a&gt;&lt;br /&gt;
+Auth0 claims their free plan is production ready, which sound right since they provide up to 7,000 active users per month. They can host a username/password database for you and you can integrate with up to two social providers (out of the 30+ they support). They provide a drop-in component for your web and mobile apps called Lock which provides the UI for authentication and registration of users. Their documentation is good, and they have lots of sample apps and examples to guide your integration (which is pretty easy).&lt;/p&gt;
+
+&lt;p&gt;Disclosure: &lt;a href=&#34;https://colin.is/Blogs/BateBlog/Lists/Posts/Post.aspx?ID=149&#34;&gt;I&amp;rsquo;ve used Auth0 before&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stormpath&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stormpath.com/&#34;&gt;https://stormpath.com/&lt;/a&gt;&lt;br /&gt;
+Stormpath has a free developer plan, limited to 100,000 monthly API calls. They will host unlimited users and groups and can integrate with Facebook and Google. They only support those two at the moment. Stormpath also has some SDKs and example apps available which show integration in various languages. They don&amp;rsquo;t seem to have a pre-made UI for you to use, but they do offer a hosted login domain for some of the plans.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DailyCred&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.dailycred.com&#34;&gt;https://www.dailycred.com&lt;/a&gt;&lt;br /&gt;
+DailyCred has a pricing model similar to Auth0, in that they count active users per month. With DailyCred, your first 1000 are free each month. There is no other tiered offering, just pay per active user. They only support ten social identity providers, but they do provide a drop in UI for use locally, called Connect. Also, they have hosted pages to signup and sign in on their servers that will redirect you back to your app with a token. They also have an extensive user analytics offering that I haven&amp;rsquo;t seen mentioned anywhere else.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

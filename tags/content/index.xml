@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Content on Colin Bate is...</title>
+    <link>https://colin.is/tags/content/</link>
+    <description>Recent content in Content on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2015 15:13:20 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/content/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-12-18</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-18/</link>
+      <pubDate>Fri, 18 Dec 2015 15:13:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-18/</guid>
+      <description>&lt;p&gt;Continuing with my trend of grouping links by theme, I&amp;rsquo;m going to list a few &lt;a href=&#34;https://dropbox.com&#34;&gt;Dropbox&lt;/a&gt; based blogging/web hosting solutions. It is an appealing proposition, particularly for people who are non-technical to be able to update files on your computer and then have them &lt;em&gt;magically&lt;/em&gt; published for you.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m listing services with free options, but I&amp;rsquo;ll give honourable mention to a couple of others which may not. In general, some of these tools feel a bit simplified, but that makes sense since they are trying to be as easy to use as possible.&lt;/p&gt;
+
+&lt;p&gt;And in case you were wondering, these apps don&amp;rsquo;t get full access to your Dropbox content, only the app-specific folder that they set up as part of the linking process.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DropPages&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://droppages.com/&#34;&gt;http://droppages.com/&lt;/a&gt;&lt;br /&gt;
+DropPages allows you to edit text files with the (Markdown-based) content of your pages and takes care of adding the templates/themes around it. Everything gets compressed and minified as part of their processing, and you can host off of a subdomain of droppages.com for free. If you want a custom domain name, it costs £5/month for premium service.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pancake&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://pancake.io/&#34;&gt;https://pancake.io/&lt;/a&gt;&lt;br /&gt;
+Pancake also supports Markdown-based pages in a Dropbox folder, but also allows you to use HTML files as well. It also gives you more control over your templates. It supports adding metadata to your Markdown files. You can even edit your content files from the Pancake website if you aren&amp;rsquo;t able to access your Dropbox. It looks like Pancake is starting to get into hosting sites from Git repositories, passing things through a static site generator. You can also use a custom domain name for free. Otherwise, your site will be hosted on a subdomain of &lt;code&gt;pancakeapps.com&lt;/code&gt;. In fact, I believe that the entirety of Pancake&amp;rsquo;s services is free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Postach.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://postach.io/&#34;&gt;http://postach.io/&lt;/a&gt;&lt;br /&gt;
+OK, I&amp;rsquo;ll admit, this isn&amp;rsquo;t Dropbox-based, it is Evernote-based, but the offering and site are so compelling that I thought it would be worth mentioning. I&amp;rsquo;m not much of an Evernote person, but some people swear by it, well for them, this might be the best way to blog. Custom domains are available for free (to integrate, you still need to buy the domain), and creating a post is as easy as creating a new note in Evernote. It does seem more blog oriented versus general site oriented. There is a premium level you can pay for which offers multiple authors, password protection and the ability to have multiple sites per account.&lt;/p&gt;
+
+&lt;p&gt;Here are a couple of &amp;ldquo;honourable mention&amp;rdquo; links because I short changed you on Dropbox services. They don&amp;rsquo;t seem to have free options but are otherwise similar to the previous Dropbox services.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Site44 - &lt;a href=&#34;http://www.site44.com&#34;&gt;http://www.site44.com&lt;/a&gt; - starts at $4.95/month&lt;/li&gt;
+&lt;li&gt;Blot.im - &lt;a href=&#34;https://blot.im&#34;&gt;https://blot.im&lt;/a&gt; - $20/year&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-12-04</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-04/</link>
+      <pubDate>Fri, 04 Dec 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-04/</guid>
+      <description>&lt;p&gt;I know that I must have mentioned Markdown in passing in some of my past fun link posts, but today I wanted to focus on it a bit more with some tools specifically focused on Markdown.&lt;/p&gt;
+
+&lt;p&gt;For those not familiar with Markdown, I will try to reserve judgement and say that it is a simple text markup format with the goal of being easy and natural to read in its unprocessed form. Plain text emails are the inspiration for the syntax and it has been gaining traction over the past number of years to the point where a lot of content systems and other tools support the format. Recently work has been happening to try to formalize the specification of the syntax such that implementors of tools can provide consistent behaviour. You can find more information over at &lt;a href=&#34;http://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; and in addition to a specification, they provide a reference implementation as well.&lt;/p&gt;
+
+&lt;p&gt;As a relevant matter of interest, I write all of my Fun Links content in Markdown format, which I then convert into the various forms that I need it in for the web and emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dillinger&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://dillinger.io/&#34;&gt;http://dillinger.io/&lt;/a&gt;&lt;br /&gt;
+Dillinger is a simple split screen web app that lets your write Markdown on the left and see the resulting HTML rendering on the right. It is a pretty simple app that supports linking to Dropbox, Github, Google Drive and One Drive to load and save documents. I haven&amp;rsquo;t seen a way to customize the stylesheet for the rendering either with themes or custom CSS. But for a quick, simple editor that lets you check your general rendering it works great. It also supports exporting the content as HTML or PDF if you&amp;rsquo;d like.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://markable.in/&#34;&gt;http://markable.in/&lt;/a&gt;&lt;br /&gt;
+Markable is a similar web-based tool for editing Markdown, but unlike Dillinger, it requires that you create an account first. It integrates with Evernote and Tumblr in addition to Dropbox. Interestingly it allows for customization, but only of the input editor, not the output rendering. It adds Word document export to the usual HTML and PDF. One interesting and potentially useful feature is it allows you to import HTML documents and convert them to Markdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tools to support your markdown authoring&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&#34;&gt;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&lt;/a&gt;&lt;br /&gt;
+This link might be considered cheating, but this is a page with a list of links to other Markdown-related resources. I was going to link to some Mac tools and some Windows tools, but the ones I wanted to link to are on this page already. As it turns out the two sites I write about above are not. If you want to get familiar with the various tools in the Markdown ecosystem, then this should get you started.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-11-27</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-27/</link>
+      <pubDate>Fri, 27 Nov 2015 14:13:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-27/</guid>
+      <description>&lt;p&gt;Today my links are for various image/document services each of which fills slightly different needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cloudinary&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cloudinary.com/&#34;&gt;http://cloudinary.com/&lt;/a&gt;&lt;br /&gt;
+A cloud image/video service that provides storage and CDN hosting in addition to manipulation all with API access. You can send files to it from your web apps directly from the browser, no need to deal with storing end user uploads yourself. You can have it perform various manipulations as well, including face detection for thumbnail creation. It can even fetch your users&amp;rsquo; profile pictures from some common sites. Offers a very generous free tier. I&amp;rsquo;ve been using Cloudinary myself for a short time to experiment with hosting images for my blog. The UI is full featured, but I would say a bit clunky. I can&amp;rsquo;t argue with the value though.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ImgIX&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.imgix.com&#34;&gt;https://www.imgix.com&lt;/a&gt;&lt;br /&gt;
+ImgIX is an image processing service that allows you to deliver device-specific and manipulated images very quickly. They don&amp;rsquo;t host the images directly; those would come from a location you provide (S3, public web location, etc.). They also don&amp;rsquo;t seem to have a free tier, which is unfortunate for any hobby sites/applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smallpdf&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://smallpdf.com/&#34;&gt;http://smallpdf.com/&lt;/a&gt;&lt;br /&gt;
+Smallpdf, as the name suggests, deals with PDF files. They provide online services to compress, split, merge, unlock and convert PDF files. I used their compress tool to optimize a 1.1 MB PDF into a 58 KB file. Impressive. They don&amp;rsquo;t seem to have an API, you need to drag and drop files onto their pages, but the site looks and works smoothly, and the whole process is very easy. This probably won&amp;rsquo;t replace Acrobat if you are doing serious PDF work, but if you need the occasional PDF compressed or converted, then this tool is a great resource.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-01-23</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-01-23/</link>
+      <pubDate>Fri, 23 Jan 2015 16:29:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-01-23/</guid>
+      <description>&lt;p&gt;Happy Friday everyone&lt;/p&gt;
+
+&lt;p&gt;Today there is a bit of a customer engagement theme to my links.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apostle.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://apostle.io/&#34;&gt;http://apostle.io/&lt;/a&gt;&lt;br /&gt;
+Manage your transactional emails without needing a developer. Does your web app send emails? Would you like to better manage and track engagement with these emails? Then check out Apostle.io.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cloudcannon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cloudcannon.com/&#34;&gt;http://cloudcannon.com/&lt;/a&gt;&lt;br /&gt;
+A CMS for static sites without the CMS. I haven&amp;rsquo;t tried this yet personally, but I know I&amp;rsquo;ve created sites for people in the past where this would have been ideal. Perhaps now you can stop making edits to sites of family members :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sniply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://snip.ly/&#34;&gt;http://snip.ly/&lt;/a&gt;&lt;br /&gt;
+If you share a lot of content and links, then perhaps it would be nice to be able to embed a call to action in those links bringing people back to you or your products/services, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

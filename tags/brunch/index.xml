@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brunch on Colin Bate is...</title>
+    <link>https://colin.is/tags/brunch/</link>
+    <description>Recent content in Brunch on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jun 2015 15:13:44 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/brunch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun links 2015-06-05</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-05/</link>
+      <pubDate>Fri, 05 Jun 2015 15:13:44 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-05/</guid>
+      <description>&lt;p&gt;SQL tools, build tools and a little something functional for my fans of that genre. Please enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wagon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1MsU8q5&#34;&gt;http://www.wagonhq.com/&lt;/a&gt;&lt;br /&gt;
+Wagon claims to be a modern editor and analysis tool for SQL. Supports a growing list of database types, with SQL Server coming soon apparently. It runs on Linux, Mac, and Windows. Very early days for this project, so this might be something to watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lazy-array&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GoQFKc&#34;&gt;http://oli.me.uk/2015/05/31/lazy-arrays-in-javascript/&lt;/a&gt;&lt;br /&gt;
+Lazy array is a JavaScript library that was modeled after lazy sequences in Clojure. Essentially an array of values which is represented algorithmically and only populated when specific values are needed. An interested concept and I linked to the author&amp;rsquo;s blog post where he discusses possible UI use cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brunch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1FBQepc&#34;&gt;http://brunch.io/&lt;/a&gt;&lt;br /&gt;
+Brunch is a web build tool that has been around for a long time by web standards but hasn&amp;rsquo;t received the fame of some newer tools. It emphasizes speed and conventions over configuration to make the build process less of a burden to your day to day. Now that I&amp;rsquo;m working with ES6 and find myself transpiling more often, I might look into just how fast it is because it could make some of my projects easier to work with, maybe. It is a pluggable system, which provides some skeletons that are essentially just project templates.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

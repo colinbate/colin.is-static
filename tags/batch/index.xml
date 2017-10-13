@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Batch on Colin Bate is...</title>
+    <link>https://colin.is/tags/batch/</link>
+    <description>Recent content in Batch on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Feb 2016 21:40:00 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/batch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Batch File Templating</title>
+      <link>https://colin.is/blog/2016/batch-file-templating/</link>
+      <pubDate>Fri, 12 Feb 2016 21:40:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/batch-file-templating/</guid>
+      <description>&lt;p&gt;Say you have a batch file and you want to read in a template and replace some values in it and output the result as a separate file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;@echo off
+setlocal enabledelayedexpansion
+
+rem Reference to the template file and output
+set template=my-template.txt
+set outputFile=my-output.txt
+
+rem Set template values
+set name=Colin Bate
+set url=http://colin.is
+
+rem Read template and replace
+for /f &amp;quot;tokens=1,* delims=¶&amp;quot; %%G in ( &#39;&amp;quot;type %template%&amp;quot;&#39;) do (
+  set _temp=%%G
+  set _modified=!_temp:{{NAME}}=%name%!
+  set _modified=!_modified:{{URL}}=%url%!
+  echo !_modified! &amp;gt;&amp;gt; %outputFile%
+)
+
+endlocal
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Great! So this will read &lt;code&gt;my-template.txt&lt;/code&gt; and replace any occurrences of &lt;code&gt;{{NAME}}&lt;/code&gt; with &amp;ldquo;Colin Bate&amp;rdquo; and &lt;code&gt;{{URL}}&lt;/code&gt; with my URL. It will save that result of that to &lt;code&gt;my-output.txt&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note the use of &lt;code&gt;enabledelayedexpansion&lt;/code&gt; at the top, this allows the evaluation of the variables using &lt;code&gt;!&lt;/code&gt; inside the loop to work.&lt;/p&gt;
+
+&lt;p&gt;This works, but assume you are getting your name and url from somewhere else. And assume that the name you get on some run of this script is: &amp;ldquo;Pete (Maverick) Mitchell&amp;rdquo;. What will you see?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-plain&#34;&gt;Mitchell was unexpected at this time.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And while that might be true, it does cause a problem. The underlying issue is the parentheses in the name.&lt;/p&gt;
+
+&lt;p&gt;So what can you do about it, short of flying off without your wingman?&lt;/p&gt;
+
+&lt;p&gt;Add the following to your script after you read in the name and before you loop through the template.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;set name=!name:)=^^)!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What looks like an emoticon with two noses is actually another variable replacement escaping your closing parenthesis. Escaping values in variables is a tricky business as your escape characters can be consumed when used with &lt;code&gt;%&lt;/code&gt; based expansion.&lt;/p&gt;
+
+&lt;p&gt;If you want to preserve any &lt;code&gt;^&lt;/code&gt; characters that might be in your input, add this as well.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bat&#34;&gt;set name=!name:^^=^^^^!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Good luck!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

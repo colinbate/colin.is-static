@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Es2015 on Colin Bate is...</title>
+    <link>https://colin.is/tags/es2015/</link>
+    <description>Recent content in Es2015 on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Mar 2015 13:10:09 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/es2015/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-03-27</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-03-27/</link>
+      <pubDate>Fri, 27 Mar 2015 13:10:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-03-27/</guid>
+      <description>&lt;p&gt;Sorry for the lack of links being sent out lately, my backlog was looking pretty bare for a bit and I wasn&amp;rsquo;t really getting much time to do anything about it.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, these links will make up for it. A bit of variety today to wean people back into it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;StackEdit&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://stackedit.io/&#34;&gt;https://stackedit.io/&lt;/a&gt;&lt;br /&gt;
+An online markdown editor which uses the same engine as StackOverflow. Allows you to access your various cloud files and can publish content to various blogs as well as export to PDF. Supports GFM, MathJax and even flow and sequence diagrams.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Babel&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://babeljs.io&#34;&gt;https://babeljs.io&lt;/a&gt;&lt;br /&gt;
+Formerly 6to5, Babel is an ECMAScript 6 transpiler allowing you to use ES6 features with today&amp;rsquo;s ES5 compatible browsers. In particular they have a nice section on their site which discusses the new ES6 features: &lt;a href=&#34;https://babeljs.io/docs/learn-es6&#34;&gt;https://babeljs.io/docs/learn-es6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Grammarly&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.grammarly.com/&#34;&gt;https://www.grammarly.com/&lt;/a&gt;&lt;br /&gt;
+A grammar and contextual spell checker as a service. Works in your browser for free, or you can get a premium account with extra grammar rules and an MS Office plugin. Never make embarrassing grammar mistakes in emails, posts, or comments again. In fact, Grammarly saved me from a few mistakes in this very post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

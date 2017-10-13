@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microjs on Colin Bate is...</title>
+    <link>https://colin.is/tags/microjs/</link>
+    <description>Recent content in Microjs on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jan 2015 00:01:09 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/microjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-01-16</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-01-16/</link>
+      <pubDate>Sat, 17 Jan 2015 00:01:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-01-16/</guid>
+      <description>&lt;p&gt;Welcome to 2015 and what will hopefully be a year of technological excitement.&lt;/p&gt;
+
+&lt;p&gt;Hopefully I can start things off relatively well with a couple of micro JavaScript libraries that I&amp;rsquo;ve found that I think are exciting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;page.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://visionmedia.github.io/page.js/&#34;&gt;http://visionmedia.github.io/page.js/&lt;/a&gt;&lt;br /&gt;
+There are lots of JavaScript frameworks which provide routing capabilities, but what if you only need a router, and not a framework. Then take a look at page.js which is just that in a tiny package. Only 1.2Kb with a syntax which will be familiar to most users of other JS based routers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;aja.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://krampstudio.github.io/aja.js/&#34;&gt;http://krampstudio.github.io/aja.js/&lt;/a&gt;&lt;br /&gt;
+Ajax without the XML. A small library which supports JSON and JSONP requests using a fluent API. Makes a nice little REST client.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slang&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/devongovett/slang&#34;&gt;https://github.com/devongovett/slang&lt;/a&gt;&lt;br /&gt;
+A collection of JavaScript string functions. Some are things I find myself wanting from time to time so it may be nice to have on hand.&lt;/p&gt;
+
+&lt;p&gt;Happy New Year&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.Net on Colin Bate is...</title>
+    <link>https://colin.is/tags/index.net/</link>
+    <description>Recent content in .Net on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Jul 2015 15:09:00 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-07-03</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-07-03/</link>
+      <pubDate>Fri, 03 Jul 2015 15:09:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-07-03/</guid>
+      <description>&lt;p&gt;In the interest of giving people something they want to hear, I&amp;rsquo;m going to focus on some interesting NuGet packages for .NET today. Again, like always, I post these links as being potentially interesting, and not as an endorsement or anything like that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hangfire&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JHxnxO&#34;&gt;http://hangfire.io&lt;/a&gt;&lt;br /&gt;
+Hangfire is a background task manager for .NET applications. Backed by persistent storage, you can use it from any type of .NET app. Supports delayed and recurring tasks as well. It is open-source, but there are commercial options with support and &amp;ldquo;pro&amp;rdquo; features.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Simple Injector&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GUeBjo&#34;&gt;https://simpleinjector.org&lt;/a&gt;&lt;br /&gt;
+Simple Injector is as the name implies a simple dependency injection library that is a lot faster than some of the bigger names in this space. It is also quite full-featured compared to some of the other strictly performance-based containers. It also claims to provide powerful diagnostics to help sort out configuration issues. I know that would be a useful functionality as I&amp;rsquo;ve patched other IoC libraries to get even the most basic diagnostic information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LINQ to Twitter&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1IyK7bk&#34;&gt;https://github.com/JoeMayo/LinqToTwitter&lt;/a&gt;&lt;br /&gt;
+LINQ to Twitter is an interesting use of the LINQ querying style to communicate with the Twitter API. If you are working with Twitter or the Twitter API in your application, then this might be a more expressive way of working with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-06-26</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-26/</link>
+      <pubDate>Fri, 26 Jun 2015 15:21:35 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-26/</guid>
+      <description>&lt;p&gt;This week I&amp;rsquo;m doing something a bit different, this week my links are all to videos outlining some new features and functionality surrounding Visual Studio 2015 and C# 6.&lt;/p&gt;
+
+&lt;p&gt;Most of the people reading this use Visual Studio on a day to day basis, so it felt like a good subject for some fun links that are hopefully also educational.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Studio 2015: Building JavaScript Apps with AngularJs&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GNXX7d&#34;&gt;https://www.youtube.com/watch?v=EO9Ck9vUhmo&lt;/a&gt;&lt;br /&gt;
+Just because I&amp;rsquo;m focusing on Visual Studio doesn&amp;rsquo;t mean I can&amp;rsquo;t also focus on the web. This video demonstrates some of the new web-focused features of VS 2015, specifically those geared toward the popular Angular framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&amp;rsquo;s New In C# 6.0&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JnOV4F&#34;&gt;https://www.youtube.com/watch?v=KvW0NCFuXLg&lt;/a&gt;&lt;br /&gt;
+A simple condensed video that shows how new language constructs can simplify your code and reduce the amount of boilerplate that is needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Studio: An IDE For All Your Modern Devices &amp;amp; Services&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1fJEvj4&#34;&gt;https://www.youtube.com/watch?v=L7uaHQydXFE&lt;/a&gt;&lt;br /&gt;
+This video talks about the IDE itself and how it fits in better with your modern life. From integration with various services to better support for touch devices and multiple monitors, find out what you have to look forward to when moving to VS 2015.&lt;/p&gt;
+
+&lt;p&gt;And as a bonus link (which is not a video) I&amp;rsquo;ll send you to look at &lt;strong&gt;Visual Studio Code&lt;/strong&gt;, which is a new light(er) weight code editor designed for web based applications. It has many of the things you may like from Visual Studio without all of the extra features which you may not need. Plus it works on Linux and Mac as well as Windows.
+&lt;a href=&#34;http://bit.ly/1J9V6pW&#34;&gt;https://www.visualstudio.com/en-us/products/code-vs.aspx&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

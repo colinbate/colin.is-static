@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ng2 on Colin Bate is...</title>
+    <link>https://colin.is/tags/ng2/</link>
+    <description>Recent content in Ng2 on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2016 17:11:07 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/ng2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-16</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-16/</link>
+      <pubDate>Fri, 16 Sep 2016 17:11:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-16/</guid>
+      <description>&lt;p&gt;To mark the occasion of the release of Angular 2 (finally), I thought that an Angular 2 themed set of links would be appropriate. And since I&amp;rsquo;ve been heavily steeped in React lately, it also gave me a chance to come up for air a little bit and see what is going on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://angular.io&#34;&gt;https://angular.io&lt;/a&gt;&lt;br /&gt;
+Can&amp;rsquo;t talk about Angular 2 without a link to the official page itself. This site is different to the one for Angular 1 and contains documentation and tutorials as you would expect. For those not subjected to my Angular 2 evangelism yet, it is a bit of a departure from its predecessor. It follows the more structured component-based approach which is very popular at the moment, and it brings some other technologies to the table with it. In particular takes particular advantage of TypeScript to support dependency injection and metadata. It also incorporates the concept of Observables via the &lt;code&gt;rxjs&lt;/code&gt; package. You don&amp;rsquo;t have to use either in your applications, but the community is embracing them, and both are quite powerful additions if you take the time to learn them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2 Courses @ Egghead&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/building-angular-2-components&#34;&gt;https://egghead.io/courses/building-angular-2-components&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/intro-to-angular-2-router&#34;&gt;https://egghead.io/courses/intro-to-angular-2-router&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/angular-2-dependency-injection-di-explained&#34;&gt;https://egghead.io/courses/angular-2-dependency-injection-di-explained&lt;/a&gt;&lt;br /&gt;
+Three links for the price of one. There are three new Angular 2 courses available at Egghead which are completely free, at least for the time being. So unless you have a Pro Egghead account, or would like to, then I&amp;rsquo;d recommend checking out those courses sooner rather than later if you want to learn about Angular 2. That said, I do recommend a Pro Egghead account if you are interested in learning about the hottest web technologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update: They are no longer free apart from the intro videos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ng2-bootstrap&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://valor-software.com/ng2-bootstrap/&#34;&gt;http://valor-software.com/ng2-bootstrap/&lt;/a&gt;&lt;br /&gt;
+Given the popularity of Bootstrap for quickly bringing a UI to life, I wanted to mention the library which brings Bootstrap to Angular 2 using components and doesn&amp;rsquo;t require any of the out-of-the-box Bootstrap JavaScript. It provides components for the usual suspects like the accordion, date picker, and tabs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Angular 2 Error: No Directive annotation found</title>
+      <link>https://colin.is/blog/2016/angular2-error-no-directive/</link>
+      <pubDate>Thu, 24 Mar 2016 17:01:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/angular2-error-no-directive/</guid>
+      <description>&lt;p&gt;I thought I&amp;rsquo;d start keeping track of all of the errors that I work through as I work on several Angular 2 based projects. Many of these are not issues with Angular 2 per se, but perhaps your build tooling or even something silly you&amp;rsquo;ve done in your code. In any case, if it results in a semi-cryptic error in the console from Angular, then I&amp;rsquo;ll try to add it to my site here.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ll also try to write about my more positive experiences as well. :)&lt;/p&gt;
+
+&lt;p&gt;In this case, the error I was seeing was &lt;code&gt;No Directive annotation found on &amp;lt;Type&amp;gt;&lt;/code&gt;, where Type was a directive from another third party library.&lt;/p&gt;
+
+&lt;p&gt;This error happened just after I had decided to try the latest beta from Angular 2 and also update the third party library as well. The third party library claimed to have a dependency on a particular previous beta version, but I knew it would be okay, so I ignored the errors about unmet peer dependencies.&lt;/p&gt;
+
+&lt;p&gt;After running into this issue at runtime, I tried to debug the &lt;code&gt;directive_resolver&lt;/code&gt; file and found that the type in question had the correct metadata and claimed to be of the right type (Angular 2 does an &lt;code&gt;instanceof&lt;/code&gt; comparison). So I had an object claiming to be of type &lt;code&gt;DirectiveMetadata&lt;/code&gt; and I had the &lt;code&gt;DirectiveMetadata&lt;/code&gt; type itself, but &lt;code&gt;instanceof&lt;/code&gt; was failing.&lt;/p&gt;
+
+&lt;p&gt;It turns out that NPM had installed a separate older version of Angular 2 specifically for the third party library, and that was why the types didn&amp;rsquo;t match up. I deleted the library&amp;rsquo;s &lt;code&gt;node_modules&lt;/code&gt; folder, and all was well.&lt;/p&gt;
+
+&lt;p&gt;This issue leads me to a broader rant about peer dependencies. This particular library listed &lt;code&gt;angular2&lt;/code&gt; in both &lt;code&gt;peerDependencies&lt;/code&gt; and &lt;code&gt;dependencies&lt;/code&gt; lists. I agree with the former; the latter is what causes this problem. With NPM 3, it will complain about unmet peer dependencies, but it won&amp;rsquo;t do anything about it. That is what I was seeing. However, if it is also a normal dependency it will install a private copy of it. That doesn&amp;rsquo;t work so well for an application framework dependency like this.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this will help sort out any similar issues you see like this. What you can do from this point is up to you. Likely things will get sorted out with your third party before long.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

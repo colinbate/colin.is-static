@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teamcity on Colin Bate is...</title>
+    <link>https://colin.is/tags/teamcity/</link>
+    <description>Recent content in Teamcity on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Feb 2014 21:21:52 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/teamcity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mercurial Bookmarks in TeamCity</title>
+      <link>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</link>
+      <pubDate>Wed, 05 Feb 2014 21:21:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</guid>
+      <description>&lt;p&gt;This is just a note to help those people looking for help on this and hopefully prevent some banging of heads into walls.&lt;/p&gt;
+
+&lt;p&gt;To use bookmarks fully with &lt;a href=&#34;http://www.jetbrains.com/teamcity/&#34;&gt;TeamCity&lt;/a&gt;, you need TeamCity 8 &lt;strong&gt;and&lt;/strong&gt; Mercurial 2.4 installed on the server.&lt;/p&gt;
+
+&lt;p&gt;New installations shouldn&amp;rsquo;t have a problem, but if you&amp;rsquo;ve upgraded to TC8, then do yourself a favour and &lt;a href=&#34;http://mercurial.selenic.com/downloads/&#34;&gt;upgrade your Mercurial as well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have an old version of Mercurial, you may see an exception like this if you try to set your default branch to be a bookmark.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jetbrains.buildServer.vcs.VcsRootVcsException: Cannot find revision of the default branch &#39;&amp;lt;bookmark name&amp;gt;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You also won&amp;rsquo;t be able to select any branches in the custom run dialog.&lt;/p&gt;
+
+&lt;p&gt;It will be very frustrating. :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

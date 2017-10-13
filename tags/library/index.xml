@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Library on Colin Bate is...</title>
+    <link>https://colin.is/tags/library/</link>
+    <description>Recent content in Library on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Jun 2016 15:04:11 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/library/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-06-10</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-06-10/</link>
+      <pubDate>Fri, 10 Jun 2016 15:04:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-06-10/</guid>
+      <description>&lt;p&gt;Since I&amp;rsquo;m in the middle of delivering a React training course to some of my colleagues, I thought why not highlight something React-related.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m starting off with some React-inspired alternatives to React. The concept of virtual DOM comparisons and one-way data flow has become very popular in the JavaScript world, so there has been a slew of copycat libraries emerge. Some are almost drop-in replacements, others take the concepts and run in a different direction.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inferno&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/trueadm/inferno&#34;&gt;https://github.com/trueadm/inferno&lt;/a&gt;&lt;br /&gt;
+Inferno claims to be one of, if not &lt;em&gt;the&lt;/em&gt; fastest virtual DOM libraries out there. It does this by only &amp;ldquo;diffing&amp;rdquo; the parts of the DOM that are potentially dynamic. The result is a React-like library which performs even better on low-power devices like phones and tablets. It has a Babel plugin as well, so you can write your components using the same JSX syntax you may be familiar with, and have it compiled to optimized Inferno virtual DOM.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;React-lite&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/Lucifier129/react-lite&#34;&gt;https://github.com/Lucifier129/react-lite&lt;/a&gt;&lt;br /&gt;
+React-lite is a drop-in replacement for React on the browser which optimizes for file size. It is less than 20% of the size of React. Obviously, it makes some sacrifices to do that, and certain development niceties of React didn&amp;rsquo;t make the cut, like PropTypes and support for the React dev-tools. It also doesn&amp;rsquo;t support rendering on the server. In all of these cases, you can use the full React if necessary.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Preact&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://preactjs.com/&#34;&gt;https://preactjs.com/&lt;/a&gt;&lt;br /&gt;
+Preact is a slightly less compatible, but even smaller version of React, weighing in at around 3kb when fully optimized. It only supports the newer ES2015 class and stateless components. It too is missing PropTypes, but otherwise is quite compatible with an extra compatibility package available if you need it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

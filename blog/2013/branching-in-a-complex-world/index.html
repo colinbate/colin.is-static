@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Colin Bate is... Branching in a Complex World</title>
+    <meta name="generator" content="Hugo 0.14" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Colin Bate">
+    
+    
+    <link rel="icon" href="https://colin.is/favicon.ico">
+    <link rel="apple-touch-icon" href="https://colin.is//apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://colin.is/css/style.css">
+    <link rel="stylesheet" href="https://colin.is/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://colin.is/css/oa.css">
+    <link rel="stylesheet" href="https://colin.is/fancybox/jquery.fancybox.css">
+    <meta property="og:title" content="Branching in a Complex World" />
+<meta property="og:description" content="Sometimes you aren&rsquo;t in a completely clean state when you want to take a branch of your repository. I&rsquo;ve said before to people not to attempt it if you aren&rsquo;t sure how because the risk of error is non-negligible. That said anything is possible, and I&rsquo;d like to document some of the advanced cases somewhere in case it is useful to someone. There are number of possible branching strategies, and I&rsquo;m not here to promote one or another, but if you create named branches in mercurial, this should be applicable." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://colin.is/blog/2013/branching-in-a-complex-world/" />
+
+
+<meta property="og:updated_time" content="2013-10-18T23:23:33&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Branching in a Complex World">
+<meta itemprop="description" content="Sometimes you aren&rsquo;t in a completely clean state when you want to take a branch of your repository. I&rsquo;ve said before to people not to attempt it if you aren&rsquo;t sure how because the risk of error is non-negligible. That said anything is possible, and I&rsquo;d like to document some of the advanced cases somewhere in case it is useful to someone. There are number of possible branching strategies, and I&rsquo;m not here to promote one or another, but if you create named branches in mercurial, this should be applicable.">
+
+
+<meta itemprop="dateModified" content="2013-10-18T23:23:33&#43;00:00" />
+<meta itemprop="wordCount" content="1027">
+
+
+
+<meta itemprop="keywords" content="dev,fun-links,meta,angular-2,building-a-song-request-app,.net,ajax,app,apps,auth,auth0,batch,brunch,ci,content,db,dns,electron,email,es2015,finance,fonts,frp,ghost,hg,hook.io,ide,jwt,lang,learning,libraries,library,markdown,meta,microjs,ng2,node,react,redux,sdlc,series,service,teamcity,template,tools,troubleshoot,vs," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Branching in a Complex World"/>
+<meta name="twitter:description" content="Sometimes you aren&rsquo;t in a completely clean state when you want to take a branch of your repository. I&rsquo;ve said before to people not to attempt it if you aren&rsquo;t sure how because the risk of error is non-negligible. That said anything is possible, and I&rsquo;d like to document some of the advanced cases somewhere in case it is useful to someone. There are number of possible branching strategies, and I&rsquo;m not here to promote one or another, but if you create named branches in mercurial, this should be applicable."/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400">
+    <link rel="stylesheet" href="https://colin.is/css/colin.is.css">
+</head>
+<body>
+<div class="container">
+
+<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://colin.is/" id="logo"><i class="logo" style="background-image: url('https://colin.is/img/ng-cb.svg')"></i><span class="site-title">Colin Bate is...</span></a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://colin.is/">Home</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://colin.is/blog/">Blogging</a>
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" data-src="//res.cloudinary.com/colinbate/image/upload/c_scale,r_max,w_128,dpr_auto/v1447876600/colin-bate-bowtie-sq_muwa2x.jpg"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="q" value="site:https://colin.is/">
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://colin.is/">Home</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://colin.is/blog/">Blogging</a></td>
+          
+          
+
+          
+
+          
+          
+          
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="q" value="site:https://colin.is/">
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+
+<div id="container">
+   <div class="outer wide-main">
+    <section id="main">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+        <div class="article-inner">
+            
+
+            <header class="article-header">
+    <a href="https://colin.is/blog/2013/branching-in-a-complex-world/">
+    <h1 class="article-title" itemprop="name">
+        Branching in a Complex World
+    </h1>
+    </a>
+    <div class="article-meta">
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2013-10-18 23:23:33 &#43;0000 UTC" itemprop="datePublished">2013-10-18</time>
+            &middot;
+            1027
+            words
+            &middot;
+            5
+            minute read
+        </div>
+        <div class="article-category">
+            
+            <i class="fa fa-folder"></i>
+            <a class="article-category-link" href="https://colin.is/categories/dev">Dev</a>
+            
+        </div>
+        
+    </div>
+</header>
+            <div class="article-entry" itemprop="articleBody">
+                
+
+<p>Sometimes you aren&rsquo;t in a completely clean state when you want to take a branch of your repository. I&rsquo;ve said before to people not to attempt it if you aren&rsquo;t sure how because the risk of error is non-negligible. That said anything is possible, and I&rsquo;d like to document some of the advanced cases somewhere in case it is useful to someone.</p>
+
+<p>There are number of possible branching strategies, and I&rsquo;m not here to promote one or another, but if you create named branches in mercurial, this should be applicable. This example is assuming you are branching from <code>default</code>, but you can branch from another branch if that floats your boat.</p>
+
+<h2 id="tidy-local-changes:2f7303b1473f767b3121185aa341ae98">Tidy local changes</h2>
+
+<p>If you have uncommitted local files, your options are to either shelve the changes or commit them because you won&rsquo;t be able to switch around branches with loose changes.</p>
+
+<p>Generally I&rsquo;m a big fan of the command line for my mercurial stuff, but there are a couple places where I use the TortoiseHg or SourceTree UIs: committing selectively, and shelving.</p>
+
+<p>You can commit an individual file with something like this:</p>
+
+<pre><code>hg ci -m &quot;Message&quot; path/to/file.txt
+</code></pre>
+
+<p>Don&rsquo;t worry if you don&rsquo;t want to push this commit yet, you don&rsquo;t need to. In fact given that is a more tricky situation, that is my assumption for this article.</p>
+
+<p>As for shelving there are various methods and perhaps I&rsquo;ll talk about it in another article, but for now I&rsquo;d recommend the graphical tools.</p>
+
+<h2 id="navigating-to-your-branch-point:2f7303b1473f767b3121185aa341ae98">Navigating to your branch point</h2>
+
+<p>If working with other people, it is always a good idea to pull to see what the current state of the repo is. Then you can determine where you need to be to make the branch.</p>
+
+<pre><code>hg pull &lt;alias/url/path&gt;
+hg up default # or tip or a bookmark
+</code></pre>
+
+<p>Basically you want to be updated to the most recent changeset that is meant to be in the new branch. If you have a local changeset which isn&rsquo;t meant to be included in this branch, you will need to update to either a different head, or whichever ancestor is supposed to be included.</p>
+
+<p>You can run the <code>log</code> command to check the history, or use a graphical tool to help visualize it.</p>
+
+<pre><code>hg log -l 10 -G
+</code></pre>
+
+<p>This will show you the last ten changesets with the graph beside them. The ASCII graph is pretty cool, but not always the clearest if you have a lot going on. You can also use <code>hg parents</code> to determine the immediate ancestors of a revision or file.</p>
+
+<p>Another command to help visualize the topology of your repository is <code>heads</code>.</p>
+
+<pre><code>hg heads .
+</code></pre>
+
+<p>This will show you the heads (which are changesets with no children) in your current branch. If you have local changesets to exclude from the branch, you will end up with an extra head in <code>default</code> after this. Just update to the last changeset you do want to branch.</p>
+
+<h2 id="creating-a-new-branch:2f7303b1473f767b3121185aa341ae98">Creating a new branch</h2>
+
+<p>After you have updated to the correct changeset, all you need to do is name your branch and commit that branch into history. The <code>branch</code> command will warn you about the permanence of branches. They are kind of a big deal.</p>
+
+<pre><code>hg branch BRANCH_NAME
+hg commit -m &quot;Create BRANCH_NAME branch&quot;
+</code></pre>
+
+<p>Now you have created the branch, you could say you are done, but it is good practice to merge this back into <code>default</code> particularly if others will be pulling. If you leave the tip in your new branch, it is possible that someone else&rsquo;s tool might decide to update to tip even though it isn&rsquo;t in the same branch.</p>
+
+<p>If you aren&rsquo;t interested in pushing you local changeset yet, even into default, then you&rsquo;ll need to merge back to the same changeset that you branched from. After updating to <code>default</code>, update to the correct parent changeset.</p>
+
+<pre><code>hg up default
+# possibly updating to some other changeset in default
+hg merge BRANCH_NAME
+hg commit -m &quot;Merged BRANCH_NAME into default&quot;
+</code></pre>
+
+<p>So now you have your new branch, how do you share it with the world?</p>
+
+<h2 id="publishing-branches:2f7303b1473f767b3121185aa341ae98">Publishing branches</h2>
+
+<p>There really isn&rsquo;t a lot of magic around pushing branches, you just need to add <code>--new-branch</code> to your push command.</p>
+
+<p>However, going back to the beginning, we have local changesets that we don&rsquo;t want to push, how do we deal with that? Using the commands mentioned before, you should be able to see that you have multiple heads in <code>default</code> now.</p>
+
+<p>When in doubt, use <code>outgoing</code>.</p>
+
+<pre><code>hg out
+</code></pre>
+
+<p>This should show your branch creation and merge back into default, but it will also show that local changeset that you don&rsquo;t want to publish yet. However, <code>out</code> like <code>push</code> accepts a <code>-r</code> parameter for passing changesets (aka. revisions). When you push a particular changeset, you are pushing only it and its ancestors, but not any other heads.</p>
+
+<p>As a shortcut you can use a period <code>.</code> to reference the current working copy/changeset. So you can use it to push only changesets that are ancestors of your current state.</p>
+
+<pre><code>hg push -r . &lt;alias/url/path&gt;
+</code></pre>
+
+<p>Of course, if you aren&rsquo;t updated to the changesets you want to push, you can specify the id or number directly instead of a period. Again, try <code>out</code> first if you are unsure.</p>
+
+<p>At some point you may want to have divergent branches, or a branch that cannot merge back into default. If you want, you can push multiple heads at the same time.</p>
+
+<pre><code>hg push -r . -r BRANCH_NAME &lt;alias/url/path&gt;
+</code></pre>
+
+<p>As you can see, <code>-r</code> can be specified multiple times.</p>
+
+<h2 id="conclusions:2f7303b1473f767b3121185aa341ae98">Conclusions</h2>
+
+<p>We&rsquo;ve learned how to create a new branch regardless of how much stuff we are in the middle of. No longer should anyone hear: &ldquo;I&rsquo;m not ready to push yet&rdquo; as an excuse why they can&rsquo;t make a branch or fix a bug. The concepts, particularly around navigating to and pushing particular changesets, are applicable in both scenarios.</p>
+
+<p>Using a distributed version control system can be a great way to manage code and/or other written material for your project. They are quite flexible and powerful, but with that comes great responsibility as they say.</p>
+
+<p>I will try and share other tidbits of mercurial fun as I think if them.</p>
+
+            </div>
+            
+            <footer class="article-footer">
+    <a data-url="https://colin.is/blog/2013/branching-in-a-complex-world/" data-id="2f7303b1473f767b3121185aa341ae98" class="article-share-link">
+        Share
+    </a>
+    
+</footer>
+        </div>
+
+        
+<nav id="article-nav">
+    
+    <a href="https://colin.is/blog/2013/the-perfect-excuse/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">The Perfect Excuse</div>
+    </a>
+    
+
+    
+    <a href="https://colin.is/blog/2013/fun-links-2013-11-15/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Fun Links 2013-11-15</div>
+    </a>
+    
+</nav>
+
+
+    </article>
+    <section id="comments">
+        <p>There are no comments available on this site. If you want to respond then you can write your own blog article and send me the link via <a href="https://twitter.com/rhuvok" target="_blank">twitter</a>. If there is an issue with this article or the site in general, you can open an issue on <a href="https://github.com/colinbate/colin.is-static/issues" target="_blank">Github</a></p>
+    </section>
+
+</section>
+
+    <aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      <img id="avatar" data-src="//res.cloudinary.com/colinbate/image/upload/c_scale,r_max,w_128,dpr_auto/v1447876600/colin-bate-bowtie-sq_muwa2x.jpg">
+      <h2 id="name">Colin Bate</h2>
+      <h3 id="title">Developer - Father - Husband</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Bermuda</span>
+      
+          <a id="follow" href="https://bitbucket.org/colinbate">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        80
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        42
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="contact-info profile-block">
+      <table class="contact-list">
+        <tr>
+          
+<td><a href="//github.com/colinbate" target="_blank" title="Github"><i class="fa fa-github"></i></a></td>
+
+
+
+<td><a href="//bitbucket.com/colinbate" target="_blank" title="Bitbucket"><i class="fa fa-bitbucket"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//flickr.com/photos/rhuvok" target="_blank" title="Flickr"><i class="fa fa-flickr"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/rhuvok" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    <aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                
+                <div class="item-thumbnail">
+                    <a href="https://colin.is/blog/2016/fun-links-2016-09-23/" class="thumbnail funlink-banner"></a>
+                </div>
+                
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        <a class="article-category-link" href="https://colin.is/categories/fun-links">
+                        Fun links
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://colin.is/blog/2016/fun-links-2016-09-23/" class="title">Fun Links 2016-09-23</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-09-23 14:55:21 &#43;0000 UTC" itemprop="datePublished">2016-09-23</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                
+                <div class="item-thumbnail">
+                    <a href="https://colin.is/blog/2016/fun-links-2016-09-16/" class="thumbnail funlink-banner"></a>
+                </div>
+                
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        <a class="article-category-link" href="https://colin.is/categories/fun-links">
+                        Fun links
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://colin.is/blog/2016/fun-links-2016-09-16/" class="title">Fun Links 2016-09-16</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-09-16 17:11:07 &#43;0000 UTC" itemprop="datePublished">2016-09-16</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                
+                <div class="item-thumbnail">
+                    <a href="https://colin.is/blog/2016/fun-links-2016-06-10/" class="thumbnail funlink-banner"></a>
+                </div>
+                
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        <a class="article-category-link" href="https://colin.is/categories/fun-links">
+                        Fun links
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://colin.is/blog/2016/fun-links-2016-06-10/" class="title">Fun Links 2016-06-10</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-06-10 15:04:11 &#43;0000 UTC" itemprop="datePublished">2016-06-10</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                
+                <div class="item-thumbnail">
+                    <a href="https://colin.is/blog/2016/fun-links-2016-06-03/" class="thumbnail funlink-banner"></a>
+                </div>
+                
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        <a class="article-category-link" href="https://colin.is/categories/fun-links">
+                        Fun links
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://colin.is/blog/2016/fun-links-2016-06-03/" class="title">Fun Links 2016-06-03</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-06-03 16:05:07 &#43;0000 UTC" itemprop="datePublished">2016-06-03</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                
+                <div class="item-thumbnail">
+                    <a href="https://colin.is/blog/2016/fun-links-2016-05-27/" class="thumbnail funlink-banner"></a>
+                </div>
+                
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        <a class="article-category-link" href="https://colin.is/categories/fun-links">
+                        Fun links
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://colin.is/blog/2016/fun-links-2016-05-27/" class="title">Fun Links 2016-05-27</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-05-27 13:09:56 &#43;0000 UTC" itemprop="datePublished">2016-05-27</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is//categories/dev">
+                    dev
+                </a>
+                <span class="category-list-count">6</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is//categories/fun-links">
+                    fun-links
+                </a>
+                <span class="category-list-count">72</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is//categories/meta">
+                    meta
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/.net">
+                    .net
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/ajax">
+                    ajax
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/app">
+                    app
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/apps">
+                    apps
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/auth">
+                    auth
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/auth0">
+                    auth0
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/batch">
+                    batch
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/brunch">
+                    brunch
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/ci">
+                    ci
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/content">
+                    content
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/db">
+                    db
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/dns">
+                    dns
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/electron">
+                    electron
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/email">
+                    email
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/es2015">
+                    es2015
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/finance">
+                    finance
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/fonts">
+                    fonts
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/frp">
+                    frp
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/ghost">
+                    ghost
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/hg">
+                    hg
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/hook.io">
+                    hook.io
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/ide">
+                    ide
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/jwt">
+                    jwt
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/lang">
+                    lang
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/learning">
+                    learning
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/libraries">
+                    libraries
+                </a>
+                <span class="category-list-count">9</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/library">
+                    library
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/markdown">
+                    markdown
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/meta">
+                    meta
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/microjs">
+                    microjs
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/ng2">
+                    ng2
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/node">
+                    node
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/react">
+                    react
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/redux">
+                    redux
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/sdlc">
+                    sdlc
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/series">
+                    series
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/service">
+                    service
+                </a>
+                <span class="category-list-count">14</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/teamcity">
+                    teamcity
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/template">
+                    template
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/tools">
+                    tools
+                </a>
+                <span class="category-list-count">11</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/troubleshoot">
+                    troubleshoot
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://colin.is/tags/vs">
+                    vs
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="https://colin.is/tags/.net" style="font-size: 12px;">.net</a>
+        
+        <a href="https://colin.is/tags/ajax" style="font-size: 12px;">ajax</a>
+        
+        <a href="https://colin.is/tags/app" style="font-size: 12px;">app</a>
+        
+        <a href="https://colin.is/tags/apps" style="font-size: 12px;">apps</a>
+        
+        <a href="https://colin.is/tags/auth" style="font-size: 12px;">auth</a>
+        
+        <a href="https://colin.is/tags/auth0" style="font-size: 12px;">auth0</a>
+        
+        <a href="https://colin.is/tags/batch" style="font-size: 12px;">batch</a>
+        
+        <a href="https://colin.is/tags/brunch" style="font-size: 12px;">brunch</a>
+        
+        <a href="https://colin.is/tags/ci" style="font-size: 12px;">ci</a>
+        
+        <a href="https://colin.is/tags/content" style="font-size: 12px;">content</a>
+        
+        <a href="https://colin.is/tags/db" style="font-size: 12px;">db</a>
+        
+        <a href="https://colin.is/tags/dns" style="font-size: 12px;">dns</a>
+        
+        <a href="https://colin.is/tags/electron" style="font-size: 12px;">electron</a>
+        
+        <a href="https://colin.is/tags/email" style="font-size: 12px;">email</a>
+        
+        <a href="https://colin.is/tags/es2015" style="font-size: 12px;">es2015</a>
+        
+        <a href="https://colin.is/tags/finance" style="font-size: 12px;">finance</a>
+        
+        <a href="https://colin.is/tags/fonts" style="font-size: 12px;">fonts</a>
+        
+        <a href="https://colin.is/tags/frp" style="font-size: 12px;">frp</a>
+        
+        <a href="https://colin.is/tags/ghost" style="font-size: 12px;">ghost</a>
+        
+        <a href="https://colin.is/tags/hg" style="font-size: 12px;">hg</a>
+        
+        <a href="https://colin.is/tags/hook.io" style="font-size: 12px;">hook.io</a>
+        
+        <a href="https://colin.is/tags/ide" style="font-size: 12px;">ide</a>
+        
+        <a href="https://colin.is/tags/jwt" style="font-size: 12px;">jwt</a>
+        
+        <a href="https://colin.is/tags/lang" style="font-size: 12px;">lang</a>
+        
+        <a href="https://colin.is/tags/learning" style="font-size: 12px;">learning</a>
+        
+        <a href="https://colin.is/tags/libraries" style="font-size: 12px;">libraries</a>
+        
+        <a href="https://colin.is/tags/library" style="font-size: 12px;">library</a>
+        
+        <a href="https://colin.is/tags/markdown" style="font-size: 12px;">markdown</a>
+        
+        <a href="https://colin.is/tags/meta" style="font-size: 12px;">meta</a>
+        
+        <a href="https://colin.is/tags/microjs" style="font-size: 12px;">microjs</a>
+        
+        <a href="https://colin.is/tags/ng2" style="font-size: 12px;">ng2</a>
+        
+        <a href="https://colin.is/tags/node" style="font-size: 12px;">node</a>
+        
+        <a href="https://colin.is/tags/react" style="font-size: 12px;">react</a>
+        
+        <a href="https://colin.is/tags/redux" style="font-size: 12px;">redux</a>
+        
+        <a href="https://colin.is/tags/sdlc" style="font-size: 12px;">sdlc</a>
+        
+        <a href="https://colin.is/tags/series" style="font-size: 12px;">series</a>
+        
+        <a href="https://colin.is/tags/service" style="font-size: 12px;">service</a>
+        
+        <a href="https://colin.is/tags/teamcity" style="font-size: 12px;">teamcity</a>
+        
+        <a href="https://colin.is/tags/template" style="font-size: 12px;">template</a>
+        
+        <a href="https://colin.is/tags/tools" style="font-size: 12px;">tools</a>
+        
+        <a href="https://colin.is/tags/troubleshoot" style="font-size: 12px;">troubleshoot</a>
+        
+        <a href="https://colin.is/tags/vs" style="font-size: 12px;">vs</a>
+        
+    </div>
+</div>
+
+
+
+    
+
+
+    <div id="toTop" class="fa fa-chevron-up"></div>
+</aside>
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017<br>
+      Powered by <a href="//gohugo.io">Hugo</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://static.jsbin.com/js/embed.min.js?3.35.4"></script>
+<script src="https://colin.is/js/dpr.js"></script>
+<script src="https://colin.is/js/highlight.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46914579-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://colin.is/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://colin.is/js/script.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- MathJax -->
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    ignoreClass: 'gist',
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+
+</body>
+</html>

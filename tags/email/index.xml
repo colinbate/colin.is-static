@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on Colin Bate is...</title>
+    <link>https://colin.is/tags/email/</link>
+    <description>Recent content in Email on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2015 16:29:52 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun links 2015-01-23</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-01-23/</link>
+      <pubDate>Fri, 23 Jan 2015 16:29:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-01-23/</guid>
+      <description>&lt;p&gt;Happy Friday everyone&lt;/p&gt;
+
+&lt;p&gt;Today there is a bit of a customer engagement theme to my links.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Apostle.io&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://apostle.io/&#34;&gt;http://apostle.io/&lt;/a&gt;&lt;br /&gt;
+Manage your transactional emails without needing a developer. Does your web app send emails? Would you like to better manage and track engagement with these emails? Then check out Apostle.io.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cloudcannon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cloudcannon.com/&#34;&gt;http://cloudcannon.com/&lt;/a&gt;&lt;br /&gt;
+A CMS for static sites without the CMS. I haven&amp;rsquo;t tried this yet personally, but I know I&amp;rsquo;ve created sites for people in the past where this would have been ideal. Perhaps now you can stop making edits to sites of family members :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sniply&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://snip.ly/&#34;&gt;http://snip.ly/&lt;/a&gt;&lt;br /&gt;
+If you share a lot of content and links, then perhaps it would be nice to be able to embed a call to action in those links bringing people back to you or your products/services, etc.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

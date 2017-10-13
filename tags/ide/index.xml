@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ide on Colin Bate is...</title>
+    <link>https://colin.is/tags/ide/</link>
+    <description>Recent content in Ide on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jun 2015 15:21:35 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun links 2015-06-26</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-26/</link>
+      <pubDate>Fri, 26 Jun 2015 15:21:35 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-26/</guid>
+      <description>&lt;p&gt;This week I&amp;rsquo;m doing something a bit different, this week my links are all to videos outlining some new features and functionality surrounding Visual Studio 2015 and C# 6.&lt;/p&gt;
+
+&lt;p&gt;Most of the people reading this use Visual Studio on a day to day basis, so it felt like a good subject for some fun links that are hopefully also educational.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Studio 2015: Building JavaScript Apps with AngularJs&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GNXX7d&#34;&gt;https://www.youtube.com/watch?v=EO9Ck9vUhmo&lt;/a&gt;&lt;br /&gt;
+Just because I&amp;rsquo;m focusing on Visual Studio doesn&amp;rsquo;t mean I can&amp;rsquo;t also focus on the web. This video demonstrates some of the new web-focused features of VS 2015, specifically those geared toward the popular Angular framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&amp;rsquo;s New In C# 6.0&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JnOV4F&#34;&gt;https://www.youtube.com/watch?v=KvW0NCFuXLg&lt;/a&gt;&lt;br /&gt;
+A simple condensed video that shows how new language constructs can simplify your code and reduce the amount of boilerplate that is needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Visual Studio: An IDE For All Your Modern Devices &amp;amp; Services&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1fJEvj4&#34;&gt;https://www.youtube.com/watch?v=L7uaHQydXFE&lt;/a&gt;&lt;br /&gt;
+This video talks about the IDE itself and how it fits in better with your modern life. From integration with various services to better support for touch devices and multiple monitors, find out what you have to look forward to when moving to VS 2015.&lt;/p&gt;
+
+&lt;p&gt;And as a bonus link (which is not a video) I&amp;rsquo;ll send you to look at &lt;strong&gt;Visual Studio Code&lt;/strong&gt;, which is a new light(er) weight code editor designed for web based applications. It has many of the things you may like from Visual Studio without all of the extra features which you may not need. Plus it works on Linux and Mac as well as Windows.
+&lt;a href=&#34;http://bit.ly/1J9V6pW&#34;&gt;https://www.visualstudio.com/en-us/products/code-vs.aspx&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-08</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-08/</link>
+      <pubDate>Fri, 08 May 2015 15:19:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-08/</guid>
+      <description>&lt;p&gt;Apologies, I&amp;rsquo;ve been out of the office for a while and I&amp;rsquo;ve fallen behind. I&amp;rsquo;ve been building up a backlog of links though, and so there should be a fairly steady stream for the next while.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RethinkDB&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://rethinkdb.com/&#34;&gt;http://rethinkdb.com/&lt;/a&gt;&lt;br /&gt;
+An open-source distributed database built with love. RethinkDB is built to store JSON documents, and scale to multiple machines with very little effort. It has a pleasant query language that supports useful queries like table joins and group by, and is easy to setup and learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gitbook&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.gitbook.com/&#34;&gt;https://www.gitbook.com/&lt;/a&gt;&lt;br /&gt;
+A git and Markdown-based way to create books and distribute them. Generous terms and a freemium payment model, you can try it out for free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codio&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://codio.com/&#34;&gt;https://codio.com/&lt;/a&gt;&lt;br /&gt;
+Codio is a cloud-based IDE with a focus on education. They offer a free plan with 256MB of RAM and 2GB of disk space. As with any of the other Cloud IDEs I&amp;rsquo;ve mentioned before, it isn&amp;rsquo;t always about specs. Features can vary subtly, and the IDE UIs are often a deciding factor when looking for something to suit your tastes. I&amp;rsquo;ve compared a number of the cloud IDEs lately, and this one ranks pretty highly if you are using Mercurial.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

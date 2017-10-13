@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libraries on Colin Bate is...</title>
+    <link>https://colin.is/tags/libraries/</link>
+    <description>Recent content in Libraries on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Sep 2016 17:11:07 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/libraries/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-09-16</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-09-16/</link>
+      <pubDate>Fri, 16 Sep 2016 17:11:07 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-09-16/</guid>
+      <description>&lt;p&gt;To mark the occasion of the release of Angular 2 (finally), I thought that an Angular 2 themed set of links would be appropriate. And since I&amp;rsquo;ve been heavily steeped in React lately, it also gave me a chance to come up for air a little bit and see what is going on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://angular.io&#34;&gt;https://angular.io&lt;/a&gt;&lt;br /&gt;
+Can&amp;rsquo;t talk about Angular 2 without a link to the official page itself. This site is different to the one for Angular 1 and contains documentation and tutorials as you would expect. For those not subjected to my Angular 2 evangelism yet, it is a bit of a departure from its predecessor. It follows the more structured component-based approach which is very popular at the moment, and it brings some other technologies to the table with it. In particular takes particular advantage of TypeScript to support dependency injection and metadata. It also incorporates the concept of Observables via the &lt;code&gt;rxjs&lt;/code&gt; package. You don&amp;rsquo;t have to use either in your applications, but the community is embracing them, and both are quite powerful additions if you take the time to learn them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 2 Courses @ Egghead&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/building-angular-2-components&#34;&gt;https://egghead.io/courses/building-angular-2-components&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/intro-to-angular-2-router&#34;&gt;https://egghead.io/courses/intro-to-angular-2-router&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://egghead.io/courses/angular-2-dependency-injection-di-explained&#34;&gt;https://egghead.io/courses/angular-2-dependency-injection-di-explained&lt;/a&gt;&lt;br /&gt;
+Three links for the price of one. There are three new Angular 2 courses available at Egghead which are completely free, at least for the time being. So unless you have a Pro Egghead account, or would like to, then I&amp;rsquo;d recommend checking out those courses sooner rather than later if you want to learn about Angular 2. That said, I do recommend a Pro Egghead account if you are interested in learning about the hottest web technologies.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update: They are no longer free apart from the intro videos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ng2-bootstrap&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://valor-software.com/ng2-bootstrap/&#34;&gt;http://valor-software.com/ng2-bootstrap/&lt;/a&gt;&lt;br /&gt;
+Given the popularity of Bootstrap for quickly bringing a UI to life, I wanted to mention the library which brings Bootstrap to Angular 2 using components and doesn&amp;rsquo;t require any of the out-of-the-box Bootstrap JavaScript. It provides components for the usual suspects like the accordion, date picker, and tabs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-08</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-08/</link>
+      <pubDate>Fri, 08 Apr 2016 17:34:53 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-08/</guid>
+      <description>&lt;p&gt;Back in November, I wrote about &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-13/&#34;&gt;reactive programming libraries&lt;/a&gt; for JavaScript. Today I&amp;rsquo;m going to write about some frameworks and libraries which sit on top of the reactive libraries and provide UI or application integration.&lt;/p&gt;
+
+&lt;p&gt;Using these libraries you can write an app in a declarative manner and not have to worry about state management. Not every type of application benefits from this. At the moment, I&amp;rsquo;m working on a &lt;a href=&#34;https://github.com/colinbate/battleship&#34;&gt;game with reactive programming&lt;/a&gt;, which I think may work well. Whether or not it is always appropriate, it is a worthwhile concept to learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cycle.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cycle.js.org/&#34;&gt;http://cycle.js.org/&lt;/a&gt;&lt;br /&gt;
+Cycle.js attempts to model your application as pure data flow using reactive programming. It isolates a &lt;code&gt;main&lt;/code&gt; function for your logic and provides sources (inputs from the external world) and sinks (outputs/writes to the external world). It uses provided &lt;em&gt;drivers&lt;/em&gt; to handle the integration with things like the DOM, HTTP requests, Websockets, etc. You need to see examples to appreciate exactly how it works.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Motorcycle.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/motorcyclejs/core&#34;&gt;https://github.com/motorcyclejs/core&lt;/a&gt;&lt;br /&gt;
+Motorcycle.js is being created by the same guy (and the group of contributors) as Cycle.js, but as the name suggests, it is designed to be faster. Under the hood, it uses Most.js instead of RxJS and a more performant virtual DOM library. It uses the same concepts of sources, sinks, and drivers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yolk&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/garbles/yolk&#34;&gt;https://github.com/garbles/yolk&lt;/a&gt;&lt;br /&gt;
+Yolk is meant to be a minimal API on top of RxJS and virtual DOM. It treats everything as an observable; even the properties passed into its React-like UI components. If you are familiar with React and RxJS, then you will be right at home with Yolk. Yolk is what I am using for my game.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-04-01</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-04-01/</link>
+      <pubDate>Fri, 01 Apr 2016 13:16:20 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-04-01/</guid>
+      <description>&lt;p&gt;It may be April Fool&amp;rsquo;s day, but these links are no joke. To be sure, I wrote this article on March 31st. ;) However, to mark the occasion, I&amp;rsquo;m going to have four links today instead of three. Mind blowing.&lt;/p&gt;
+
+&lt;p&gt;My theme for these links is immutability. Specifically immutability in JavaScript. Arrays and objects, as well as the new &lt;code&gt;Map&lt;/code&gt; and &lt;code&gt;Set&lt;/code&gt; in JavaScript, are mutable. That is one can change their values and contents while maintaining a single reference to them. While this is a familiar concept for some, it sometimes has unintended side effects when these entities are passed around to different parts of the application.&lt;/p&gt;
+
+&lt;p&gt;On the other hand programming with immutable data types requires a slightly different way of thinking about things, but offers benefits which make it valuable in certain applications.&lt;/p&gt;
+
+&lt;p&gt;For example, change detection. If you want to know if a JavaScript array has changed, you could first check its length, but if they are the same, you&amp;rsquo;d have to iterate the whole array to determine if any element has changed. And even then, for mutable types within the array, you&amp;rsquo;d have to check those deeply as well. But if you have immutable types, then checking for a changed array is just a reference check which is much faster.&lt;/p&gt;
+
+&lt;p&gt;Most of these libraries listed do very similar things but have different syntax, different performance and manage slightly different data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Immutable.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://facebook.github.io/immutable-js/&#34;&gt;https://facebook.github.io/immutable-js/&lt;/a&gt;&lt;br /&gt;
+Immutable collections for JavaScript from Facebook. Instead of extending the native types, Immutable has its own collections: List, Map, OrderedMap, Seq, Stack, etc. They are all immutable and can be created from and cast back into native arrays and objects as necessary. The API, while a bit verbose, is clean and understandable. If you want some addition data and collection types in addition to immutability, then this is a good choice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mori&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/swannodette/mori&#34;&gt;https://github.com/swannodette/mori&lt;/a&gt;&lt;br /&gt;
+Mori is designed to emulate ClojureScript&amp;rsquo;s persistent data structures in JS. As such it is decidedly more functional (stylistically) than the rest of the options. It supports many of the same data types as Immutable.js but claims to be faster (but larger). It has tried to make provisions for being closer to idiomatic JavaScript, but to be honest, it still feels a bit foreign. YMMV.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ancient Oak&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/brainshave/ancient-oak&#34;&gt;https://github.com/brainshave/ancient-oak&lt;/a&gt;&lt;br /&gt;
+Ancient Oak dubs itself as the immutable tree. I like the name of this library the best, but that is judging a book by its cover. It is designed to work on trees of plain JS data types, something you might get from or convert to JSON. One of the types supported by Ancient Oak is the Date object, which isn&amp;rsquo;t something I&amp;rsquo;ve seen in any of the others. Allows you to use the types that you are used to in JS with pretty much the same API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Freezer&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/arqex/freezer&#34;&gt;https://github.com/arqex/freezer&lt;/a&gt;&lt;br /&gt;
+Freezer is a bit like Ancient Oak in that it maintains an immutable tree structure, but it was built with React in mind, so it also has an event mechanism which allows you to re-render your application when the freezer has been updated. That said, it doesn&amp;rsquo;t seem to have immutable Date support. And having played with Freezer and Ancient Oak, the API seems a lot more pleasant and intuitive with the former.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2016-01-15</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-15/</link>
+      <pubDate>Fri, 15 Jan 2016 14:42:49 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-15/</guid>
+      <description>&lt;p&gt;Some web application front-ends are just visualizations of data stored and calculated on servers somewhere. They provide the interaction mechanism to interact with this data, but they are agnostic to the &amp;ldquo;domain&amp;rdquo; of the problems they are solving.&lt;/p&gt;
+
+&lt;p&gt;However, more and more, the browser-based applications are becoming central to the full application experience. When you consider static applications without back-end servers, most of the domain logic sits in the JavaScript.&lt;/p&gt;
+
+&lt;p&gt;So when your domain is finance related, where can you turn to help you with your JavaScript calculations? Today I&amp;rsquo;ve compiled a list of finance-related JavaScript libraries. There isn&amp;rsquo;t a huge amount of choice of finance related tooling in the open source world. I suspect you could find some powerful JavaScript finance tools behind closed doors at various banks and funds around the world. However, if you want to start from somewhere other than zero, then some of these libraries might be worth investigating.&lt;/p&gt;
+
+&lt;p&gt;As a caveat, I&amp;rsquo;m no finance expert, so I can only point you to water, I can&amp;rsquo;t advise you that the water is safe to drink.&lt;/p&gt;
+
+&lt;p&gt;Also, I know that there are no charting libraries listed, and they are obviously useful within financial applications as well. Another post will cover those at some point.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Finance.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://trentrichardson.com/examples/FinanceJs/&#34;&gt;http://trentrichardson.com/examples/FinanceJs/&lt;/a&gt;&lt;br /&gt;
+A simple, dependency-free library that lets you calculate amortization schedules and payment amounts. It also has some helpful currency and number formatting functions. Nothing too fancy, but it can save you from implementing these things if you need them in your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Financial.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/mfreilich/financial.js&#34;&gt;https://github.com/mfreilich/financial.js&lt;/a&gt;&lt;br /&gt;
+Finacial.js, another creatively named library, claims to implement the Excel Financial functions in JavaScript. There isn&amp;rsquo;t much to it in the way of documentation or anything like that, but when I looked at the code, I noticed that it supports AMD and CommonJS, so you should be able to use it on the server or in the browser. I suppose if you were to combine this with a reactive programming library, you might be able to create a little version of Excel. Well, with a small subset of the functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Node Finance&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/albertosantini/node-finance&#34;&gt;https://github.com/albertosantini/node-finance&lt;/a&gt;&lt;br /&gt;
+OK so Node Finance, as the name suggests, is a Node.js module meant to run on the server. It requires persistence in the form of a CouchDB instance for some of its functionality. It seems to be much more involved and application-like than the previous libraries. I will admit that I don&amp;rsquo;t know much about the algorithms it implements, so I&amp;rsquo;ll just quote the summary from the repository:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This module contains an implementation of Markowitz algorithm for the portfolio optimization, a routine for retrieving historical prices from Yahoo, statistical information for stocks and a routine for calculating implied volatility using Black and Scholes formula.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So if that is your cup of tea, then look no further. There is also &lt;a href=&#34;http://github.com/albertosantini/node-conpa&#34;&gt;a web UI&lt;/a&gt; that the author has also created for it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-11-13</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-11-13/</link>
+      <pubDate>Fri, 13 Nov 2015 16:07:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-11-13/</guid>
+      <description>&lt;p&gt;Another themed group of links, this time, Reactive Programming libraries for JavaScript. As the reactive programming paradigm catches on, there are libraries popping up in many languages and JavaScript is no different. Sometimes referred to as Functional Reactive Programming (FRP), the idea is that streams of events or dynamic values represent the data within your application. You can then transform, combine, filter and perform a host of other operations on these streams. Each library has slightly different syntax and names for certain things, but conceptually they are all trying to do the same thing.&lt;/p&gt;
+
+&lt;p&gt;It is something that makes more sense when you see examples, and even then, it may not be apparent what the value is. But if you let it sit in the back of your mind for a while, you can appreciate the value and power the concept brings to the table.&lt;/p&gt;
+
+&lt;p&gt;If that isn&amp;rsquo;t enough to convince you, I&amp;rsquo;ll also mention that as of the time of this writing, it is intended that Angular 2 will use these &lt;em&gt;observables&lt;/em&gt;&amp;ndash;as they are known&amp;ndash;for the results of Ajax calls.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RxJS&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/Reactive-Extensions/RxJS&#34;&gt;https://github.com/Reactive-Extensions/RxJS&lt;/a&gt;&lt;br /&gt;
+From the Reactive Extensions family of libraries, including a Rx.NET, comes the &lt;em&gt;enterprise friendly&lt;/em&gt; RxJS. From what I can tell this is the version that is most popular with enterprise projects. It is quite comprehensive, and if desired, you can pull in only the features that you need. RxJS is the library that Angular 2 will be bundling as far as I know.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bacon.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://baconjs.github.io/&#34;&gt;https://baconjs.github.io/&lt;/a&gt;&lt;br /&gt;
+What can go wrong with a library with the name bacon? This library seems to be more popular with the open source community than RxJS, perhaps because it is a bit more light-weight. This library splits the concept of Observables (from RxJS) into EventStreams and Properties.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kefir.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://rpominov.github.io/kefir/&#34;&gt;https://rpominov.github.io/kefir/&lt;/a&gt;&lt;br /&gt;
+Another reactive library, this one focused on performance and memory footprint. The feature set seems quite comprehensive, and the documentation is good, although it has fewer practical examples than others. What is lacks in practical examples I feel it makes up for with conceptual examples and illustrations that help explain how the different functions work. For what it is worth, Kefir is the library that I&amp;rsquo;m planning to use in my next personal project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-07-03</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-07-03/</link>
+      <pubDate>Fri, 03 Jul 2015 15:09:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-07-03/</guid>
+      <description>&lt;p&gt;In the interest of giving people something they want to hear, I&amp;rsquo;m going to focus on some interesting NuGet packages for .NET today. Again, like always, I post these links as being potentially interesting, and not as an endorsement or anything like that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hangfire&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JHxnxO&#34;&gt;http://hangfire.io&lt;/a&gt;&lt;br /&gt;
+Hangfire is a background task manager for .NET applications. Backed by persistent storage, you can use it from any type of .NET app. Supports delayed and recurring tasks as well. It is open-source, but there are commercial options with support and &amp;ldquo;pro&amp;rdquo; features.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Simple Injector&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GUeBjo&#34;&gt;https://simpleinjector.org&lt;/a&gt;&lt;br /&gt;
+Simple Injector is as the name implies a simple dependency injection library that is a lot faster than some of the bigger names in this space. It is also quite full-featured compared to some of the other strictly performance-based containers. It also claims to provide powerful diagnostics to help sort out configuration issues. I know that would be a useful functionality as I&amp;rsquo;ve patched other IoC libraries to get even the most basic diagnostic information.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LINQ to Twitter&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1IyK7bk&#34;&gt;https://github.com/JoeMayo/LinqToTwitter&lt;/a&gt;&lt;br /&gt;
+LINQ to Twitter is an interesting use of the LINQ querying style to communicate with the Twitter API. If you are working with Twitter or the Twitter API in your application, then this might be a more expressive way of working with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun links 2015-06-05</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-06-05/</link>
+      <pubDate>Fri, 05 Jun 2015 15:13:44 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-06-05/</guid>
+      <description>&lt;p&gt;SQL tools, build tools and a little something functional for my fans of that genre. Please enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wagon&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1MsU8q5&#34;&gt;http://www.wagonhq.com/&lt;/a&gt;&lt;br /&gt;
+Wagon claims to be a modern editor and analysis tool for SQL. Supports a growing list of database types, with SQL Server coming soon apparently. It runs on Linux, Mac, and Windows. Very early days for this project, so this might be something to watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;lazy-array&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1GoQFKc&#34;&gt;http://oli.me.uk/2015/05/31/lazy-arrays-in-javascript/&lt;/a&gt;&lt;br /&gt;
+Lazy array is a JavaScript library that was modeled after lazy sequences in Clojure. Essentially an array of values which is represented algorithmically and only populated when specific values are needed. An interested concept and I linked to the author&amp;rsquo;s blog post where he discusses possible UI use cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Brunch&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1FBQepc&#34;&gt;http://brunch.io/&lt;/a&gt;&lt;br /&gt;
+Brunch is a web build tool that has been around for a long time by web standards but hasn&amp;rsquo;t received the fame of some newer tools. It emphasizes speed and conventions over configuration to make the build process less of a burden to your day to day. Now that I&amp;rsquo;m working with ES6 and find myself transpiling more often, I might look into just how fast it is because it could make some of my projects easier to work with, maybe. It is a pluggable system, which provides some skeletons that are essentially just project templates.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-15</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-15/</link>
+      <pubDate>Fri, 15 May 2015 14:29:18 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-15/</guid>
+      <description>&lt;p&gt;A functional reactive library, a new web browser and a new-school take on old school build processes. I hope that people find something interesting here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flyd&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/paldepind/flyd&#34;&gt;https://github.com/paldepind/flyd&lt;/a&gt;&lt;br /&gt;
+The minimalistic but powerful, modular, functional reactive programming library in JavaScript. With reactive programming being in vogue at the moment, there are a number of libraries popping up in various languages. I&amp;rsquo;m certainly no expert, but I like the API on this one. Quite functional (and therefore very composable) with a number of convenient optional modules you can pull in.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vivaldi&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://vivaldi.com/&#34;&gt;https://vivaldi.com/&lt;/a&gt;&lt;br /&gt;
+A new web browser built from HTML, CSS and Node.js. Created by the former CEO of Opera, this is a browser designed for power users. Has built-in note taking, email, sync and host of other features that make this a unique offering. If nothing else you don&amp;rsquo;t get more meta than creating a browser using HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DIY&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.vittoriozaccaria.net/diy/&#34;&gt;http://www.vittoriozaccaria.net/diy/&lt;/a&gt;&lt;br /&gt;
+A slightly different take on creating a web/JavaScript build system by allowing you to create a JS file that compiles into a &lt;code&gt;Makefile&lt;/code&gt;. Of course, this is a bit more cumbersome for Windows users who would need to grab a copy of GnuWin&amp;rsquo;s version of &lt;code&gt;make&lt;/code&gt;, but it might appeal to some. The library has a number of the standard operations (minification, concatenation, etc.) built-in.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-01-16</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-01-16/</link>
+      <pubDate>Sat, 17 Jan 2015 00:01:09 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-01-16/</guid>
+      <description>&lt;p&gt;Welcome to 2015 and what will hopefully be a year of technological excitement.&lt;/p&gt;
+
+&lt;p&gt;Hopefully I can start things off relatively well with a couple of micro JavaScript libraries that I&amp;rsquo;ve found that I think are exciting.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;page.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://visionmedia.github.io/page.js/&#34;&gt;http://visionmedia.github.io/page.js/&lt;/a&gt;&lt;br /&gt;
+There are lots of JavaScript frameworks which provide routing capabilities, but what if you only need a router, and not a framework. Then take a look at page.js which is just that in a tiny package. Only 1.2Kb with a syntax which will be familiar to most users of other JS based routers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;aja.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://krampstudio.github.io/aja.js/&#34;&gt;http://krampstudio.github.io/aja.js/&lt;/a&gt;&lt;br /&gt;
+Ajax without the XML. A small library which supports JSON and JSONP requests using a fluent API. Makes a nice little REST client.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Slang&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/devongovett/slang&#34;&gt;https://github.com/devongovett/slang&lt;/a&gt;&lt;br /&gt;
+A collection of JavaScript string functions. Some are things I find myself wanting from time to time so it may be nice to have on hand.&lt;/p&gt;
+
+&lt;p&gt;Happy New Year&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

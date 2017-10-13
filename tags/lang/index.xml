@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lang on Colin Bate is...</title>
+    <link>https://colin.is/tags/lang/</link>
+    <description>Recent content in Lang on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Mar 2016 20:22:47 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/lang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-03-11</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-03-11/</link>
+      <pubDate>Fri, 11 Mar 2016 20:22:47 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-03-11/</guid>
+      <description>&lt;p&gt;Dynamic programming languages and interpreted languages all have the benefit of being quick to use to write code. They have grown quite popular in the past years, driven mostly by the fluid nature of the web. The nebbish amongst us will usually lament the lack of static typing, but the genuine issue with these languages is usually quite simple: execution speed.&lt;/p&gt;
+
+&lt;p&gt;So while they may be fast to write, they aren&amp;rsquo;t always fast to run.&lt;/p&gt;
+
+&lt;p&gt;OK, that makes sense. And to be fair, that might be perfectly acceptable in some cases, and clearly people were accepting this trade-off for a while. And no matter how provocative you find pointer dereferencing to be, you can&amp;rsquo;t argue that languages like Ruby, Python and PHP aren&amp;rsquo;t in vogue. Whether the syntax, the high-level abstractions or the dynamic features mentioned before, each has a little &amp;ldquo;je ne sais quoi&amp;rdquo; about them.&lt;/p&gt;
+
+&lt;p&gt;So you love your language, but it isn&amp;rsquo;t quite what you need, what do you do? You create a new language with the same basic syntax and make it better. At least in theory. The following languages make look a bit niche at the moment, but it is worth keeping an eye on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Crystal&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://crystal-lang.org/&#34;&gt;http://crystal-lang.org/&lt;/a&gt;&lt;br /&gt;
+Crystal is like Ruby, only faster. Developed by a company in Argentina, there seems to be a growing community around the new language. Unlike Ruby, Crystal is a compiled language, so you create a native executable. It also has a package/module management system called &lt;code&gt;shard&lt;/code&gt;. At the moment, it looks like it only runs on Linux or Mac, and given how the Ruby community regards Windows, I wouldn&amp;rsquo;t hold my breath for a native compiler there.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Julia&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://julialang.org/&#34;&gt;http://julialang.org/&lt;/a&gt;&lt;br /&gt;
+Julia is the upgraded, faster version of Python. Sort of. The syntax is certainly Python inspired, and built with data and scientific processing in mind. Looking at the summary of features and benchmark results, it seems like the best of all worlds as a language. It has a package manager as well and even built-in support for parallelism and distributed computing. Not surprising given its focus on technical computing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hack&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://hacklang.org/&#34;&gt;http://hacklang.org/&lt;/a&gt;&lt;br /&gt;
+Hack is Facebook&amp;rsquo;s enhanced version of PHP. Supposedly they couldn&amp;rsquo;t think of a woman&amp;rsquo;s name to use. And while the name they did choose may invoke some concern, the language moves in a more &amp;ldquo;safe&amp;rdquo; direction from its origins. Hack requires a runtime called HHVM, and at the moment, is only available on Linux. You could run it from a VM for development locally. It adds things like types and native XML support to the PHP language, and they even have tools for converting from PHP to Hack.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-29</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-29/</link>
+      <pubDate>Fri, 29 May 2015 14:26:35 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-29/</guid>
+      <description>&lt;p&gt;A DevOps tool, an IoT kit and a transcompiled JavaScript language. I&amp;rsquo;m hoping that people will find something interesting&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Kitematic&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1JYR2uy&#34;&gt;https://kitematic.com/&lt;/a&gt;&lt;br /&gt;
+A Mac app to manage your Docker containers in a visual way. Works side by side with the Docker CLI app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Particle&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1PSp5cK&#34;&gt;https://www.particle.io/&lt;/a&gt;&lt;br /&gt;
+Particle is an interesting Internet of Things toolkit. They provide hardware dev kits to prototype your ideas, and they have an online IDE, which allows you to edit and deploy firmware applications written in SparkJS and their Mobile SDK. Used to be called Spark.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Earl Grey&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://bit.ly/1Qff2ZT&#34;&gt;http://breuleux.github.io/earl-grey/&lt;/a&gt;&lt;br /&gt;
+Earl Grey is a neat little language that compiles to JavaScript. It is still in development, but it has a concise syntax and might appeal to people, particularly with a Python background.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

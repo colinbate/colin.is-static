@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Colin Bate is...</title>
+    <link>https://colin.is/tags/markdown/</link>
+    <description>Recent content in Markdown on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Dec 2015 18:00:00 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2015-12-04</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-12-04/</link>
+      <pubDate>Fri, 04 Dec 2015 18:00:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-12-04/</guid>
+      <description>&lt;p&gt;I know that I must have mentioned Markdown in passing in some of my past fun link posts, but today I wanted to focus on it a bit more with some tools specifically focused on Markdown.&lt;/p&gt;
+
+&lt;p&gt;For those not familiar with Markdown, I will try to reserve judgement and say that it is a simple text markup format with the goal of being easy and natural to read in its unprocessed form. Plain text emails are the inspiration for the syntax and it has been gaining traction over the past number of years to the point where a lot of content systems and other tools support the format. Recently work has been happening to try to formalize the specification of the syntax such that implementors of tools can provide consistent behaviour. You can find more information over at &lt;a href=&#34;http://commonmark.org/&#34;&gt;CommonMark&lt;/a&gt; and in addition to a specification, they provide a reference implementation as well.&lt;/p&gt;
+
+&lt;p&gt;As a relevant matter of interest, I write all of my Fun Links content in Markdown format, which I then convert into the various forms that I need it in for the web and emails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dillinger&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://dillinger.io/&#34;&gt;http://dillinger.io/&lt;/a&gt;&lt;br /&gt;
+Dillinger is a simple split screen web app that lets your write Markdown on the left and see the resulting HTML rendering on the right. It is a pretty simple app that supports linking to Dropbox, Github, Google Drive and One Drive to load and save documents. I haven&amp;rsquo;t seen a way to customize the stylesheet for the rendering either with themes or custom CSS. But for a quick, simple editor that lets you check your general rendering it works great. It also supports exporting the content as HTML or PDF if you&amp;rsquo;d like.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Markable&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://markable.in/&#34;&gt;http://markable.in/&lt;/a&gt;&lt;br /&gt;
+Markable is a similar web-based tool for editing Markdown, but unlike Dillinger, it requires that you create an account first. It integrates with Evernote and Tumblr in addition to Dropbox. Interestingly it allows for customization, but only of the input editor, not the output rendering. It adds Word document export to the usual HTML and PDF. One interesting and potentially useful feature is it allows you to import HTML documents and convert them to Markdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tools to support your markdown authoring&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&#34;&gt;https://github.com/karthik/markdown_science/wiki/Tools-to-support-your-markdown-authoring&lt;/a&gt;&lt;br /&gt;
+This link might be considered cheating, but this is a page with a list of links to other Markdown-related resources. I was going to link to some Mac tools and some Windows tools, but the ones I wanted to link to are on this page already. As it turns out the two sites I write about above are not. If you want to get familiar with the various tools in the Markdown ecosystem, then this should get you started.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun Links 2015-05-08</title>
+      <link>https://colin.is/blog/2015/fun-links-2015-05-08/</link>
+      <pubDate>Fri, 08 May 2015 15:19:00 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/fun-links-2015-05-08/</guid>
+      <description>&lt;p&gt;Apologies, I&amp;rsquo;ve been out of the office for a while and I&amp;rsquo;ve fallen behind. I&amp;rsquo;ve been building up a backlog of links though, and so there should be a fairly steady stream for the next while.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RethinkDB&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://rethinkdb.com/&#34;&gt;http://rethinkdb.com/&lt;/a&gt;&lt;br /&gt;
+An open-source distributed database built with love. RethinkDB is built to store JSON documents, and scale to multiple machines with very little effort. It has a pleasant query language that supports useful queries like table joins and group by, and is easy to setup and learn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gitbook&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.gitbook.com/&#34;&gt;https://www.gitbook.com/&lt;/a&gt;&lt;br /&gt;
+A git and Markdown-based way to create books and distribute them. Generous terms and a freemium payment model, you can try it out for free.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Codio&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://codio.com/&#34;&gt;https://codio.com/&lt;/a&gt;&lt;br /&gt;
+Codio is a cloud-based IDE with a focus on education. They offer a free plan with 256MB of RAM and 2GB of disk space. As with any of the other Cloud IDEs I&amp;rsquo;ve mentioned before, it isn&amp;rsquo;t always about specs. Features can vary subtly, and the IDE UIs are often a deciding factor when looking for something to suit your tastes. I&amp;rsquo;ve compared a number of the cloud IDEs lately, and this one ranks pretty highly if you are using Mercurial.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

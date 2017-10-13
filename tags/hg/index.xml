@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hg on Colin Bate is...</title>
+    <link>https://colin.is/tags/hg/</link>
+    <description>Recent content in Hg on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Feb 2014 21:21:52 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/hg/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mercurial Bookmarks in TeamCity</title>
+      <link>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</link>
+      <pubDate>Wed, 05 Feb 2014 21:21:52 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2014/mercurial-bookmarks-in-teamcity/</guid>
+      <description>&lt;p&gt;This is just a note to help those people looking for help on this and hopefully prevent some banging of heads into walls.&lt;/p&gt;
+
+&lt;p&gt;To use bookmarks fully with &lt;a href=&#34;http://www.jetbrains.com/teamcity/&#34;&gt;TeamCity&lt;/a&gt;, you need TeamCity 8 &lt;strong&gt;and&lt;/strong&gt; Mercurial 2.4 installed on the server.&lt;/p&gt;
+
+&lt;p&gt;New installations shouldn&amp;rsquo;t have a problem, but if you&amp;rsquo;ve upgraded to TC8, then do yourself a favour and &lt;a href=&#34;http://mercurial.selenic.com/downloads/&#34;&gt;upgrade your Mercurial as well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have an old version of Mercurial, you may see an exception like this if you try to set your default branch to be a bookmark.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jetbrains.buildServer.vcs.VcsRootVcsException: Cannot find revision of the default branch &#39;&amp;lt;bookmark name&amp;gt;&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You also won&amp;rsquo;t be able to select any branches in the custom run dialog.&lt;/p&gt;
+
+&lt;p&gt;It will be very frustrating. :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Branching in a Complex World</title>
+      <link>https://colin.is/blog/2013/branching-in-a-complex-world/</link>
+      <pubDate>Fri, 18 Oct 2013 23:23:33 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2013/branching-in-a-complex-world/</guid>
+      <description>
+
+&lt;p&gt;Sometimes you aren&amp;rsquo;t in a completely clean state when you want to take a branch of your repository. I&amp;rsquo;ve said before to people not to attempt it if you aren&amp;rsquo;t sure how because the risk of error is non-negligible. That said anything is possible, and I&amp;rsquo;d like to document some of the advanced cases somewhere in case it is useful to someone.&lt;/p&gt;
+
+&lt;p&gt;There are number of possible branching strategies, and I&amp;rsquo;m not here to promote one or another, but if you create named branches in mercurial, this should be applicable. This example is assuming you are branching from &lt;code&gt;default&lt;/code&gt;, but you can branch from another branch if that floats your boat.&lt;/p&gt;
+
+&lt;h2 id=&#34;tidy-local-changes:2f7303b1473f767b3121185aa341ae98&#34;&gt;Tidy local changes&lt;/h2&gt;
+
+&lt;p&gt;If you have uncommitted local files, your options are to either shelve the changes or commit them because you won&amp;rsquo;t be able to switch around branches with loose changes.&lt;/p&gt;
+
+&lt;p&gt;Generally I&amp;rsquo;m a big fan of the command line for my mercurial stuff, but there are a couple places where I use the TortoiseHg or SourceTree UIs: committing selectively, and shelving.&lt;/p&gt;
+
+&lt;p&gt;You can commit an individual file with something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg ci -m &amp;quot;Message&amp;quot; path/to/file.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Don&amp;rsquo;t worry if you don&amp;rsquo;t want to push this commit yet, you don&amp;rsquo;t need to. In fact given that is a more tricky situation, that is my assumption for this article.&lt;/p&gt;
+
+&lt;p&gt;As for shelving there are various methods and perhaps I&amp;rsquo;ll talk about it in another article, but for now I&amp;rsquo;d recommend the graphical tools.&lt;/p&gt;
+
+&lt;h2 id=&#34;navigating-to-your-branch-point:2f7303b1473f767b3121185aa341ae98&#34;&gt;Navigating to your branch point&lt;/h2&gt;
+
+&lt;p&gt;If working with other people, it is always a good idea to pull to see what the current state of the repo is. Then you can determine where you need to be to make the branch.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg pull &amp;lt;alias/url/path&amp;gt;
+hg up default # or tip or a bookmark
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Basically you want to be updated to the most recent changeset that is meant to be in the new branch. If you have a local changeset which isn&amp;rsquo;t meant to be included in this branch, you will need to update to either a different head, or whichever ancestor is supposed to be included.&lt;/p&gt;
+
+&lt;p&gt;You can run the &lt;code&gt;log&lt;/code&gt; command to check the history, or use a graphical tool to help visualize it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg log -l 10 -G
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will show you the last ten changesets with the graph beside them. The ASCII graph is pretty cool, but not always the clearest if you have a lot going on. You can also use &lt;code&gt;hg parents&lt;/code&gt; to determine the immediate ancestors of a revision or file.&lt;/p&gt;
+
+&lt;p&gt;Another command to help visualize the topology of your repository is &lt;code&gt;heads&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg heads .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will show you the heads (which are changesets with no children) in your current branch. If you have local changesets to exclude from the branch, you will end up with an extra head in &lt;code&gt;default&lt;/code&gt; after this. Just update to the last changeset you do want to branch.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-new-branch:2f7303b1473f767b3121185aa341ae98&#34;&gt;Creating a new branch&lt;/h2&gt;
+
+&lt;p&gt;After you have updated to the correct changeset, all you need to do is name your branch and commit that branch into history. The &lt;code&gt;branch&lt;/code&gt; command will warn you about the permanence of branches. They are kind of a big deal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg branch BRANCH_NAME
+hg commit -m &amp;quot;Create BRANCH_NAME branch&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you have created the branch, you could say you are done, but it is good practice to merge this back into &lt;code&gt;default&lt;/code&gt; particularly if others will be pulling. If you leave the tip in your new branch, it is possible that someone else&amp;rsquo;s tool might decide to update to tip even though it isn&amp;rsquo;t in the same branch.&lt;/p&gt;
+
+&lt;p&gt;If you aren&amp;rsquo;t interested in pushing you local changeset yet, even into default, then you&amp;rsquo;ll need to merge back to the same changeset that you branched from. After updating to &lt;code&gt;default&lt;/code&gt;, update to the correct parent changeset.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg up default
+# possibly updating to some other changeset in default
+hg merge BRANCH_NAME
+hg commit -m &amp;quot;Merged BRANCH_NAME into default&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So now you have your new branch, how do you share it with the world?&lt;/p&gt;
+
+&lt;h2 id=&#34;publishing-branches:2f7303b1473f767b3121185aa341ae98&#34;&gt;Publishing branches&lt;/h2&gt;
+
+&lt;p&gt;There really isn&amp;rsquo;t a lot of magic around pushing branches, you just need to add &lt;code&gt;--new-branch&lt;/code&gt; to your push command.&lt;/p&gt;
+
+&lt;p&gt;However, going back to the beginning, we have local changesets that we don&amp;rsquo;t want to push, how do we deal with that? Using the commands mentioned before, you should be able to see that you have multiple heads in &lt;code&gt;default&lt;/code&gt; now.&lt;/p&gt;
+
+&lt;p&gt;When in doubt, use &lt;code&gt;outgoing&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg out
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This should show your branch creation and merge back into default, but it will also show that local changeset that you don&amp;rsquo;t want to publish yet. However, &lt;code&gt;out&lt;/code&gt; like &lt;code&gt;push&lt;/code&gt; accepts a &lt;code&gt;-r&lt;/code&gt; parameter for passing changesets (aka. revisions). When you push a particular changeset, you are pushing only it and its ancestors, but not any other heads.&lt;/p&gt;
+
+&lt;p&gt;As a shortcut you can use a period &lt;code&gt;.&lt;/code&gt; to reference the current working copy/changeset. So you can use it to push only changesets that are ancestors of your current state.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg push -r . &amp;lt;alias/url/path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, if you aren&amp;rsquo;t updated to the changesets you want to push, you can specify the id or number directly instead of a period. Again, try &lt;code&gt;out&lt;/code&gt; first if you are unsure.&lt;/p&gt;
+
+&lt;p&gt;At some point you may want to have divergent branches, or a branch that cannot merge back into default. If you want, you can push multiple heads at the same time.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hg push -r . -r BRANCH_NAME &amp;lt;alias/url/path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, &lt;code&gt;-r&lt;/code&gt; can be specified multiple times.&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusions:2f7303b1473f767b3121185aa341ae98&#34;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ve learned how to create a new branch regardless of how much stuff we are in the middle of. No longer should anyone hear: &amp;ldquo;I&amp;rsquo;m not ready to push yet&amp;rdquo; as an excuse why they can&amp;rsquo;t make a branch or fix a bug. The concepts, particularly around navigating to and pushing particular changesets, are applicable in both scenarios.&lt;/p&gt;
+
+&lt;p&gt;Using a distributed version control system can be a great way to manage code and/or other written material for your project. They are quite flexible and powerful, but with that comes great responsibility as they say.&lt;/p&gt;
+
+&lt;p&gt;I will try and share other tidbits of mercurial fun as I think if them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

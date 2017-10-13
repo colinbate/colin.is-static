@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Colin Bate is...</title>
+    <link>https://colin.is/tags/node/</link>
+    <description>Recent content in Node on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jan 2016 14:42:49 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fun Links 2016-01-15</title>
+      <link>https://colin.is/blog/2016/fun-links-2016-01-15/</link>
+      <pubDate>Fri, 15 Jan 2016 14:42:49 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/fun-links-2016-01-15/</guid>
+      <description>&lt;p&gt;Some web application front-ends are just visualizations of data stored and calculated on servers somewhere. They provide the interaction mechanism to interact with this data, but they are agnostic to the &amp;ldquo;domain&amp;rdquo; of the problems they are solving.&lt;/p&gt;
+
+&lt;p&gt;However, more and more, the browser-based applications are becoming central to the full application experience. When you consider static applications without back-end servers, most of the domain logic sits in the JavaScript.&lt;/p&gt;
+
+&lt;p&gt;So when your domain is finance related, where can you turn to help you with your JavaScript calculations? Today I&amp;rsquo;ve compiled a list of finance-related JavaScript libraries. There isn&amp;rsquo;t a huge amount of choice of finance related tooling in the open source world. I suspect you could find some powerful JavaScript finance tools behind closed doors at various banks and funds around the world. However, if you want to start from somewhere other than zero, then some of these libraries might be worth investigating.&lt;/p&gt;
+
+&lt;p&gt;As a caveat, I&amp;rsquo;m no finance expert, so I can only point you to water, I can&amp;rsquo;t advise you that the water is safe to drink.&lt;/p&gt;
+
+&lt;p&gt;Also, I know that there are no charting libraries listed, and they are obviously useful within financial applications as well. Another post will cover those at some point.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Finance.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;http://trentrichardson.com/examples/FinanceJs/&#34;&gt;http://trentrichardson.com/examples/FinanceJs/&lt;/a&gt;&lt;br /&gt;
+A simple, dependency-free library that lets you calculate amortization schedules and payment amounts. It also has some helpful currency and number formatting functions. Nothing too fancy, but it can save you from implementing these things if you need them in your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Financial.js&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/mfreilich/financial.js&#34;&gt;https://github.com/mfreilich/financial.js&lt;/a&gt;&lt;br /&gt;
+Finacial.js, another creatively named library, claims to implement the Excel Financial functions in JavaScript. There isn&amp;rsquo;t much to it in the way of documentation or anything like that, but when I looked at the code, I noticed that it supports AMD and CommonJS, so you should be able to use it on the server or in the browser. I suppose if you were to combine this with a reactive programming library, you might be able to create a little version of Excel. Well, with a small subset of the functions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Node Finance&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/albertosantini/node-finance&#34;&gt;https://github.com/albertosantini/node-finance&lt;/a&gt;&lt;br /&gt;
+OK so Node Finance, as the name suggests, is a Node.js module meant to run on the server. It requires persistence in the form of a CouchDB instance for some of its functionality. It seems to be much more involved and application-like than the previous libraries. I will admit that I don&amp;rsquo;t know much about the algorithms it implements, so I&amp;rsquo;ll just quote the summary from the repository:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This module contains an implementation of Markowitz algorithm for the portfolio optimization, a routine for retrieving historical prices from Yahoo, statistical information for stocks and a routine for calculating implied volatility using Black and Scholes formula.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So if that is your cup of tea, then look no further. There is also &lt;a href=&#34;http://github.com/albertosantini/node-conpa&#34;&gt;a web UI&lt;/a&gt; that the author has also created for it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

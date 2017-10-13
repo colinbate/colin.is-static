@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Colin Bate is...</title>
+    <link>https://colin.is/tags/series/</link>
+    <description>Recent content in Series on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Mar 2016 17:01:15 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Angular 2 Error: No Directive annotation found</title>
+      <link>https://colin.is/blog/2016/angular2-error-no-directive/</link>
+      <pubDate>Thu, 24 Mar 2016 17:01:15 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2016/angular2-error-no-directive/</guid>
+      <description>&lt;p&gt;I thought I&amp;rsquo;d start keeping track of all of the errors that I work through as I work on several Angular 2 based projects. Many of these are not issues with Angular 2 per se, but perhaps your build tooling or even something silly you&amp;rsquo;ve done in your code. In any case, if it results in a semi-cryptic error in the console from Angular, then I&amp;rsquo;ll try to add it to my site here.&lt;/p&gt;
+
+&lt;p&gt;And I&amp;rsquo;ll also try to write about my more positive experiences as well. :)&lt;/p&gt;
+
+&lt;p&gt;In this case, the error I was seeing was &lt;code&gt;No Directive annotation found on &amp;lt;Type&amp;gt;&lt;/code&gt;, where Type was a directive from another third party library.&lt;/p&gt;
+
+&lt;p&gt;This error happened just after I had decided to try the latest beta from Angular 2 and also update the third party library as well. The third party library claimed to have a dependency on a particular previous beta version, but I knew it would be okay, so I ignored the errors about unmet peer dependencies.&lt;/p&gt;
+
+&lt;p&gt;After running into this issue at runtime, I tried to debug the &lt;code&gt;directive_resolver&lt;/code&gt; file and found that the type in question had the correct metadata and claimed to be of the right type (Angular 2 does an &lt;code&gt;instanceof&lt;/code&gt; comparison). So I had an object claiming to be of type &lt;code&gt;DirectiveMetadata&lt;/code&gt; and I had the &lt;code&gt;DirectiveMetadata&lt;/code&gt; type itself, but &lt;code&gt;instanceof&lt;/code&gt; was failing.&lt;/p&gt;
+
+&lt;p&gt;It turns out that NPM had installed a separate older version of Angular 2 specifically for the third party library, and that was why the types didn&amp;rsquo;t match up. I deleted the library&amp;rsquo;s &lt;code&gt;node_modules&lt;/code&gt; folder, and all was well.&lt;/p&gt;
+
+&lt;p&gt;This issue leads me to a broader rant about peer dependencies. This particular library listed &lt;code&gt;angular2&lt;/code&gt; in both &lt;code&gt;peerDependencies&lt;/code&gt; and &lt;code&gt;dependencies&lt;/code&gt; lists. I agree with the former; the latter is what causes this problem. With NPM 3, it will complain about unmet peer dependencies, but it won&amp;rsquo;t do anything about it. That is what I was seeing. However, if it is also a normal dependency it will install a private copy of it. That doesn&amp;rsquo;t work so well for an application framework dependency like this.&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this will help sort out any similar issues you see like this. What you can do from this point is up to you. Likely things will get sorted out with your third party before long.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using JSON Web Tokens with Hook.io</title>
+      <link>https://colin.is/blog/2015/jwt-and-hook-io/</link>
+      <pubDate>Thu, 31 Dec 2015 02:37:50 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/jwt-and-hook-io/</guid>
+      <description>
+
+&lt;p&gt;Continuing from my article about React and Redux, which are very much front-end concerns, I now turn my focus onto the back-end. Since my karaoke song request app is a static one, hosted at the moment, on GitHub Pages, I don&amp;rsquo;t have a backend. Instead, I take advantage of third-party services for persistence and authentication.&lt;/p&gt;
+
+&lt;p&gt;There are many hosted database providers out there, and even a few backend-as-a-service offerings as well. However, a couple of months ago I wrote a &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-06/&#34;&gt;fun links article about microservices&lt;/a&gt;. During that time I discovered &lt;a href=&#34;https://hook.io&#34;&gt;Hook.io&lt;/a&gt; which offered a bit more functionality than most of the other microservices. In particular, it offered a datastore which means it is usable as a backend with persistence.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure what technically constitutes &lt;em&gt;micro&lt;/em&gt; in this context, but I feel like I may have violated the spirit of a microservice with what I created for this app. My code is only a bit over 100 lines, yet I implemented a full CRUD API in a single service function.&lt;/p&gt;
+
+&lt;p&gt;The way Hook.io works is that you point your &lt;em&gt;hook&lt;/em&gt; at a Gist on GitHub, and it uses that as the source code. It is a pretty easy way to manage the source since you can clone a Gist to work on it locally, or just update it in the browser. And for the most part, things just work. That said, I probably burnt most of my time during this project trying to figure out some of the following things.&lt;/p&gt;
+
+&lt;h2 id=&#34;things-i-learned-about-hook-io:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;Things I Learned About Hook.io&lt;/h2&gt;
+
+&lt;p&gt;These are things that I would have liked to have known when starting out. Either because they would have potentially changed my design or they would have saved me a fair bit of time.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-all-your-hooks-share-a-datastore:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;1. All Your Hooks Share a Datastore&lt;/h3&gt;
+
+&lt;p&gt;The documentation mentions that you are limited in the number of keys you can store with the free version, but it doesn&amp;rsquo;t mention that your datastore is global to all of your hooks. In hindsight, it makes sense as environment variables work that way and it would allow for more &lt;em&gt;micro&lt;/em&gt; services being created to act on the same data. I might not have bundled all functionality into one service if I knew about this up front.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-hooks-are-run-with-node-js-0-12-7:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;2. Hooks Are Run With Node.js 0.12.7&lt;/h3&gt;
+
+&lt;p&gt;This seems to be true as of year end 2015. Unfortunately, this isn&amp;rsquo;t easy to determine as the sandbox environment used to run the hooks doesn&amp;rsquo;t allow access to the &lt;code&gt;process&lt;/code&gt; global object. I determined this by looking at the &lt;code&gt;Dockerfile&lt;/code&gt; &lt;a href=&#34;https://github.com/bigcompany/hook.io/blob/master/docker/nodebase/Dockerfile&#34;&gt;they have in their repo&lt;/a&gt;. The reason I wanted to know was I was wondering which ES2015 features I would have access to natively. Knowing the version wasn&amp;rsquo;t a huge help as it was difficult figuring our what was available for old versions of the V8 engine.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the features available:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Promises&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Map&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt;, &lt;code&gt;WeakMap&lt;/code&gt;, &lt;code&gt;WeakSet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Symbols&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;for..of&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, that list doesn&amp;rsquo;t include some that I would have liked, like arrow functions or &lt;code&gt;Array.from()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-you-cannot-use-buffer-directly:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;3. You Cannot Use &lt;code&gt;Buffer&lt;/code&gt; Directly&lt;/h3&gt;
+
+&lt;p&gt;But, and this is important, &lt;strong&gt;you can use them indirectly&lt;/strong&gt;. This is also caused by the sandbox evaluation of scripts. So you can&amp;rsquo;t do this directly in your code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Standard Node.js base64 decoding
+let decoded = new Buffer(base64encoded, &#39;base64&#39;).toString(&#39;utf8&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But you could reference a package which does this or even one which returns a buffer. I&amp;rsquo;ll give an example of this later.&lt;/p&gt;
+
+&lt;h2 id=&#34;authenticating-users-from-a-hook:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;Authenticating Users From A Hook&lt;/h2&gt;
+
+&lt;p&gt;As a part of creating my API within my hook, I needed a way to authenticate some of the requests. The code to my hook is public, and I&amp;rsquo;m accessing the API &lt;em&gt;cross-origin&lt;/em&gt; so there are some limitations.&lt;/p&gt;
+
+&lt;p&gt;The Hook.io documentation warns against storing sensitive data, so we need a way of determining who the user is without storing usernames and passwords locally. What we need is user management as a service. There are a couple of options, but one I had heard the most about was &lt;a href=&#34;https://auth0.com&#34;&gt;Auth0&lt;/a&gt;. It allows you to tap into some social identity providers like Facebook, Google or GitHub. Or they can maintain a username/password database for you.&lt;/p&gt;
+
+&lt;p&gt;So now I&amp;rsquo;m authenticating with &lt;code&gt;auth0.com&lt;/code&gt; and calling an API at &lt;code&gt;hook.io&lt;/code&gt;, so sharing a cookie isn&amp;rsquo;t an option. This is where &lt;em&gt;Bearer&lt;/em&gt; tokens, in particular &lt;a href=&#34;https://jwt.io&#34;&gt;JSON Web Tokens&lt;/a&gt;, come into play.&lt;/p&gt;
+
+&lt;p&gt;Auth0 provides a pre-made login/signup form (called Lock) which you can drop into your projects. It is customizable, but it works and looks pretty good out of the box. If you recall in my last article, I showed an action creator which imported a couple of functions from &lt;code&gt;../api/auth&lt;/code&gt;. Well it is the &lt;code&gt;signin&lt;/code&gt; function from there which integrates with Auth0&amp;rsquo;s Lock like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const lock = new window.Auth0Lock(id, url);
+export function signin() {
+  return new Promise((resolve, rej) =&amp;gt; {
+    lock.show({authParams: {scope: &#39;openid admin&#39;}}, (err, profile, token) =&amp;gt; {
+      if (err) {
+        return rej(err);
+      }
+      storage.set(tokenKey, token);
+      storage.set(profileKey, profile);
+      resolve(profile);
+    });
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yes, I am accessing &lt;code&gt;Auth0Lock&lt;/code&gt; globally and not via the module system. It was a lot easier than trying to integrate it with Webpack. Also in this case &lt;code&gt;storage&lt;/code&gt; is a small wrapper around &lt;code&gt;sessionStorage&lt;/code&gt; that I wrote.&lt;/p&gt;
+
+&lt;p&gt;As you can see, using the &lt;code&gt;lock&lt;/code&gt; is pretty easy in this case. The only customization I&amp;rsquo;m doing to it is specifying that I want the &lt;code&gt;admin&lt;/code&gt; property of the user (which is maintained at Auth0) to be included in the generated token&amp;rsquo;s payload.&lt;/p&gt;
+
+&lt;p&gt;This causes a dialog to pop up asking for username and password, and then that opens a popup window briefly. What is returned in the end, using the callback, is the profile document from Auth0 and the token.&lt;/p&gt;
+
+&lt;p&gt;The token is then saved and used whenever I make an API call. I just have a little helper function in my API wrapper which uses it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const getHeaders = (initial = {}) =&amp;gt; {
+  let token = storage.get(tokenKey);
+  if (token) {
+    initial[&#39;Authorization&#39;] = &#39;Bearer &#39; + token;
+  }
+  return initial;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the token is present, I add an &lt;code&gt;Authorization&lt;/code&gt; header with the token in it. This is how the token is communicated to my hook when I make a call to it.&lt;/p&gt;
+
+&lt;p&gt;Without going into all of the technical details, this token is signed by Auth0 using a secret. To verify that it hasn&amp;rsquo;t been tampered with, you need access to that same secret. I can&amp;rsquo;t just add that secret to my public source code, but fortunately, Hook.io supports environment variables. This is a place you can set private values which are then made available to your executing hooks.&lt;/p&gt;
+
+&lt;p&gt;Now we are looking at the code of the hook itself, running as part of the API.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// This is code running in my hook
+var jwt = require(&#39;jsonwebtoken&#39;),
+    clientId = hook.env.my_clientId,
+    secret = require(&#39;base64url&#39;).toBuffer(hook.env.my_secret),
+    token = hook.req.headers.authorization &amp;amp;&amp;amp;
+            hook.req.headers.authorization.replace(/^Bearer\s+/, &#39;&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the code that is used to extract the token and other inputs needed to autheticate the user. The &lt;code&gt;hook&lt;/code&gt; object is passed to the hook, and &lt;code&gt;hook.env&lt;/code&gt; contains the environment variables I set up. You can see that I have required the &lt;code&gt;base64url&lt;/code&gt; package and that is to get around the &lt;code&gt;Buffer&lt;/code&gt; issue I mentioned above. In this case, I&amp;rsquo;m taking &lt;code&gt;my_secret&lt;/code&gt;, a base64 encoded string, out of the environment variables. The &lt;code&gt;base64url&lt;/code&gt; package converts it into a &lt;code&gt;Buffer&lt;/code&gt; for me, which I will use in a minute.&lt;/p&gt;
+
+&lt;p&gt;I also extract the token from the &lt;code&gt;Authorization&lt;/code&gt; header if it is present.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var user = {};
+if (token) {
+  try {
+    user = jwt.verify(token, secret, {audience: clientId});
+    user.authenticated = true;
+  } catch (e) {
+    hook.res.statusCode = 401;
+    hook.res.end(&#39;Invalid user token&#39;);
+    return;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the code where the token is verified. The &lt;code&gt;jsonwebtoken&lt;/code&gt; package we required above is doing the heavy lifting. The &lt;code&gt;user&lt;/code&gt; being returned from that is the token payload. Because I asked for it, the token includes an &lt;code&gt;admin&lt;/code&gt; property which indicates whether the user is an administrator.&lt;/p&gt;
+
+&lt;p&gt;In the rest of my hook, I can simply do this when necessary:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;if (user.admin) {
+  // Do something admin-y
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is it. It is pretty straightforward in the end, but the sandboxed execution environment caused me to spin my wheels for a while. I want to provide this as a reference for anyone looking for ways to integrate Auth0 or JWT in general with Hook.io.&lt;/p&gt;
+
+&lt;p&gt;For anyone interested, here is the full code for my hook. It is live from the Gist, so it may change slightly in the future as I make updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&#34;https://gist.github.com/colinbate/517144b2bfc2584575e7.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with React&#43;Redux</title>
+      <link>https://colin.is/blog/2015/song-request-app-getting-started/</link>
+      <pubDate>Wed, 30 Dec 2015 02:38:11 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/song-request-app-getting-started/</guid>
+      <description>
+
+&lt;p&gt;Over the holidays, I worked on a web app. That isn&amp;rsquo;t new; I do that most chances I get. However this app was an assignment, and I&amp;rsquo;d like to walk you through some of the lessons learned. I&amp;rsquo;m planning this to be a series of articles looking at different aspects of building this application.&lt;/p&gt;
+
+&lt;p&gt;The assignment, in this case, was &lt;a href=&#34;https://github.com/colinbate/web-club-assignments/tree/master/song-request&#34;&gt;one that I created myself&lt;/a&gt;. I created it for some of my colleagues as a way to learn new web technologies without needing to worry about what to build. The goal was to recreate a simple app I had written years ago to request songs to add to my karaoke song list. Yes, I was an office karaoke jockey for a while.&lt;/p&gt;
+
+&lt;p&gt;The goal of the assignment aside from some specifications on functionality was to state that you needed to use at least two technologies that were new to you. But why stop at two? Why not make everything new?&lt;/p&gt;
+
+&lt;p&gt;I started with the notion of using &lt;a href=&#34;https://facebook.github.io/react/&#34;&gt;React&lt;/a&gt;, mostly to see what all the fuss was about. React is a view engine, and doesn&amp;rsquo;t provide the full package you get with some other frameworks. Looking around, I saw that Facebook also had a state management library called Flux. At this time, I was investigating Reactive Programming, and I had it in my head that I would use &lt;a href=&#34;https://rpominov.github.io/kefir/&#34;&gt;Kefir.js&lt;/a&gt; instead of Flux. Then I heard about &lt;a href=&#34;http://redux.js.org/&#34;&gt;Redux&lt;/a&gt; and I was hooked.&lt;/p&gt;
+
+&lt;p&gt;The ideas behind Redux are simple:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Application state is a single object tree (&lt;em&gt;store&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;That state is read-only, you can only update it via an &lt;em&gt;action&lt;/em&gt; describing what happened.&lt;/li&gt;
+&lt;li&gt;Changes are made with pure functions so that each state is independent (&lt;em&gt;reducers&lt;/em&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Essentially it is event sourcing or, at least, a light-weight version of it.&lt;/p&gt;
+
+&lt;p&gt;Redux isn&amp;rsquo;t exclusively for use with React, but the two play well together. There is a &lt;code&gt;react-redux&lt;/code&gt; package that provides some integration points. If you want to learn more about Redux, particularly if you don&amp;rsquo;t know much about React, then watch the &lt;a href=&#34;https://egghead.io/series/getting-started-with-redux&#34;&gt;&lt;em&gt;Getting Started with Redux&lt;/em&gt; course at Egghead.io&lt;/a&gt;. It was produced by the creator of Redux and is an informative, ground-up set of lessons.&lt;/p&gt;
+
+&lt;p&gt;For a taste, here is an example reducer function from my karaoke app:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import * as Actions from &#39;../actions&#39;;
+
+function user(state = {}, action) {
+  switch (action.type) {
+    case Actions.CLEAR_USER:
+      return {};
+    case Actions.SET_USER:
+      if (action.ready &amp;amp;&amp;amp; action.result) {
+        return {
+          ...action.result
+        };
+      }
+    default:
+      return state;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This function is responsible for managing the state of a single part of the app (the user info) and is combined with other reducers to create a function that manages the full application state.&lt;/p&gt;
+
+&lt;p&gt;You can see under the &lt;code&gt;SET_USER&lt;/code&gt; case that I&amp;rsquo;m returning a new object populated with the spread of values from the action result. This syntax is an ES2016 proposed feature (object spread) and probably not strictly necessary since the result would be a new object from the state&amp;rsquo;s perspective. In any case, it gives you an idea.&lt;/p&gt;
+
+&lt;p&gt;The actions which this reducer handles look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import {signin, signout} from &#39;../api/auth&#39;;
+
+export const SET_USER = &#39;SET_USER&#39;;
+export const CLEAR_USER = &#39;CLEAR_USER&#39;;
+
+export function login() {
+  return {
+    promise: signin(),
+    type: SET_USER
+  };
+}
+
+export function logout() {
+  signout();
+  return {
+    type: CLEAR_USER
+  };
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Apart from the potentially confusing signout vs. logout nomenclature, you can see that actions are potentially very simple, just objects with a type. Functions that create actions are called action creators in the Redux world (imagine that). In the &lt;code&gt;login&lt;/code&gt; case, I&amp;rsquo;m setting a promise on the action. This promise is picked up by some middleware that turns that into two actions, one initially when called and another when the promise is fulfilled. The state of the action is indicated by &lt;code&gt;action.ready&lt;/code&gt; that you can see in the reducer above.&lt;/p&gt;
+
+&lt;p&gt;And here I bring it all together by creating a store with the reducers and middleware:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import { createStore, applyMiddleware } from &#39;redux&#39;;
+import rootReducer from &#39;../reducers&#39;;
+import promiseMiddleware from &#39;./promise-middleware&#39;;
+import thunkMiddleware from &#39;./thunk-middleware&#39;;
+
+function configureStore(initialState) {
+  const createStoreWithMiddleware = applyMiddleware(
+    promiseMiddleware,
+    thunkMiddleware
+  )(createStore);
+  return createStoreWithMiddleware(rootReducer, initialState);
+}
+
+const store = configureStore(); 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So that is a quick look at the Redux part, how does this fit in with the rendering using React?&lt;/p&gt;
+
+&lt;p&gt;React uses JSX, an extension on JavaScript, which uses HTML-like structures inline within your rendering methods. There are specific compilers for it, but Babel supports it as well if you are using that already.&lt;/p&gt;
+
+&lt;p&gt;Here is my &lt;code&gt;Header&lt;/code&gt; component. A parent JSX component would reference it as &lt;code&gt;&amp;lt;Header /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;import React from &#39;react&#39;;
+import {connect} from &#39;react-redux&#39;;
+import Button from &#39;./Button&#39;;
+import {login, logout} from &#39;../actions&#39;;
+
+const Header = ({ user, login, logout, children }) =&amp;gt; (
+  &amp;lt;header className=&amp;quot;mdl-layout__header&amp;quot;&amp;gt;
+    &amp;lt;div className=&amp;quot;mdl-layout__header-row&amp;quot;&amp;gt;
+      &amp;lt;span className=&amp;quot;mdl-layout-title&amp;quot;&amp;gt;{children}&amp;lt;/span&amp;gt;
+      &amp;lt;div className=&amp;quot;mdl-layout-spacer&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+      &amp;lt;div&amp;gt;{user.email ?
+        &amp;lt;div&amp;gt;
+          &amp;lt;span&amp;gt;{user.email}&amp;lt;/span&amp;gt;
+          &amp;lt;Button accent=&amp;quot;true&amp;quot; onClick={logout}&amp;gt;Logout&amp;lt;/Button&amp;gt;
+        &amp;lt;/div&amp;gt; :
+        &amp;lt;Button accent=&amp;quot;true&amp;quot; onClick={login}&amp;gt;Login&amp;lt;/Button&amp;gt;}
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/header&amp;gt;
+);
+
+const mapStateToProps = (state) =&amp;gt; ({ user: state.user });
+
+export default connect(mapStateToProps, {login, logout})(Header);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;Header&lt;/code&gt; function is a simple stateless React component. It can be a bit tricky at first glance if you aren&amp;rsquo;t familiar with ES2015 syntax; between that and React there are about four different syntactic uses of curly braces in that snippet.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;connect&lt;/code&gt; function is what is doing the magic of hooking up the React component to the Redux store. You should check out the lessons I mentioned earlier, as they explain what exactly the &lt;code&gt;connect&lt;/code&gt; function is doing so you can see how things are wired up.&lt;/p&gt;
+
+&lt;h3 id=&#34;next-up:24752f5a4a3a65bb890df4891e9fef80&#34;&gt;Next Up&lt;/h3&gt;
+
+&lt;p&gt;When I said that I wanted everything to be new for this app, I wasn&amp;rsquo;t kidding. The only thing that I&amp;rsquo;d used before was ES2015 as a language and &lt;a href=&#34;http://babeljs.io&#34;&gt;Babel&lt;/a&gt; as a transpiler. That said, it was my first use of Babel 6, and I used &lt;a href=&#34;https://webpack.github.io/docs/&#34;&gt;Webpack&lt;/a&gt; which was new to me as well.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&#34;http://hook.io&#34;&gt;Hook.io&lt;/a&gt; as my backend and &lt;a href=&#34;https://auth0.com&#34;&gt;Auth0&lt;/a&gt; as my authentication provider. And on the visual side, I used &lt;a href=&#34;http://www.getmdl.io&#34;&gt;Material Design Lite&lt;/a&gt; for styles. I used the &lt;a href=&#34;https://github.com/github/fetch&#34;&gt;fetch&lt;/a&gt; API and polyfill for talking to the server, Git instead of Mercurial and even my editor was new, switching to &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VS Code&lt;/a&gt;. All told a great experience. I&amp;rsquo;ll be sharing more of my &lt;em&gt;learnings&lt;/em&gt; and struggles with you soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

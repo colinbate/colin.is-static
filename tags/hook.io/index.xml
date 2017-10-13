@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hook.Io on Colin Bate is...</title>
+    <link>https://colin.is/tags/hook/index.io/</link>
+    <description>Recent content in Hook.Io on Colin Bate is...</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Dec 2015 02:37:50 +0000</lastBuildDate>
+    <atom:link href="https://colin.is/tags/hook.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using JSON Web Tokens with Hook.io</title>
+      <link>https://colin.is/blog/2015/jwt-and-hook-io/</link>
+      <pubDate>Thu, 31 Dec 2015 02:37:50 +0000</pubDate>
+      
+      <guid>https://colin.is/blog/2015/jwt-and-hook-io/</guid>
+      <description>
+
+&lt;p&gt;Continuing from my article about React and Redux, which are very much front-end concerns, I now turn my focus onto the back-end. Since my karaoke song request app is a static one, hosted at the moment, on GitHub Pages, I don&amp;rsquo;t have a backend. Instead, I take advantage of third-party services for persistence and authentication.&lt;/p&gt;
+
+&lt;p&gt;There are many hosted database providers out there, and even a few backend-as-a-service offerings as well. However, a couple of months ago I wrote a &lt;a href=&#34;https://colin.is/blog/2015/fun-links-2015-11-06/&#34;&gt;fun links article about microservices&lt;/a&gt;. During that time I discovered &lt;a href=&#34;https://hook.io&#34;&gt;Hook.io&lt;/a&gt; which offered a bit more functionality than most of the other microservices. In particular, it offered a datastore which means it is usable as a backend with persistence.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure what technically constitutes &lt;em&gt;micro&lt;/em&gt; in this context, but I feel like I may have violated the spirit of a microservice with what I created for this app. My code is only a bit over 100 lines, yet I implemented a full CRUD API in a single service function.&lt;/p&gt;
+
+&lt;p&gt;The way Hook.io works is that you point your &lt;em&gt;hook&lt;/em&gt; at a Gist on GitHub, and it uses that as the source code. It is a pretty easy way to manage the source since you can clone a Gist to work on it locally, or just update it in the browser. And for the most part, things just work. That said, I probably burnt most of my time during this project trying to figure out some of the following things.&lt;/p&gt;
+
+&lt;h2 id=&#34;things-i-learned-about-hook-io:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;Things I Learned About Hook.io&lt;/h2&gt;
+
+&lt;p&gt;These are things that I would have liked to have known when starting out. Either because they would have potentially changed my design or they would have saved me a fair bit of time.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-all-your-hooks-share-a-datastore:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;1. All Your Hooks Share a Datastore&lt;/h3&gt;
+
+&lt;p&gt;The documentation mentions that you are limited in the number of keys you can store with the free version, but it doesn&amp;rsquo;t mention that your datastore is global to all of your hooks. In hindsight, it makes sense as environment variables work that way and it would allow for more &lt;em&gt;micro&lt;/em&gt; services being created to act on the same data. I might not have bundled all functionality into one service if I knew about this up front.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-hooks-are-run-with-node-js-0-12-7:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;2. Hooks Are Run With Node.js 0.12.7&lt;/h3&gt;
+
+&lt;p&gt;This seems to be true as of year end 2015. Unfortunately, this isn&amp;rsquo;t easy to determine as the sandbox environment used to run the hooks doesn&amp;rsquo;t allow access to the &lt;code&gt;process&lt;/code&gt; global object. I determined this by looking at the &lt;code&gt;Dockerfile&lt;/code&gt; &lt;a href=&#34;https://github.com/bigcompany/hook.io/blob/master/docker/nodebase/Dockerfile&#34;&gt;they have in their repo&lt;/a&gt;. The reason I wanted to know was I was wondering which ES2015 features I would have access to natively. Knowing the version wasn&amp;rsquo;t a huge help as it was difficult figuring our what was available for old versions of the V8 engine.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the features available:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Promises&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Map&lt;/code&gt;, &lt;code&gt;Set&lt;/code&gt;, &lt;code&gt;WeakMap&lt;/code&gt;, &lt;code&gt;WeakSet&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Symbols&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;for..of&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, that list doesn&amp;rsquo;t include some that I would have liked, like arrow functions or &lt;code&gt;Array.from()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-you-cannot-use-buffer-directly:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;3. You Cannot Use &lt;code&gt;Buffer&lt;/code&gt; Directly&lt;/h3&gt;
+
+&lt;p&gt;But, and this is important, &lt;strong&gt;you can use them indirectly&lt;/strong&gt;. This is also caused by the sandbox evaluation of scripts. So you can&amp;rsquo;t do this directly in your code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// Standard Node.js base64 decoding
+let decoded = new Buffer(base64encoded, &#39;base64&#39;).toString(&#39;utf8&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But you could reference a package which does this or even one which returns a buffer. I&amp;rsquo;ll give an example of this later.&lt;/p&gt;
+
+&lt;h2 id=&#34;authenticating-users-from-a-hook:00b299fd5d6aefe72b21cd8b08a0aa25&#34;&gt;Authenticating Users From A Hook&lt;/h2&gt;
+
+&lt;p&gt;As a part of creating my API within my hook, I needed a way to authenticate some of the requests. The code to my hook is public, and I&amp;rsquo;m accessing the API &lt;em&gt;cross-origin&lt;/em&gt; so there are some limitations.&lt;/p&gt;
+
+&lt;p&gt;The Hook.io documentation warns against storing sensitive data, so we need a way of determining who the user is without storing usernames and passwords locally. What we need is user management as a service. There are a couple of options, but one I had heard the most about was &lt;a href=&#34;https://auth0.com&#34;&gt;Auth0&lt;/a&gt;. It allows you to tap into some social identity providers like Facebook, Google or GitHub. Or they can maintain a username/password database for you.&lt;/p&gt;
+
+&lt;p&gt;So now I&amp;rsquo;m authenticating with &lt;code&gt;auth0.com&lt;/code&gt; and calling an API at &lt;code&gt;hook.io&lt;/code&gt;, so sharing a cookie isn&amp;rsquo;t an option. This is where &lt;em&gt;Bearer&lt;/em&gt; tokens, in particular &lt;a href=&#34;https://jwt.io&#34;&gt;JSON Web Tokens&lt;/a&gt;, come into play.&lt;/p&gt;
+
+&lt;p&gt;Auth0 provides a pre-made login/signup form (called Lock) which you can drop into your projects. It is customizable, but it works and looks pretty good out of the box. If you recall in my last article, I showed an action creator which imported a couple of functions from &lt;code&gt;../api/auth&lt;/code&gt;. Well it is the &lt;code&gt;signin&lt;/code&gt; function from there which integrates with Auth0&amp;rsquo;s Lock like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const lock = new window.Auth0Lock(id, url);
+export function signin() {
+  return new Promise((resolve, rej) =&amp;gt; {
+    lock.show({authParams: {scope: &#39;openid admin&#39;}}, (err, profile, token) =&amp;gt; {
+      if (err) {
+        return rej(err);
+      }
+      storage.set(tokenKey, token);
+      storage.set(profileKey, profile);
+      resolve(profile);
+    });
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yes, I am accessing &lt;code&gt;Auth0Lock&lt;/code&gt; globally and not via the module system. It was a lot easier than trying to integrate it with Webpack. Also in this case &lt;code&gt;storage&lt;/code&gt; is a small wrapper around &lt;code&gt;sessionStorage&lt;/code&gt; that I wrote.&lt;/p&gt;
+
+&lt;p&gt;As you can see, using the &lt;code&gt;lock&lt;/code&gt; is pretty easy in this case. The only customization I&amp;rsquo;m doing to it is specifying that I want the &lt;code&gt;admin&lt;/code&gt; property of the user (which is maintained at Auth0) to be included in the generated token&amp;rsquo;s payload.&lt;/p&gt;
+
+&lt;p&gt;This causes a dialog to pop up asking for username and password, and then that opens a popup window briefly. What is returned in the end, using the callback, is the profile document from Auth0 and the token.&lt;/p&gt;
+
+&lt;p&gt;The token is then saved and used whenever I make an API call. I just have a little helper function in my API wrapper which uses it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;const getHeaders = (initial = {}) =&amp;gt; {
+  let token = storage.get(tokenKey);
+  if (token) {
+    initial[&#39;Authorization&#39;] = &#39;Bearer &#39; + token;
+  }
+  return initial;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If the token is present, I add an &lt;code&gt;Authorization&lt;/code&gt; header with the token in it. This is how the token is communicated to my hook when I make a call to it.&lt;/p&gt;
+
+&lt;p&gt;Without going into all of the technical details, this token is signed by Auth0 using a secret. To verify that it hasn&amp;rsquo;t been tampered with, you need access to that same secret. I can&amp;rsquo;t just add that secret to my public source code, but fortunately, Hook.io supports environment variables. This is a place you can set private values which are then made available to your executing hooks.&lt;/p&gt;
+
+&lt;p&gt;Now we are looking at the code of the hook itself, running as part of the API.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;// This is code running in my hook
+var jwt = require(&#39;jsonwebtoken&#39;),
+    clientId = hook.env.my_clientId,
+    secret = require(&#39;base64url&#39;).toBuffer(hook.env.my_secret),
+    token = hook.req.headers.authorization &amp;amp;&amp;amp;
+            hook.req.headers.authorization.replace(/^Bearer\s+/, &#39;&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the code that is used to extract the token and other inputs needed to autheticate the user. The &lt;code&gt;hook&lt;/code&gt; object is passed to the hook, and &lt;code&gt;hook.env&lt;/code&gt; contains the environment variables I set up. You can see that I have required the &lt;code&gt;base64url&lt;/code&gt; package and that is to get around the &lt;code&gt;Buffer&lt;/code&gt; issue I mentioned above. In this case, I&amp;rsquo;m taking &lt;code&gt;my_secret&lt;/code&gt;, a base64 encoded string, out of the environment variables. The &lt;code&gt;base64url&lt;/code&gt; package converts it into a &lt;code&gt;Buffer&lt;/code&gt; for me, which I will use in a minute.&lt;/p&gt;
+
+&lt;p&gt;I also extract the token from the &lt;code&gt;Authorization&lt;/code&gt; header if it is present.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;var user = {};
+if (token) {
+  try {
+    user = jwt.verify(token, secret, {audience: clientId});
+    user.authenticated = true;
+  } catch (e) {
+    hook.res.statusCode = 401;
+    hook.res.end(&#39;Invalid user token&#39;);
+    return;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the code where the token is verified. The &lt;code&gt;jsonwebtoken&lt;/code&gt; package we required above is doing the heavy lifting. The &lt;code&gt;user&lt;/code&gt; being returned from that is the token payload. Because I asked for it, the token includes an &lt;code&gt;admin&lt;/code&gt; property which indicates whether the user is an administrator.&lt;/p&gt;
+
+&lt;p&gt;In the rest of my hook, I can simply do this when necessary:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;if (user.admin) {
+  // Do something admin-y
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is it. It is pretty straightforward in the end, but the sandboxed execution environment caused me to spin my wheels for a while. I want to provide this as a reference for anyone looking for ways to integrate Auth0 or JWT in general with Hook.io.&lt;/p&gt;
+
+&lt;p&gt;For anyone interested, here is the full code for my hook. It is live from the Gist, so it may change slightly in the future as I make updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&#34;https://gist.github.com/colinbate/517144b2bfc2584575e7.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
