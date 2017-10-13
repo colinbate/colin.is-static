@@ -12,14 +12,14 @@ Colin can be [contacted by email][contact] and [followed on Twitter][twitter].
 
 ## Developer
 
-Colin has been developing for the web for 20 years. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
+Colin has been developing for the web for 21 years. Throughout university, he wrote and maintained an application platform in PHP called echo! He did freelance work during this time as well, including developing an e-commerce system for [Savana urban spa][sav] in London, UK.
 
-For the past 8.5 years, Colin has been employed by Orbis Investment Management Limited as a software developer working initially on internal software systems. Most of that time however he was working on a retail investment platform called [Orbis Access][oa].
+For the past 10 years, Colin has been employed by Orbis Investment Management Limited as a software developer working on a mix of internal software systems and public facing web applications.
 
-In his spare time, Colin likes to hack on [node.js][njs], [Angular][ng], [React][], and is currently investigating Scheme and whatever else his little spare time permits. Anything publicly available will be located on [bitbucket][bb] or possibly [github][gh]
+In his spare time, Colin likes to hack on [Vue][], [Angular][ng], [React][], and is currently investigating Scheme and whatever else his little spare time permits. Anything publicly available will be located on [bitbucket][bb] or [github][gh]
 
 [sav]: http://www.savanaspa.com
-[njs]: http://nodejs.org/
+[Vue]: https://vuejs.org/
 [ng]: http://angular.io
 [React]: https://facebook.github.io/react/
 [bb]: https://bitbucket.org/colinbate/
@@ -46,7 +46,7 @@ Colin is an avid amateur photographer who shoots Canon and enjoys event, portrai
 
 ## Personal
 
-Colin lives on the beautiful island of Bermuda in the mid-Atlantic with his beautiful wife Lynne and sons Noah and Isaac. He enjoys movies, [fencing][bf] and mild winters. He is also the organizer of the fledgling Bermuda Web Technology User Group.
+Colin lives on the beautiful island of Bermuda in the mid-Atlantic with his wife and two sons. He enjoys movies, [fencing][bf] and mild winters.
 
 At the moment, Colin is trying to find as much time as possible amongst his busy work schedule to spend with his family.
 
