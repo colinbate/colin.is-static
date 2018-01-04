@@ -1,0 +1,19 @@
+{
+  "name": "colin.is-static",
+  "version": "1.0.0",
+  "description": "Source for colin.is",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo serve -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinbate/colin.is-static.git"
+  },
+  "author": "Colin Bate <colin@colinbate.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinbate/colin.is-static/issues"
+  },
+  "homepage": "https://github.com/colinbate/colin.is-static#readme"
+}
