@@ -9,12 +9,10 @@
 <body>
 	<div id="pageframe" class="container">
 		<div class="grid-4" id="innerframe">
-			{{ range where .Site.Pages "Type" "homepage" }}
-				<h1>{{ .Title }}</h1>
-				<div class="main-content">
-					{{ .Content }}
-				</div>
-			{{ end }}
+			<h1>{{ .Title }}</h1>
+			<div class="main-content">
+				{{ .Content }}
+			</div>
 		</div>
 		<div id="rightcol" class="grid-2">
 			<img src="assets/photo/colin-headshot.jpg" alt="Photo of Colin">
