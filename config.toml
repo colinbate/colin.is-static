@@ -16,8 +16,9 @@ theme = "hugo-icarus-theme"
 [permalinks]
     post = "/blog/:year/:month/:day/:slug"
 
-[Author]
-	name = "Colin Bate"
+[author]
+    name = "Colin Bate"
+    email = "colin@colin.is"
 
 [params]
     author = "Colin Bate"

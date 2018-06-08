@@ -1,5 +1,11 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 80
+    "editor.wordWrapColumn": 80,
+    "markdownlint.config": {
+        "MD002": {
+            "level": 2
+        },
+        "MD013": false
+    }
 }
