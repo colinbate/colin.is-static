@@ -9,6 +9,8 @@
                 {{ end }}
             {{ else if in .Params.categories "Fun links" }}
             <div class="funlink-banner"></div>
+            {{ else }}
+            <div class="default-banner"></div>
             {{ end }}
 
             {{ partial "article_header" . }}
@@ -19,7 +21,9 @@
             {{ partial "article_footer" . }}
         </div>
 
-        {{ partial "prev_next_post" . }}
+        {{ if ne .Page.Type "page" }}
+            {{ partial "prev_next_post" . }}
+        {{ end }}
     </article>
     <section id="comments">
         <p>There are no comments available on this site. If you want to respond then you can write your own blog article and send me the link via <a href="https://twitter.com/rhuvok" target="_blank">twitter</a>. If there is an issue with this article or the site in general, you can open an issue on <a href="https://github.com/colinbate/colin.is-static/issues" target="_blank">Github</a></p>

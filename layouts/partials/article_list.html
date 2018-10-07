@@ -15,6 +15,10 @@
             <a href="{{ .Permalink }}" itemprop="url">
                 <div class="funlink-banner"></div>
             </a>
+            {{ else }}
+            <a href="{{ .Permalink }}" itemprop="url">
+                <div class="default-banner"></div>
+            </a>
             {{ end }}
             {{ partial "article_header" . }}
             <div class="article-entry" itemprop="articleBody">
