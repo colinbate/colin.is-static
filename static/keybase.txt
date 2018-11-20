@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/colinbate
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://colin.is
+  * I am colinbate (https://keybase.io/colinbate) on keybase.
+  * I have a public key ASDIbdN_KSmwoRL4XiN5nNp7pP-jJuQHmsWuw5FtJVcH1Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c86dd37f2929b0a112f85e23799cda7ba4ffa326e4079ac5aec3916d255707d40a",
+      "host": "keybase.io",
+      "kid": "0120c86dd37f2929b0a112f85e23799cda7ba4ffa326e4079ac5aec3916d255707d40a",
+      "uid": "12b74b21f8040b7bcd0a393e31299819",
+      "username": "colinbate"
+    },
+    "merkle_root": {
+      "ctime": 1542686335,
+      "hash": "9848098072057ee61ca0b96ca6d0d68378674c3f12f0ffb02320d65dac9649ca7a7fdd9f8e85573e63ded456b4728c0b3924390a3ca9bcd8626dd302e180b490",
+      "hash_meta": "0a44afd7657a8b9ffc7d7501f8d3d0487bd2e07c3c81ec5a514204e2c736fa74",
+      "seqno": 3980358
+    },
+    "service": {
+      "entropy": "JvJSAn5aKlunBGpGamQHUc7y",
+      "hostname": "colin.is",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.10.0"
+  },
+  "ctime": 1542686366,
+  "expire_in": 504576000,
+  "prev": "88aa57494aa64e837c14585d065bbb8e6d270f56c63025a302295e6f93dbc5a0",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyG3TfykpsKES+F4jeZzae6T/oybkB5rFrsORbSVXB9QKp3BheWxvYWTESpcCBsQgiKpXSUqmToN8FFhdBlu7jm0nD1bGMCWjAileb5PbxaDEIK7u0eChSwYGjKYM5zi2ZFStieS7qZh3n4MHb3oLbQOPAgHCo3NpZ8RAleNIERTczS43smstmeXKOgRbAeyKmkX5Q/VKfPX931U58vmGre3NREdeNGZ4kE0RIGUFxpLWRu6EVwCYcUIeDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJZ2yjRH0Lf/qBcpnlCLiJiljqNg5jpMh+gyN5olZArKo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/colinbate
+
+==================================================================
