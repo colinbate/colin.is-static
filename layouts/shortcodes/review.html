@@ -4,13 +4,13 @@
 {{ $cover := .Get "cover" }}
 {{ $authorId := .Get "authorId" }}
 {{ $author := .Get "author" }}
-{{ $num := .Get "rating" }}
+{{ $num := int (.Get "rating") }}
 <div class="review-meta">
   <a href="https://www.goodreads.com/book/show/{{$book}}" class="review-cover"><img data-plain alt="{{$title}}" src="https://images.gr-assets.com/books/{{$cover}}"/></a>
   <h3><a href="https://www.goodreads.com/book/show/{{$book}}">{{$title}}</a></h3>
   by <a href="https://www.goodreads.com/author/show/{{$authorId}}">{{$author}}</a><br>
   My rating: <a href="https://www.goodreads.com/review/show/{{$id}}">
-    <span class="star-rating">
+    <span class="star-rating"><span class="literal">{{$num}} out of 5 stars</span>
       {{ range (seq 5) }}<span class="star {{ if le . $num }}star-full{{end}}"></span>{{ end }}
     </span>
   </a>
