@@ -3,7 +3,7 @@ title = "Go go go (aka. Advent of Code 2019)"
 date = 2019-12-09T15:41:31Z
 categories = ["Dev"]
 tags = ["lang", "geek", "go"]
-banner = "C:t_banner_center/advent-code_iuo9ct.jpg"
+banner = "C:t_banner_center/christmas-go_vsmcod.jpg"
 +++
 [Last year]({{< ref "blog/2018/advent-of-code.md" >}}) I participated in a programming competition in which I attempted to solve a daily problem by writing a little program to process input and get a result. To punish myself further, I decided to try writing the programs in a different language each day.
 
