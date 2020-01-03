@@ -11,8 +11,8 @@
                 <div class="item-thumbnail">
                     <a href="{{ .Permalink }}" class="thumbnail">
                         {{ if eq (substr .Params.banner 0 8) "https://" }}
-                        <span style="background-image:url({{ .Params.banner }})" alt="{{ .Title }}" class="thumbnail-image"></span>
-                        {{ if eq (substr .Params.banner 0 2) "C:" }}
+                        <span style="background-image:url({{ .Params.banner }})" alt="{{ .Title }}" class="thumbnail-image"></span> 
+                        {{ else if eq (substr .Params.banner 0 2) "C:" }}
                         <span style="background-image:url({{ .Site.Params.cloudinary_prefix }}{{ substr .Params.banner 2 }})" alt="{{ .Title }}" class="thumbnail-image"></span>
                         {{ else }}
                         <span style="background-image:url({{ .Site.BaseURL }}{{ .Params.banner }})" alt="{{ .Title }}" class="thumbnail-image"></span>
