@@ -5,9 +5,10 @@
       {{ with .Site.Params.author}}<h2 id="name">{{ . }}</h2>{{ end }}
       {{ with .Site.Params.bio }}<h3 id="title">{{ . }}</h3>{{ end }}
       {{ with .Site.Params.location }}<span id="location"><i class="fa fa-map-marker"></i>{{ . }}</span>{{ end }}
-      {{ with .Site.Params.profile.follow_button }}
-          <a id="follow" href="{{ . }}">
-              {{with $.Site.Data.l10n.profile.follow_button}}{{.}}{{end}}
+      {{ with .Site.Params.profile.support }}
+          <a id="support" href="{{ . }}">
+            <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Show your support">
+            <span>{{with $.Site.Data.l10n.profile.support}}{{.}}{{end}}</span>
           </a>
       {{ end }}
     </div>
