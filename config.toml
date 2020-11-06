@@ -52,7 +52,8 @@ theme = "hugo-icarus-theme"
 
 # Enter a link for the follow button on the left
 [params.profile]
-    follow_button = "https://bitbucket.org/colinbate"
+    follow_button = "https://github.com/colinbate"
+    support = "https://www.buymeacoffee.com/colinbate"
 
 
 [params.social]
