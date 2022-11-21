@@ -1,6 +1,6 @@
 +++
 title = "Not Just Mustaches"
-date = 2020-12-15T14:22:40Z
+date = 2022-11-21T13:22:40Z
 categories = ["Personal"]
 banner = "C:t_banner_center/kivit-hi_ooejuz.png"
 +++
