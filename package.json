@@ -4,7 +4,7 @@
   "description": "Source for colin.is",
   "main": "index.js",
   "scripts": {
-    "start": "hugo serve -w"
+    "dev": "sirv ./static -p 1313 -D"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/colinbate/colin.is-static/issues"
   },
-  "homepage": "https://github.com/colinbate/colin.is-static#readme"
+  "homepage": "https://github.com/colinbate/colin.is-static#readme",
+  "devDependencies": {
+    "sirv-cli": "^3.0.1"
+  }
 }
